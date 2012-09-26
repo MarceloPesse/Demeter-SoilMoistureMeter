@@ -753,7 +753,7 @@ grid 5 mm, outline 4.5 x 7.5 mm</description>
 <parts>
 <part name="P+1" library="mark_1" deviceset="+5V" device=""/>
 <part name="GND1" library="mark_1" deviceset="GND" device=""/>
-<part name="U$1" library="mark_1" deviceset="MAX485" device=""/>
+<part name="IC1" library="mark_1" deviceset="MAX485" device=""/>
 <part name="R1" library="mark_1" deviceset="R-EU_" device="R0805"/>
 <part name="X1" library="mark_1" deviceset="W237-103" device=""/>
 <part name="GND2" library="mark_1" deviceset="GND" device=""/>
@@ -769,9 +769,11 @@ grid 5 mm, outline 4.5 x 7.5 mm</description>
 <plain>
 </plain>
 <instances>
-<instance part="P+1" gate="1" x="60.96" y="33.02"/>
+<instance part="P+1" gate="1" x="60.96" y="33.02" smashed="yes">
+<attribute name="VALUE" x="63.5" y="35.56" size="1.778" layer="96" rot="R180"/>
+</instance>
 <instance part="GND1" gate="1" x="60.96" y="15.24"/>
-<instance part="U$1" gate="G$1" x="43.18" y="22.86"/>
+<instance part="IC1" gate="G$1" x="43.18" y="22.86"/>
 <instance part="R1" gate="G$1" x="71.12" y="22.86" rot="R90"/>
 <instance part="X1" gate="G$1" x="86.36" y="22.86"/>
 <instance part="GND2" gate="1" x="78.74" y="15.24"/>
@@ -779,7 +781,9 @@ grid 5 mm, outline 4.5 x 7.5 mm</description>
 <instance part="C1" gate="G$1" x="96.52" y="25.4"/>
 <instance part="GND3" gate="1" x="96.52" y="15.24"/>
 <instance part="JP1" gate="A" x="22.86" y="-2.54"/>
-<instance part="P+3" gate="1" x="27.94" y="7.62"/>
+<instance part="P+3" gate="1" x="27.94" y="7.62" smashed="yes">
+<attribute name="VALUE" x="30.48" y="10.16" size="1.778" layer="96" rot="R180"/>
+</instance>
 <instance part="GND4" gate="1" x="30.48" y="-15.24"/>
 </instances>
 <busses>
@@ -787,7 +791,7 @@ grid 5 mm, outline 4.5 x 7.5 mm</description>
 <nets>
 <net name="+5V" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="VCC"/>
+<pinref part="IC1" gate="G$1" pin="VCC"/>
 <pinref part="P+1" gate="1" pin="+5V"/>
 <wire x1="60.96" y1="30.48" x2="60.96" y2="27.94" width="0.1524" layer="91"/>
 <wire x1="60.96" y1="27.94" x2="58.42" y2="27.94" width="0.1524" layer="91"/>
@@ -806,7 +810,7 @@ grid 5 mm, outline 4.5 x 7.5 mm</description>
 </net>
 <net name="GND" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="GND"/>
+<pinref part="IC1" gate="G$1" pin="GND"/>
 <pinref part="GND1" gate="1" pin="GND"/>
 <wire x1="60.96" y1="17.78" x2="60.96" y2="20.32" width="0.1524" layer="91"/>
 <wire x1="60.96" y1="20.32" x2="58.42" y2="20.32" width="0.1524" layer="91"/>
@@ -831,7 +835,7 @@ grid 5 mm, outline 4.5 x 7.5 mm</description>
 </net>
 <net name="TXD" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="RO"/>
+<pinref part="IC1" gate="G$1" pin="RO"/>
 <wire x1="27.94" y1="27.94" x2="15.24" y2="27.94" width="0.1524" layer="91"/>
 <label x="15.24" y="27.94" size="1.778" layer="95"/>
 </segment>
@@ -843,7 +847,7 @@ grid 5 mm, outline 4.5 x 7.5 mm</description>
 </net>
 <net name="RXD" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="DI"/>
+<pinref part="IC1" gate="G$1" pin="DI"/>
 <wire x1="27.94" y1="20.32" x2="15.24" y2="20.32" width="0.1524" layer="91"/>
 <label x="15.24" y="20.32" size="1.778" layer="95"/>
 </segment>
@@ -857,10 +861,10 @@ grid 5 mm, outline 4.5 x 7.5 mm</description>
 <segment>
 <wire x1="15.24" y1="25.4" x2="25.4" y2="25.4" width="0.1524" layer="91"/>
 <wire x1="25.4" y1="25.4" x2="25.4" y2="22.86" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="DE"/>
+<pinref part="IC1" gate="G$1" pin="DE"/>
 <wire x1="25.4" y1="22.86" x2="27.94" y2="22.86" width="0.1524" layer="91"/>
 <junction x="25.4" y="25.4"/>
-<pinref part="U$1" gate="G$1" pin="RE"/>
+<pinref part="IC1" gate="G$1" pin="RE"/>
 <wire x1="27.94" y1="25.4" x2="25.4" y2="25.4" width="0.1524" layer="91"/>
 <label x="15.24" y="25.4" size="1.778" layer="95"/>
 </segment>
@@ -872,7 +876,7 @@ grid 5 mm, outline 4.5 x 7.5 mm</description>
 </net>
 <net name="N$1" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="B"/>
+<pinref part="IC1" gate="G$1" pin="B"/>
 <wire x1="58.42" y1="25.4" x2="66.04" y2="25.4" width="0.1524" layer="91"/>
 <wire x1="66.04" y1="25.4" x2="66.04" y2="27.94" width="0.1524" layer="91"/>
 <pinref part="R1" gate="G$1" pin="2"/>
@@ -886,7 +890,7 @@ grid 5 mm, outline 4.5 x 7.5 mm</description>
 </net>
 <net name="N$2" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="A"/>
+<pinref part="IC1" gate="G$1" pin="A"/>
 <wire x1="58.42" y1="22.86" x2="66.04" y2="22.86" width="0.1524" layer="91"/>
 <wire x1="66.04" y1="22.86" x2="66.04" y2="17.78" width="0.1524" layer="91"/>
 <pinref part="R1" gate="G$1" pin="1"/>
