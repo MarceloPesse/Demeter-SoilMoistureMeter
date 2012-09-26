@@ -1367,16 +1367,24 @@ Source: http://ww1.microchip.com/downloads/en/DeviceDoc/21952a.pdf</description>
 </instance>
 <instance part="GND1" gate="1" x="-88.9" y="66.04"/>
 <instance part="IC1" gate="A" x="-106.68" y="81.28"/>
-<instance part="P+2" gate="1" x="-124.46" y="93.98"/>
+<instance part="P+2" gate="1" x="-124.46" y="93.98" smashed="yes">
+<attribute name="VALUE" x="-121.92" y="96.52" size="1.778" layer="96" rot="R180"/>
+</instance>
 <instance part="GND2" gate="1" x="-124.46" y="66.04"/>
 <instance part="C1" gate="G$1" x="-144.78" y="45.72"/>
-<instance part="P+3" gate="1" x="-144.78" y="50.8"/>
+<instance part="P+3" gate="1" x="-144.78" y="50.8" smashed="yes">
+<attribute name="VALUE" x="-142.24" y="53.34" size="1.778" layer="96" rot="R180"/>
+</instance>
 <instance part="GND3" gate="1" x="-144.78" y="38.1"/>
 <instance part="IC2" gate="G$1" x="-106.68" y="22.86"/>
 <instance part="GND5" gate="1" x="-121.92" y="-2.54"/>
-<instance part="P+4" gate="1" x="-124.46" y="55.88"/>
+<instance part="P+4" gate="1" x="-124.46" y="55.88" smashed="yes">
+<attribute name="VALUE" x="-121.92" y="58.42" size="1.778" layer="96" rot="R180"/>
+</instance>
 <instance part="C2" gate="G$1" x="-137.16" y="45.72"/>
-<instance part="P+5" gate="1" x="-137.16" y="50.8"/>
+<instance part="P+5" gate="1" x="-137.16" y="50.8" smashed="yes">
+<attribute name="VALUE" x="-134.62" y="53.34" size="1.778" layer="96" rot="R180"/>
+</instance>
 <instance part="GND6" gate="1" x="-137.16" y="38.1"/>
 <instance part="JK1" gate="G$1" x="-40.64" y="63.5" rot="R180"/>
 <instance part="GND7" gate="1" x="-48.26" y="53.34"/>
@@ -1408,7 +1416,9 @@ Source: http://ww1.microchip.com/downloads/en/DeviceDoc/21952a.pdf</description>
 <instance part="GND13" gate="1" x="-15.24" y="17.78"/>
 <instance part="R5" gate="G$1" x="-127" y="43.18" rot="R90"/>
 <instance part="JP1" gate="A" x="-147.32" y="73.66"/>
-<instance part="P+9" gate="1" x="-157.48" y="83.82"/>
+<instance part="P+9" gate="1" x="-157.48" y="83.82" smashed="yes">
+<attribute name="VALUE" x="-154.94" y="86.36" size="1.778" layer="96" rot="R180"/>
+</instance>
 <instance part="GND14" gate="1" x="-157.48" y="66.04"/>
 </instances>
 <busses>
