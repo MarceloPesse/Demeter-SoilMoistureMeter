@@ -545,7 +545,7 @@ design rules under a new name.</description>
 <attribute name="OC_FARNELL" value="1630424" x="-2.54" y="67.945" size="1.778" layer="28" rot="MR90" display="off"/>
 </element>
 <element name="C1" library="mark_1" package="C0805K" value="" x="29.21" y="36.195" rot="MR90"/>
-<element name="IC2" library="mark_1" package="SO28W" value="MCP23017SO" x="15.875" y="36.195" rot="MR180">
+<element name="IC2" library="mark_1" package="SO28W" value="MCP23017" x="15.875" y="36.195" rot="MR180">
 <attribute name="OC_NEWARK" value="31K2958" x="41.275" y="42.545" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="MPN" value="MCP23017-E/SO" x="41.275" y="42.545" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="MF" value="MICROCHIP" x="41.275" y="42.545" size="1.778" layer="28" rot="MR180" display="off"/>
