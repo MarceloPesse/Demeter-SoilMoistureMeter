@@ -1323,7 +1323,7 @@ Source: http://ww1.microchip.com/downloads/en/DeviceDoc/21952a.pdf</description>
 <part name="C1" library="mark_1" deviceset="C-EU" device="C0805K"/>
 <part name="P+3" library="mark_1" deviceset="+5V" device=""/>
 <part name="GND3" library="mark_1" deviceset="GND" device=""/>
-<part name="IC2" library="mark_1" deviceset="MCP23017" device="SO"/>
+<part name="IC2" library="mark_1" deviceset="MCP23017" device="SO" value="MCP23017"/>
 <part name="GND5" library="mark_1" deviceset="GND" device=""/>
 <part name="P+4" library="mark_1" deviceset="+5V" device=""/>
 <part name="C2" library="mark_1" deviceset="C-EU" device="C0805K"/>
@@ -1371,21 +1371,21 @@ Source: http://ww1.microchip.com/downloads/en/DeviceDoc/21952a.pdf</description>
 <attribute name="VALUE" x="-121.92" y="96.52" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="GND2" gate="1" x="-124.46" y="66.04"/>
-<instance part="C1" gate="G$1" x="-144.78" y="45.72"/>
-<instance part="P+3" gate="1" x="-144.78" y="50.8" smashed="yes">
-<attribute name="VALUE" x="-142.24" y="53.34" size="1.778" layer="96" rot="R180"/>
+<instance part="C1" gate="G$1" x="-157.48" y="43.18"/>
+<instance part="P+3" gate="1" x="-157.48" y="48.26" smashed="yes">
+<attribute name="VALUE" x="-154.94" y="50.8" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="GND3" gate="1" x="-144.78" y="38.1"/>
+<instance part="GND3" gate="1" x="-157.48" y="35.56"/>
 <instance part="IC2" gate="G$1" x="-106.68" y="22.86"/>
 <instance part="GND5" gate="1" x="-121.92" y="-2.54"/>
 <instance part="P+4" gate="1" x="-124.46" y="55.88" smashed="yes">
 <attribute name="VALUE" x="-121.92" y="58.42" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="C2" gate="G$1" x="-137.16" y="45.72"/>
-<instance part="P+5" gate="1" x="-137.16" y="50.8" smashed="yes">
-<attribute name="VALUE" x="-134.62" y="53.34" size="1.778" layer="96" rot="R180"/>
+<instance part="C2" gate="G$1" x="-149.86" y="43.18"/>
+<instance part="P+5" gate="1" x="-149.86" y="48.26" smashed="yes">
+<attribute name="VALUE" x="-147.32" y="50.8" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="GND6" gate="1" x="-137.16" y="38.1"/>
+<instance part="GND6" gate="1" x="-149.86" y="35.56"/>
 <instance part="JK1" gate="G$1" x="-40.64" y="63.5" rot="R180"/>
 <instance part="GND7" gate="1" x="-48.26" y="53.34"/>
 <instance part="Q2" gate="G$1" x="-50.8" y="30.48"/>
