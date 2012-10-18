@@ -3523,23 +3523,23 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <instance part="P+4" gate="1" x="294.64" y="22.86"/>
 <instance part="C6" gate="G$1" x="330.2" y="43.18"/>
 <instance part="C7" gate="G$1" x="330.2" y="12.7"/>
-<instance part="P+5" gate="1" x="218.44" y="25.4"/>
-<instance part="GND7" gate="1" x="218.44" y="7.62"/>
-<instance part="IC7" gate="G$1" x="203.2" y="17.78"/>
-<instance part="X1" gate="G$1" x="228.6" y="15.24"/>
-<instance part="IC4" gate="G$1" x="152.4" y="17.78"/>
-<instance part="P+7" gate="1" x="165.1" y="25.4" smashed="yes">
-<attribute name="VALUE" x="167.64" y="27.94" size="1.778" layer="96" rot="R180"/>
+<instance part="P+5" gate="1" x="165.1" y="0"/>
+<instance part="GND7" gate="1" x="165.1" y="-17.78"/>
+<instance part="IC7" gate="G$1" x="149.86" y="-7.62"/>
+<instance part="X1" gate="G$1" x="175.26" y="-10.16"/>
+<instance part="IC4" gate="G$1" x="99.06" y="-7.62"/>
+<instance part="P+7" gate="1" x="111.76" y="0" smashed="yes">
+<attribute name="VALUE" x="114.3" y="2.54" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="GND10" gate="1" x="139.7" y="7.62"/>
-<instance part="GND12" gate="1" x="175.26" y="15.24"/>
+<instance part="GND10" gate="1" x="86.36" y="-17.78"/>
+<instance part="GND12" gate="1" x="121.92" y="-10.16"/>
 <instance part="Q1" gate="G$1" x="-10.16" y="139.7" smashed="yes">
 <attribute name="NAME" x="-3.81" y="137.16" size="1.778" layer="95" rot="R180"/>
 </instance>
-<instance part="GND13" gate="1" x="116.84" y="-17.78"/>
-<instance part="IC5" gate="A" x="99.06" y="-2.54"/>
-<instance part="P+10" gate="1" x="81.28" y="10.16"/>
-<instance part="GND14" gate="1" x="81.28" y="-17.78"/>
+<instance part="GND13" gate="1" x="63.5" y="48.26"/>
+<instance part="IC5" gate="A" x="45.72" y="63.5"/>
+<instance part="P+10" gate="1" x="27.94" y="76.2"/>
+<instance part="GND14" gate="1" x="27.94" y="48.26"/>
 <instance part="IC6" gate="G$1" x="45.72" y="7.62"/>
 <instance part="GND15" gate="1" x="30.48" y="-17.78"/>
 <instance part="P+11" gate="1" x="27.94" y="38.1"/>
@@ -3641,63 +3641,63 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <instance part="+3V7" gate="G$1" x="0" y="17.78" smashed="yes">
 <attribute name="VALUE" x="2.54" y="20.32" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="IC8" gate="G$1" x="66.04" y="88.9"/>
-<instance part="P+13" gate="1" x="30.48" y="121.92" smashed="yes">
-<attribute name="VALUE" x="33.02" y="124.46" size="1.778" layer="96" rot="R180"/>
+<instance part="IC8" gate="G$1" x="121.92" y="53.34"/>
+<instance part="P+13" gate="1" x="86.36" y="86.36" smashed="yes">
+<attribute name="VALUE" x="88.9" y="88.9" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="GND8" gate="1" x="30.48" y="55.88"/>
-<instance part="JP1" gate="G$1" x="147.32" y="109.22"/>
-<instance part="R3" gate="G$1" x="40.64" y="139.7" rot="R90"/>
-<instance part="P+14" gate="1" x="40.64" y="147.32" smashed="yes">
-<attribute name="VALUE" x="43.18" y="149.86" size="1.778" layer="96" rot="R180"/>
+<instance part="GND8" gate="1" x="86.36" y="20.32"/>
+<instance part="JP1" gate="G$1" x="210.82" y="60.96"/>
+<instance part="R3" gate="G$1" x="96.52" y="104.14" rot="R90"/>
+<instance part="P+14" gate="1" x="96.52" y="111.76" smashed="yes">
+<attribute name="VALUE" x="99.06" y="114.3" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="P+15" gate="1" x="134.62" y="116.84" smashed="yes">
-<attribute name="VALUE" x="137.16" y="119.38" size="1.778" layer="96" rot="R180"/>
+<instance part="P+15" gate="1" x="198.12" y="68.58" smashed="yes">
+<attribute name="VALUE" x="200.66" y="71.12" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="GND22" gate="1" x="134.62" y="101.6"/>
-<instance part="C1" gate="G$1" x="38.1" y="96.52" smashed="yes" rot="R270">
-<attribute name="NAME" x="32.004" y="96.901" size="1.778" layer="95"/>
-<attribute name="VALUE" x="39.624" y="96.901" size="1.778" layer="96"/>
+<instance part="GND22" gate="1" x="198.12" y="53.34"/>
+<instance part="C1" gate="G$1" x="93.98" y="60.96" smashed="yes" rot="R270">
+<attribute name="NAME" x="87.884" y="61.341" size="1.778" layer="95"/>
+<attribute name="VALUE" x="95.504" y="61.341" size="1.778" layer="96"/>
 </instance>
-<instance part="C8" gate="G$1" x="38.1" y="91.44" smashed="yes" rot="R270">
-<attribute name="NAME" x="32.004" y="91.821" size="1.778" layer="95"/>
-<attribute name="VALUE" x="39.624" y="91.821" size="1.778" layer="96"/>
+<instance part="C8" gate="G$1" x="93.98" y="55.88" smashed="yes" rot="R270">
+<attribute name="NAME" x="87.884" y="56.261" size="1.778" layer="95"/>
+<attribute name="VALUE" x="95.504" y="56.261" size="1.778" layer="96"/>
 </instance>
-<instance part="Q9" gate="G$1" x="40.64" y="81.28" smashed="yes" rot="R90">
-<attribute name="NAME" x="43.18" y="82.296" size="1.778" layer="95"/>
-<attribute name="VALUE" x="43.18" y="83.82" size="1.778" layer="96" rot="R90"/>
+<instance part="Q9" gate="G$1" x="96.52" y="45.72" smashed="yes" rot="R90">
+<attribute name="NAME" x="99.06" y="46.736" size="1.778" layer="95"/>
+<attribute name="VALUE" x="99.06" y="48.26" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="C9" gate="G$1" x="38.1" y="86.36" smashed="yes" rot="R270">
-<attribute name="NAME" x="31.496" y="83.947" size="1.778" layer="95"/>
-<attribute name="VALUE" x="31.496" y="81.661" size="1.778" layer="96"/>
+<instance part="C9" gate="G$1" x="93.98" y="50.8" smashed="yes" rot="R270">
+<attribute name="NAME" x="87.376" y="48.387" size="1.778" layer="95"/>
+<attribute name="VALUE" x="87.376" y="46.101" size="1.778" layer="96"/>
 </instance>
-<instance part="C10" gate="G$1" x="38.1" y="78.74" smashed="yes" rot="R270">
-<attribute name="NAME" x="31.242" y="76.327" size="1.778" layer="95"/>
-<attribute name="VALUE" x="31.496" y="74.041" size="1.778" layer="96"/>
+<instance part="C10" gate="G$1" x="93.98" y="43.18" smashed="yes" rot="R270">
+<attribute name="NAME" x="87.122" y="40.767" size="1.778" layer="95"/>
+<attribute name="VALUE" x="87.376" y="38.481" size="1.778" layer="96"/>
 </instance>
-<instance part="CN1" gate="G$1" x="142.24" y="76.2"/>
-<instance part="GND23" gate="1" x="165.1" y="68.58"/>
-<instance part="R9" gate="G$1" x="157.48" y="78.74" smashed="yes" rot="R180">
-<attribute name="VALUE" x="158.75" y="79.502" size="1.778" layer="96" rot="R180"/>
+<instance part="CN1" gate="G$1" x="205.74" y="27.94"/>
+<instance part="GND23" gate="1" x="228.6" y="20.32"/>
+<instance part="R9" gate="G$1" x="220.98" y="30.48" smashed="yes" rot="R180">
+<attribute name="VALUE" x="222.25" y="31.242" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="R10" gate="G$1" x="157.48" y="76.2" smashed="yes" rot="R180">
-<attribute name="VALUE" x="158.75" y="76.962" size="1.778" layer="96" rot="R180"/>
+<instance part="R10" gate="G$1" x="220.98" y="27.94" smashed="yes" rot="R180">
+<attribute name="VALUE" x="222.25" y="28.702" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="R11" gate="G$1" x="109.22" y="78.74" smashed="yes" rot="R180">
-<attribute name="NAME" x="110.49" y="82.3214" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="113.03" y="82.042" size="1.778" layer="96" rot="R180"/>
+<instance part="R11" gate="G$1" x="165.1" y="43.18" smashed="yes" rot="R180">
+<attribute name="NAME" x="166.37" y="46.7614" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="168.91" y="46.482" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="R12" gate="G$1" x="109.22" y="73.66" smashed="yes" rot="R180">
-<attribute name="NAME" x="110.49" y="77.2414" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="113.03" y="76.962" size="1.778" layer="96" rot="R180"/>
+<instance part="R12" gate="G$1" x="165.1" y="38.1" smashed="yes" rot="R180">
+<attribute name="NAME" x="166.37" y="41.6814" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="168.91" y="41.402" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="LED1" gate="G$1" x="101.6" y="78.74" rot="R270"/>
-<instance part="LED2" gate="G$1" x="101.6" y="73.66" rot="R270"/>
-<instance part="P+16" gate="1" x="114.3" y="81.28" smashed="yes">
-<attribute name="VALUE" x="116.84" y="83.82" size="1.778" layer="96" rot="R180"/>
+<instance part="LED1" gate="G$1" x="157.48" y="43.18" rot="R270"/>
+<instance part="LED2" gate="G$1" x="157.48" y="38.1" rot="R270"/>
+<instance part="P+16" gate="1" x="170.18" y="45.72" smashed="yes">
+<attribute name="VALUE" x="172.72" y="48.26" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="P+17" gate="1" x="114.3" y="76.2" smashed="yes">
-<attribute name="VALUE" x="116.84" y="78.74" size="1.778" layer="96" rot="R180"/>
+<instance part="P+17" gate="1" x="170.18" y="40.64" smashed="yes">
+<attribute name="VALUE" x="172.72" y="43.18" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="R13" gate="G$1" x="-7.62" y="124.46"/>
 <instance part="R14" gate="G$1" x="-7.62" y="121.92"/>
@@ -3713,15 +3713,15 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <instance part="GND27" gate="1" x="-15.24" y="-17.78"/>
 <instance part="FRAME1" gate="G$1" x="-33.02" y="-35.56"/>
 <instance part="FRAME1" gate="G$2" x="254" y="-35.56"/>
-<instance part="R21" gate="G$1" x="99.06" y="121.92" smashed="yes" rot="R270">
-<attribute name="NAME" x="95.4786" y="123.19" size="1.778" layer="95" rot="R270"/>
-<attribute name="VALUE" x="95.758" y="125.73" size="1.778" layer="96" rot="R270"/>
+<instance part="R21" gate="G$1" x="154.94" y="86.36" smashed="yes" rot="R270">
+<attribute name="NAME" x="151.3586" y="87.63" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="151.638" y="90.17" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="P+18" gate="1" x="99.06" y="129.54" smashed="yes">
-<attribute name="VALUE" x="101.6" y="132.08" size="1.778" layer="96" rot="R180"/>
+<instance part="P+18" gate="1" x="154.94" y="93.98" smashed="yes">
+<attribute name="VALUE" x="157.48" y="96.52" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="GND28" gate="1" x="99.06" y="109.22"/>
-<instance part="JP2" gate="A" x="104.14" y="114.3" rot="R270"/>
+<instance part="GND28" gate="1" x="154.94" y="73.66"/>
+<instance part="JP2" gate="A" x="160.02" y="78.74" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -3784,48 +3784,48 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <segment>
 <pinref part="IC7" gate="G$1" pin="GND"/>
 <pinref part="GND7" gate="1" pin="GND"/>
-<wire x1="218.44" y1="10.16" x2="218.44" y2="12.7" width="0.1524" layer="91"/>
-<wire x1="218.44" y1="12.7" x2="215.9" y2="12.7" width="0.1524" layer="91"/>
-<junction x="218.44" y="12.7"/>
+<wire x1="165.1" y1="-15.24" x2="165.1" y2="-12.7" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="-12.7" x2="162.56" y2="-12.7" width="0.1524" layer="91"/>
+<junction x="165.1" y="-12.7"/>
 <pinref part="X1" gate="G$1" pin="3"/>
-<wire x1="226.06" y1="12.7" x2="218.44" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="-12.7" x2="165.1" y2="-12.7" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="IC4" gate="G$1" pin="WP"/>
 <pinref part="GND12" gate="1" pin="GND"/>
-<wire x1="162.56" y1="17.78" x2="175.26" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="-7.62" x2="121.92" y2="-7.62" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="IC5" gate="A" pin="GND"/>
 <pinref part="GND14" gate="1" pin="GND"/>
-<wire x1="81.28" y1="-15.24" x2="81.28" y2="-12.7" width="0.1524" layer="91"/>
-<wire x1="81.28" y1="-12.7" x2="83.82" y2="-12.7" width="0.1524" layer="91"/>
-<junction x="81.28" y="-12.7"/>
+<wire x1="27.94" y1="50.8" x2="27.94" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="53.34" x2="30.48" y2="53.34" width="0.1524" layer="91"/>
+<junction x="27.94" y="53.34"/>
 <pinref part="IC5" gate="A" pin="ADR0"/>
-<wire x1="83.82" y1="-5.08" x2="81.28" y2="-5.08" width="0.1524" layer="91"/>
-<wire x1="81.28" y1="-5.08" x2="81.28" y2="-7.62" width="0.1524" layer="91"/>
-<junction x="81.28" y="-7.62"/>
-<wire x1="81.28" y1="-7.62" x2="81.28" y2="-12.7" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="60.96" x2="27.94" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="60.96" x2="27.94" y2="58.42" width="0.1524" layer="91"/>
+<junction x="27.94" y="58.42"/>
+<wire x1="27.94" y1="58.42" x2="27.94" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="IC5" gate="A" pin="ADR1"/>
-<wire x1="83.82" y1="-7.62" x2="81.28" y2="-7.62" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="58.42" x2="27.94" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="IC5" gate="A" pin="CH1-"/>
 <pinref part="GND13" gate="1" pin="GND"/>
-<wire x1="114.3" y1="2.54" x2="116.84" y2="2.54" width="0.1524" layer="91"/>
-<wire x1="116.84" y1="2.54" x2="116.84" y2="-2.54" width="0.1524" layer="91"/>
-<junction x="116.84" y="-12.7"/>
-<wire x1="116.84" y1="-2.54" x2="116.84" y2="-7.62" width="0.1524" layer="91"/>
-<wire x1="116.84" y1="-7.62" x2="116.84" y2="-12.7" width="0.1524" layer="91"/>
-<wire x1="116.84" y1="-12.7" x2="116.84" y2="-15.24" width="0.1524" layer="91"/>
-<junction x="116.84" y="-7.62"/>
-<junction x="116.84" y="-2.54"/>
+<wire x1="60.96" y1="68.58" x2="63.5" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="68.58" x2="63.5" y2="63.5" width="0.1524" layer="91"/>
+<junction x="63.5" y="53.34"/>
+<wire x1="63.5" y1="63.5" x2="63.5" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="58.42" x2="63.5" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="53.34" x2="63.5" y2="50.8" width="0.1524" layer="91"/>
+<junction x="63.5" y="58.42"/>
+<junction x="63.5" y="63.5"/>
 <pinref part="IC5" gate="A" pin="CH2-"/>
-<wire x1="114.3" y1="-2.54" x2="116.84" y2="-2.54" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="63.5" x2="63.5" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="IC5" gate="A" pin="CH3-"/>
-<wire x1="114.3" y1="-7.62" x2="116.84" y2="-7.62" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="58.42" x2="63.5" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="IC5" gate="A" pin="CH4-"/>
-<wire x1="114.3" y1="-12.7" x2="116.84" y2="-12.7" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="53.34" x2="63.5" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="IC6" gate="G$1" pin="VSS"/>
@@ -3887,69 +3887,69 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 </segment>
 <segment>
 <pinref part="GND10" gate="1" pin="GND"/>
-<wire x1="139.7" y1="10.16" x2="139.7" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="-15.24" x2="86.36" y2="-12.7" width="0.1524" layer="91"/>
 <pinref part="IC4" gate="G$1" pin="A0"/>
-<wire x1="139.7" y1="12.7" x2="139.7" y2="15.24" width="0.1524" layer="91"/>
-<wire x1="139.7" y1="15.24" x2="139.7" y2="17.78" width="0.1524" layer="91"/>
-<wire x1="139.7" y1="17.78" x2="139.7" y2="20.32" width="0.1524" layer="91"/>
-<wire x1="139.7" y1="20.32" x2="142.24" y2="20.32" width="0.1524" layer="91"/>
-<junction x="139.7" y="17.78"/>
-<junction x="139.7" y="15.24"/>
-<junction x="139.7" y="12.7"/>
+<wire x1="86.36" y1="-12.7" x2="86.36" y2="-10.16" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="-10.16" x2="86.36" y2="-7.62" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="-7.62" x2="86.36" y2="-5.08" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="-5.08" x2="88.9" y2="-5.08" width="0.1524" layer="91"/>
+<junction x="86.36" y="-7.62"/>
+<junction x="86.36" y="-10.16"/>
+<junction x="86.36" y="-12.7"/>
 <pinref part="IC4" gate="G$1" pin="GND"/>
-<wire x1="142.24" y1="12.7" x2="139.7" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="-12.7" x2="86.36" y2="-12.7" width="0.1524" layer="91"/>
 <pinref part="IC4" gate="G$1" pin="A2"/>
-<wire x1="142.24" y1="15.24" x2="139.7" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="-10.16" x2="86.36" y2="-10.16" width="0.1524" layer="91"/>
 <pinref part="IC4" gate="G$1" pin="A1"/>
-<wire x1="142.24" y1="17.78" x2="139.7" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="-7.62" x2="86.36" y2="-7.62" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="IC8" gate="G$1" pin="UGND"/>
 <pinref part="GND8" gate="1" pin="GND"/>
-<wire x1="43.18" y1="71.12" x2="30.48" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="30.48" y1="71.12" x2="30.48" y2="66.04" width="0.1524" layer="91"/>
-<junction x="30.48" y="58.42"/>
-<wire x1="30.48" y1="66.04" x2="30.48" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="30.48" y1="63.5" x2="30.48" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="30.48" y1="60.96" x2="30.48" y2="58.42" width="0.1524" layer="91"/>
-<junction x="30.48" y="60.96"/>
-<junction x="30.48" y="63.5"/>
-<junction x="30.48" y="66.04"/>
+<wire x1="99.06" y1="35.56" x2="86.36" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="35.56" x2="86.36" y2="30.48" width="0.1524" layer="91"/>
+<junction x="86.36" y="22.86"/>
+<wire x1="86.36" y1="30.48" x2="86.36" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="27.94" x2="86.36" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="25.4" x2="86.36" y2="22.86" width="0.1524" layer="91"/>
+<junction x="86.36" y="25.4"/>
+<junction x="86.36" y="27.94"/>
+<junction x="86.36" y="30.48"/>
 <pinref part="IC8" gate="G$1" pin="GND"/>
-<wire x1="43.18" y1="66.04" x2="30.48" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="30.48" x2="86.36" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="IC8" gate="G$1" pin="GND1"/>
-<wire x1="43.18" y1="63.5" x2="30.48" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="27.94" x2="86.36" y2="27.94" width="0.1524" layer="91"/>
 <pinref part="IC8" gate="G$1" pin="GND2"/>
-<wire x1="43.18" y1="60.96" x2="30.48" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="25.4" x2="86.36" y2="25.4" width="0.1524" layer="91"/>
 <pinref part="IC8" gate="G$1" pin="GND3"/>
-<wire x1="43.18" y1="58.42" x2="30.48" y2="58.42" width="0.1524" layer="91"/>
-<junction x="30.48" y="71.12"/>
+<wire x1="99.06" y1="22.86" x2="86.36" y2="22.86" width="0.1524" layer="91"/>
+<junction x="86.36" y="35.56"/>
 <pinref part="C1" gate="G$1" pin="2"/>
-<wire x1="33.02" y1="96.52" x2="30.48" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="30.48" y1="96.52" x2="30.48" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="60.96" x2="86.36" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="60.96" x2="86.36" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="C8" gate="G$1" pin="2"/>
-<wire x1="33.02" y1="91.44" x2="30.48" y2="91.44" width="0.1524" layer="91"/>
-<junction x="30.48" y="91.44"/>
+<wire x1="88.9" y1="55.88" x2="86.36" y2="55.88" width="0.1524" layer="91"/>
+<junction x="86.36" y="55.88"/>
 <pinref part="C9" gate="G$1" pin="2"/>
-<wire x1="33.02" y1="86.36" x2="30.48" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="30.48" y1="86.36" x2="30.48" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="50.8" x2="86.36" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="50.8" x2="86.36" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="C10" gate="G$1" pin="2"/>
-<wire x1="30.48" y1="78.74" x2="33.02" y2="78.74" width="0.1524" layer="91"/>
-<junction x="30.48" y="86.36"/>
-<wire x1="30.48" y1="91.44" x2="30.48" y2="86.36" width="0.1524" layer="91"/>
-<junction x="30.48" y="78.74"/>
-<wire x1="30.48" y1="78.74" x2="30.48" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="43.18" x2="88.9" y2="43.18" width="0.1524" layer="91"/>
+<junction x="86.36" y="50.8"/>
+<wire x1="86.36" y1="55.88" x2="86.36" y2="50.8" width="0.1524" layer="91"/>
+<junction x="86.36" y="43.18"/>
+<wire x1="86.36" y1="43.18" x2="86.36" y2="35.56" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="JP1" gate="G$1" pin="GND"/>
 <pinref part="GND22" gate="1" pin="GND"/>
-<wire x1="142.24" y1="106.68" x2="134.62" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="134.62" y1="106.68" x2="134.62" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="58.42" x2="198.12" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="198.12" y1="58.42" x2="198.12" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="CN1" gate="G$1" pin="GND"/>
 <pinref part="GND23" gate="1" pin="GND"/>
-<wire x1="165.1" y1="71.12" x2="152.4" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="228.6" y1="22.86" x2="215.9" y2="22.86" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R14" gate="G$1" pin="1"/>
@@ -3974,7 +3974,7 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <segment>
 <pinref part="JP2" gate="A" pin="2"/>
 <pinref part="GND28" gate="1" pin="GND"/>
-<wire x1="101.6" y1="111.76" x2="99.06" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="76.2" x2="154.94" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+3V3" class="0">
@@ -4087,8 +4087,8 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 </segment>
 <segment>
 <pinref part="IC7" gate="G$1" pin="DI"/>
-<wire x1="190.5" y1="12.7" x2="182.88" y2="12.7" width="0.1524" layer="91"/>
-<label x="182.88" y="12.7" size="1.778" layer="95"/>
+<wire x1="137.16" y1="-12.7" x2="129.54" y2="-12.7" width="0.1524" layer="91"/>
+<label x="129.54" y="-12.7" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="RESET" class="0">
@@ -4122,8 +4122,8 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 </segment>
 <segment>
 <pinref part="IC7" gate="G$1" pin="RO"/>
-<wire x1="190.5" y1="20.32" x2="182.88" y2="20.32" width="0.1524" layer="91"/>
-<label x="182.88" y="20.32" size="1.778" layer="95"/>
+<wire x1="137.16" y1="-5.08" x2="129.54" y2="-5.08" width="0.1524" layer="91"/>
+<label x="129.54" y="-5.08" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="CTS" class="0">
@@ -4182,20 +4182,20 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <segment>
 <pinref part="IC7" gate="G$1" pin="VCC"/>
 <pinref part="P+5" gate="1" pin="+5V"/>
-<wire x1="218.44" y1="22.86" x2="218.44" y2="20.32" width="0.1524" layer="91"/>
-<wire x1="218.44" y1="20.32" x2="215.9" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="-2.54" x2="165.1" y2="-5.08" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="-5.08" x2="162.56" y2="-5.08" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="IC4" gate="G$1" pin="VCC"/>
 <pinref part="P+7" gate="1" pin="+5V"/>
-<wire x1="162.56" y1="20.32" x2="165.1" y2="20.32" width="0.1524" layer="91"/>
-<wire x1="165.1" y1="20.32" x2="165.1" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="-5.08" x2="111.76" y2="-5.08" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="-5.08" x2="111.76" y2="-2.54" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="IC5" gate="A" pin="VCC"/>
 <pinref part="P+10" gate="1" pin="+5V"/>
-<wire x1="81.28" y1="7.62" x2="81.28" y2="5.08" width="0.1524" layer="91"/>
-<wire x1="81.28" y1="5.08" x2="83.82" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="73.66" x2="27.94" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="71.12" x2="30.48" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="IC6" gate="G$1" pin="VDD"/>
@@ -4227,23 +4227,23 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <segment>
 <pinref part="P+13" gate="1" pin="+5V"/>
 <pinref part="IC8" gate="G$1" pin="AVCC1"/>
-<wire x1="30.48" y1="119.38" x2="30.48" y2="116.84" width="0.1524" layer="91"/>
-<wire x1="30.48" y1="116.84" x2="30.48" y2="114.3" width="0.1524" layer="91"/>
-<wire x1="30.48" y1="114.3" x2="30.48" y2="111.76" width="0.1524" layer="91"/>
-<wire x1="30.48" y1="111.76" x2="30.48" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="30.48" y1="109.22" x2="43.18" y2="109.22" width="0.1524" layer="91"/>
-<junction x="30.48" y="111.76"/>
-<junction x="30.48" y="114.3"/>
-<junction x="30.48" y="116.84"/>
-<junction x="30.48" y="119.38"/>
+<wire x1="86.36" y1="83.82" x2="86.36" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="81.28" x2="86.36" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="78.74" x2="86.36" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="76.2" x2="86.36" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="73.66" x2="99.06" y2="73.66" width="0.1524" layer="91"/>
+<junction x="86.36" y="76.2"/>
+<junction x="86.36" y="78.74"/>
+<junction x="86.36" y="81.28"/>
+<junction x="86.36" y="83.82"/>
 <pinref part="IC8" gate="G$1" pin="VCC"/>
-<wire x1="43.18" y1="119.38" x2="30.48" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="83.82" x2="86.36" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="IC8" gate="G$1" pin="VCC1"/>
-<wire x1="43.18" y1="116.84" x2="30.48" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="81.28" x2="86.36" y2="81.28" width="0.1524" layer="91"/>
 <pinref part="IC8" gate="G$1" pin="UVCC"/>
-<wire x1="43.18" y1="114.3" x2="30.48" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="78.74" x2="86.36" y2="78.74" width="0.1524" layer="91"/>
 <pinref part="IC8" gate="G$1" pin="AVCC"/>
-<wire x1="43.18" y1="111.76" x2="30.48" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="76.2" x2="86.36" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R3" gate="G$1" pin="2"/>
@@ -4252,8 +4252,8 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <segment>
 <pinref part="JP1" gate="G$1" pin="VTG"/>
 <pinref part="P+15" gate="1" pin="+5V"/>
-<wire x1="142.24" y1="111.76" x2="134.62" y2="111.76" width="0.1524" layer="91"/>
-<wire x1="134.62" y1="111.76" x2="134.62" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="63.5" x2="198.12" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="198.12" y1="63.5" x2="198.12" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R11" gate="G$1" pin="1"/>
@@ -4270,18 +4270,18 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 </net>
 <net name="EN" class="0">
 <segment>
-<wire x1="182.88" y1="17.78" x2="190.5" y2="17.78" width="0.1524" layer="91"/>
-<wire x1="190.5" y1="17.78" x2="190.5" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="-7.62" x2="137.16" y2="-7.62" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="-7.62" x2="137.16" y2="-10.16" width="0.1524" layer="91"/>
 <pinref part="IC7" gate="G$1" pin="DE"/>
-<junction x="190.5" y="17.78"/>
+<junction x="137.16" y="-7.62"/>
 <pinref part="IC7" gate="G$1" pin="RE"/>
-<label x="182.88" y="17.78" size="1.778" layer="95"/>
+<label x="129.54" y="-7.62" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$2" class="0">
 <segment>
 <pinref part="IC7" gate="G$1" pin="B"/>
-<wire x1="215.9" y1="17.78" x2="226.06" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="-7.62" x2="172.72" y2="-7.62" width="0.1524" layer="91"/>
 <pinref part="X1" gate="G$1" pin="1"/>
 </segment>
 </net>
@@ -4289,19 +4289,19 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <segment>
 <pinref part="IC7" gate="G$1" pin="A"/>
 <pinref part="X1" gate="G$1" pin="2"/>
-<wire x1="215.9" y1="15.24" x2="226.06" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="-10.16" x2="172.72" y2="-10.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SCL" class="0">
 <segment>
 <pinref part="IC4" gate="G$1" pin="SCL"/>
-<wire x1="162.56" y1="15.24" x2="170.18" y2="15.24" width="0.1524" layer="91"/>
-<label x="165.1" y="15.24" size="1.778" layer="95"/>
+<wire x1="109.22" y1="-10.16" x2="116.84" y2="-10.16" width="0.1524" layer="91"/>
+<label x="111.76" y="-10.16" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="IC5" gate="A" pin="SCL"/>
-<wire x1="83.82" y1="-2.54" x2="76.2" y2="-2.54" width="0.1524" layer="91"/>
-<label x="76.2" y="-2.54" size="1.778" layer="95"/>
+<wire x1="30.48" y1="63.5" x2="22.86" y2="63.5" width="0.1524" layer="91"/>
+<label x="22.86" y="63.5" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="IC6" gate="G$1" pin="SCL"/>
@@ -4310,20 +4310,20 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 </segment>
 <segment>
 <pinref part="IC8" gate="G$1" pin="PD0(INT0/OC0B/SCL)"/>
-<wire x1="91.44" y1="58.42" x2="101.6" y2="58.42" width="0.1524" layer="91"/>
-<label x="96.52" y="58.42" size="1.778" layer="95"/>
+<wire x1="147.32" y1="22.86" x2="157.48" y2="22.86" width="0.1524" layer="91"/>
+<label x="152.4" y="22.86" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SDA" class="0">
 <segment>
 <pinref part="IC4" gate="G$1" pin="SDA"/>
-<wire x1="162.56" y1="12.7" x2="170.18" y2="12.7" width="0.1524" layer="91"/>
-<label x="165.1" y="12.7" size="1.778" layer="95"/>
+<wire x1="109.22" y1="-12.7" x2="116.84" y2="-12.7" width="0.1524" layer="91"/>
+<label x="111.76" y="-12.7" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="IC5" gate="A" pin="SDA"/>
-<wire x1="83.82" y1="0" x2="76.2" y2="0" width="0.1524" layer="91"/>
-<label x="76.2" y="0" size="1.778" layer="95"/>
+<wire x1="30.48" y1="66.04" x2="22.86" y2="66.04" width="0.1524" layer="91"/>
+<label x="22.86" y="66.04" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="IC6" gate="G$1" pin="SDA"/>
@@ -4332,56 +4332,56 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 </segment>
 <segment>
 <pinref part="IC8" gate="G$1" pin="PD1(INT1/SDA)"/>
-<wire x1="91.44" y1="60.96" x2="101.6" y2="60.96" width="0.1524" layer="91"/>
-<label x="96.52" y="60.96" size="1.778" layer="95"/>
+<wire x1="147.32" y1="25.4" x2="157.48" y2="25.4" width="0.1524" layer="91"/>
+<label x="152.4" y="25.4" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="CH1" class="0">
-<segment>
-<pinref part="IC5" gate="A" pin="CH4+"/>
-<wire x1="114.3" y1="-10.16" x2="124.46" y2="-10.16" width="0.1524" layer="91"/>
-<label x="119.38" y="-10.16" size="1.778" layer="95"/>
-</segment>
 <segment>
 <pinref part="R13" gate="G$1" pin="1"/>
 <wire x1="-12.7" y1="124.46" x2="-20.32" y2="124.46" width="0.1524" layer="91"/>
 <label x="-20.32" y="124.46" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="IC5" gate="A" pin="CH1+"/>
+<wire x1="60.96" y1="71.12" x2="71.12" y2="71.12" width="0.1524" layer="91"/>
+<label x="66.04" y="71.12" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="CH2" class="0">
-<segment>
-<pinref part="IC5" gate="A" pin="CH3+"/>
-<wire x1="114.3" y1="-5.08" x2="124.46" y2="-5.08" width="0.1524" layer="91"/>
-<label x="119.38" y="-5.08" size="1.778" layer="95"/>
-</segment>
 <segment>
 <pinref part="R15" gate="G$1" pin="1"/>
 <wire x1="-12.7" y1="78.74" x2="-20.32" y2="78.74" width="0.1524" layer="91"/>
 <label x="-20.32" y="78.74" size="1.778" layer="95"/>
 </segment>
-</net>
-<net name="CH3" class="0">
 <segment>
 <pinref part="IC5" gate="A" pin="CH2+"/>
-<wire x1="114.3" y1="0" x2="124.46" y2="0" width="0.1524" layer="91"/>
-<label x="119.38" y="0" size="1.778" layer="95"/>
+<wire x1="60.96" y1="66.04" x2="71.12" y2="66.04" width="0.1524" layer="91"/>
+<label x="66.04" y="66.04" size="1.778" layer="95"/>
 </segment>
+</net>
+<net name="CH3" class="0">
 <segment>
 <pinref part="R18" gate="G$1" pin="1"/>
 <wire x1="-12.7" y1="33.02" x2="-20.32" y2="33.02" width="0.1524" layer="91"/>
 <label x="-20.32" y="33.02" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="IC5" gate="A" pin="CH3+"/>
+<wire x1="60.96" y1="60.96" x2="71.12" y2="60.96" width="0.1524" layer="91"/>
+<label x="66.04" y="60.96" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="CH4" class="0">
-<segment>
-<pinref part="IC5" gate="A" pin="CH1+"/>
-<wire x1="114.3" y1="5.08" x2="124.46" y2="5.08" width="0.1524" layer="91"/>
-<label x="119.38" y="5.08" size="1.778" layer="95"/>
-</segment>
 <segment>
 <pinref part="R20" gate="G$1" pin="1"/>
 <wire x1="-12.7" y1="-12.7" x2="-20.32" y2="-12.7" width="0.1524" layer="91"/>
 <label x="-20.32" y="-12.7" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="IC5" gate="A" pin="CH4+"/>
+<wire x1="60.96" y1="55.88" x2="71.12" y2="55.88" width="0.1524" layer="91"/>
+<label x="66.04" y="55.88" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$11" class="0">
@@ -4662,62 +4662,62 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <net name="RST" class="0">
 <segment>
 <pinref part="JP1" gate="G$1" pin="RST"/>
-<wire x1="152.4" y1="106.68" x2="165.1" y2="106.68" width="0.1524" layer="91"/>
-<label x="160.02" y="106.68" size="1.778" layer="95"/>
+<wire x1="215.9" y1="58.42" x2="228.6" y2="58.42" width="0.1524" layer="91"/>
+<label x="223.52" y="58.42" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="IC8" gate="G$1" pin="/RESET"/>
 <pinref part="R3" gate="G$1" pin="1"/>
-<wire x1="40.64" y1="134.62" x2="40.64" y2="132.08" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="132.08" x2="43.18" y2="132.08" width="0.1524" layer="91"/>
-<junction x="40.64" y="132.08"/>
-<wire x1="40.64" y1="132.08" x2="30.48" y2="132.08" width="0.1524" layer="91"/>
-<label x="30.48" y="132.08" size="1.778" layer="95"/>
+<wire x1="96.52" y1="99.06" x2="96.52" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="96.52" x2="99.06" y2="96.52" width="0.1524" layer="91"/>
+<junction x="96.52" y="96.52"/>
+<wire x1="96.52" y1="96.52" x2="86.36" y2="96.52" width="0.1524" layer="91"/>
+<label x="86.36" y="96.52" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$24" class="0">
 <segment>
 <pinref part="IC8" gate="G$1" pin="UCAP"/>
 <pinref part="C1" gate="G$1" pin="1"/>
-<wire x1="43.18" y1="96.52" x2="40.64" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="60.96" x2="96.52" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$25" class="0">
 <segment>
 <pinref part="IC8" gate="G$1" pin="AREF"/>
 <pinref part="C8" gate="G$1" pin="1"/>
-<wire x1="40.64" y1="91.44" x2="43.18" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="55.88" x2="99.06" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$26" class="0">
 <segment>
 <pinref part="IC8" gate="G$1" pin="XTAL1"/>
 <pinref part="Q9" gate="G$1" pin="2"/>
-<wire x1="43.18" y1="86.36" x2="40.64" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="86.36" x2="40.64" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="50.8" x2="96.52" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="50.8" x2="96.52" y2="48.26" width="0.1524" layer="91"/>
 <pinref part="C9" gate="G$1" pin="1"/>
-<junction x="40.64" y="86.36"/>
+<junction x="96.52" y="50.8"/>
 </segment>
 </net>
 <net name="N$27" class="0">
 <segment>
 <pinref part="Q9" gate="G$1" pin="1"/>
-<junction x="40.64" y="78.74"/>
+<junction x="96.52" y="43.18"/>
 <pinref part="IC8" gate="G$1" pin="XTAL2"/>
-<wire x1="43.18" y1="78.74" x2="40.64" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="43.18" x2="96.52" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="C10" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="VBUS" class="0">
 <segment>
 <pinref part="IC8" gate="G$1" pin="VBUS"/>
-<wire x1="43.18" y1="127" x2="30.48" y2="127" width="0.1524" layer="91"/>
-<label x="30.48" y="127" size="1.778" layer="95"/>
+<wire x1="99.06" y1="91.44" x2="86.36" y2="91.44" width="0.1524" layer="91"/>
+<label x="86.36" y="91.44" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="CN1" gate="G$1" pin="VBUS"/>
-<wire x1="152.4" y1="81.28" x2="165.1" y2="81.28" width="0.1524" layer="91"/>
-<label x="160.02" y="81.28" size="1.778" layer="95"/>
+<wire x1="215.9" y1="33.02" x2="228.6" y2="33.02" width="0.1524" layer="91"/>
+<label x="223.52" y="33.02" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$28" class="0">
@@ -4735,70 +4735,70 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <net name="D+" class="0">
 <segment>
 <pinref part="R9" gate="G$1" pin="1"/>
-<wire x1="162.56" y1="78.74" x2="165.1" y2="78.74" width="0.1524" layer="91"/>
-<label x="162.56" y="78.74" size="1.778" layer="95"/>
+<wire x1="226.06" y1="30.48" x2="228.6" y2="30.48" width="0.1524" layer="91"/>
+<label x="226.06" y="30.48" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="IC8" gate="G$1" pin="D+"/>
-<wire x1="43.18" y1="101.6" x2="30.48" y2="101.6" width="0.1524" layer="91"/>
-<label x="30.48" y="101.6" size="1.778" layer="95"/>
+<wire x1="99.06" y1="66.04" x2="86.36" y2="66.04" width="0.1524" layer="91"/>
+<label x="86.36" y="66.04" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="D-" class="0">
 <segment>
 <pinref part="R10" gate="G$1" pin="1"/>
-<wire x1="162.56" y1="76.2" x2="165.1" y2="76.2" width="0.1524" layer="91"/>
-<label x="162.56" y="76.2" size="1.778" layer="95"/>
+<wire x1="226.06" y1="27.94" x2="228.6" y2="27.94" width="0.1524" layer="91"/>
+<label x="226.06" y="27.94" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="IC8" gate="G$1" pin="D-"/>
-<wire x1="43.18" y1="104.14" x2="30.48" y2="104.14" width="0.1524" layer="91"/>
-<label x="30.48" y="104.14" size="1.778" layer="95"/>
+<wire x1="99.06" y1="68.58" x2="86.36" y2="68.58" width="0.1524" layer="91"/>
+<label x="86.36" y="68.58" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SCK" class="0">
 <segment>
 <pinref part="IC8" gate="G$1" pin="PB1(SCK)"/>
-<wire x1="91.44" y1="83.82" x2="101.6" y2="83.82" width="0.1524" layer="91"/>
-<label x="96.52" y="83.82" size="1.778" layer="95"/>
+<wire x1="147.32" y1="48.26" x2="157.48" y2="48.26" width="0.1524" layer="91"/>
+<label x="152.4" y="48.26" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="JP1" gate="G$1" pin="SCK"/>
-<wire x1="152.4" y1="109.22" x2="165.1" y2="109.22" width="0.1524" layer="91"/>
-<label x="160.02" y="109.22" size="1.778" layer="95"/>
+<wire x1="215.9" y1="60.96" x2="228.6" y2="60.96" width="0.1524" layer="91"/>
+<label x="223.52" y="60.96" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="MOSI" class="0">
 <segment>
 <pinref part="IC8" gate="G$1" pin="PB2(PDI/MOSI)"/>
-<wire x1="91.44" y1="86.36" x2="101.6" y2="86.36" width="0.1524" layer="91"/>
-<label x="96.52" y="86.36" size="1.778" layer="95"/>
+<wire x1="147.32" y1="50.8" x2="157.48" y2="50.8" width="0.1524" layer="91"/>
+<label x="152.4" y="50.8" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="JP1" gate="G$1" pin="MOSI"/>
-<wire x1="142.24" y1="109.22" x2="127" y2="109.22" width="0.1524" layer="91"/>
-<label x="127" y="109.22" size="1.778" layer="95"/>
+<wire x1="205.74" y1="60.96" x2="190.5" y2="60.96" width="0.1524" layer="91"/>
+<label x="190.5" y="60.96" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="MISO" class="0">
 <segment>
 <pinref part="IC8" gate="G$1" pin="PB3(PDO/MISO)"/>
-<wire x1="91.44" y1="88.9" x2="101.6" y2="88.9" width="0.1524" layer="91"/>
-<label x="96.52" y="88.9" size="1.778" layer="95"/>
+<wire x1="147.32" y1="53.34" x2="157.48" y2="53.34" width="0.1524" layer="91"/>
+<label x="152.4" y="53.34" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="JP1" gate="G$1" pin="MISO"/>
-<wire x1="152.4" y1="111.76" x2="165.1" y2="111.76" width="0.1524" layer="91"/>
-<label x="160.02" y="111.76" size="1.778" layer="95"/>
+<wire x1="215.9" y1="63.5" x2="228.6" y2="63.5" width="0.1524" layer="91"/>
+<label x="223.52" y="63.5" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="RXLED" class="0">
 <segment>
 <pinref part="IC8" gate="G$1" pin="PB0(SS)"/>
 <pinref part="LED1" gate="G$1" pin="C"/>
-<wire x1="96.52" y1="78.74" x2="93.98" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="93.98" y1="78.74" x2="93.98" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="93.98" y1="81.28" x2="91.44" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="43.18" x2="149.86" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="43.18" x2="149.86" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="45.72" x2="147.32" y2="45.72" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$31" class="0">
@@ -4811,9 +4811,9 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <segment>
 <pinref part="IC8" gate="G$1" pin="PD5(XCK/CTS)"/>
 <pinref part="LED2" gate="G$1" pin="C"/>
-<wire x1="96.52" y1="73.66" x2="93.98" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="93.98" y1="73.66" x2="93.98" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="93.98" y1="71.12" x2="91.44" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="38.1" x2="149.86" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="38.1" x2="149.86" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="35.56" x2="147.32" y2="35.56" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$33" class="0">
@@ -4866,25 +4866,25 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <segment>
 <pinref part="IC8" gate="G$1" pin="PE2(!HWB)"/>
 <pinref part="R21" gate="G$1" pin="2"/>
-<wire x1="91.44" y1="114.3" x2="99.06" y2="114.3" width="0.1524" layer="91"/>
-<wire x1="99.06" y1="114.3" x2="99.06" y2="116.84" width="0.1524" layer="91"/>
-<junction x="99.06" y="114.3"/>
+<wire x1="147.32" y1="78.74" x2="154.94" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="154.94" y1="78.74" x2="154.94" y2="81.28" width="0.1524" layer="91"/>
+<junction x="154.94" y="78.74"/>
 <pinref part="JP2" gate="A" pin="1"/>
-<wire x1="101.6" y1="114.3" x2="99.06" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="78.74" x2="154.94" y2="78.74" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="TX" class="0">
 <segment>
 <pinref part="IC8" gate="G$1" pin="PD3(INT3/TXD1)"/>
-<wire x1="91.44" y1="66.04" x2="101.6" y2="66.04" width="0.1524" layer="91"/>
-<label x="96.52" y="66.04" size="1.778" layer="95"/>
+<wire x1="147.32" y1="30.48" x2="157.48" y2="30.48" width="0.1524" layer="91"/>
+<label x="152.4" y="30.48" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="RX" class="0">
 <segment>
 <pinref part="IC8" gate="G$1" pin="PD2(INT2/RXD1)"/>
-<wire x1="91.44" y1="63.5" x2="101.6" y2="63.5" width="0.1524" layer="91"/>
-<label x="96.52" y="63.5" size="1.778" layer="95"/>
+<wire x1="147.32" y1="27.94" x2="157.48" y2="27.94" width="0.1524" layer="91"/>
+<label x="152.4" y="27.94" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
