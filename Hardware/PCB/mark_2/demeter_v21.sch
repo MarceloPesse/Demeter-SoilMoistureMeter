@@ -1758,66 +1758,6 @@ Source: http://www.microchip.com .. 39637a.pdf</description>
 <hole x="-2.2" y="1" drill="1"/>
 <hole x="2.2" y="1" drill="1"/>
 </package>
-<package name="LED5MM">
-<description>&lt;B&gt;LED&lt;/B&gt;&lt;p&gt;
-5 mm, round</description>
-<wire x1="2.54" y1="-1.905" x2="2.54" y2="1.905" width="0.2032" layer="21"/>
-<wire x1="2.54" y1="-1.905" x2="2.54" y2="1.905" width="0.254" layer="21" curve="-286.260205" cap="flat"/>
-<wire x1="-1.143" y1="0" x2="0" y2="1.143" width="0.1524" layer="51" curve="-90" cap="flat"/>
-<wire x1="0" y1="-1.143" x2="1.143" y2="0" width="0.1524" layer="51" curve="90" cap="flat"/>
-<wire x1="-1.651" y1="0" x2="0" y2="1.651" width="0.1524" layer="51" curve="-90" cap="flat"/>
-<wire x1="0" y1="-1.651" x2="1.651" y2="0" width="0.1524" layer="51" curve="90" cap="flat"/>
-<wire x1="-2.159" y1="0" x2="0" y2="2.159" width="0.1524" layer="51" curve="-90" cap="flat"/>
-<wire x1="0" y1="-2.159" x2="2.159" y2="0" width="0.1524" layer="51" curve="90" cap="flat"/>
-<circle x="0" y="0" radius="2.54" width="0.1524" layer="21"/>
-<pad name="A" x="-1.27" y="0" drill="1.1" shape="octagon"/>
-<pad name="K" x="1.27" y="0" drill="1.1" shape="octagon"/>
-<text x="3.175" y="0.5334" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="3.2004" y="-1.8034" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-</package>
-<package name="LED3MM">
-<description>&lt;B&gt;LED&lt;/B&gt;&lt;p&gt;
-3 mm, round</description>
-<wire x1="1.5748" y1="-1.27" x2="1.5748" y2="1.27" width="0.254" layer="51"/>
-<wire x1="-1.524" y1="0" x2="-1.1708" y2="0.9756" width="0.1524" layer="51" curve="-39.80361"/>
-<wire x1="-1.524" y1="0" x2="-1.1391" y2="-1.0125" width="0.1524" layer="51" curve="41.633208"/>
-<wire x1="1.1571" y1="0.9918" x2="1.524" y2="0" width="0.1524" layer="51" curve="-40.601165"/>
-<wire x1="1.1708" y1="-0.9756" x2="1.524" y2="0" width="0.1524" layer="51" curve="39.80361"/>
-<wire x1="0" y1="1.524" x2="1.2401" y2="0.8858" width="0.1524" layer="21" curve="-54.461337"/>
-<wire x1="-1.2192" y1="0.9144" x2="0" y2="1.524" width="0.1524" layer="21" curve="-53.130102"/>
-<wire x1="0" y1="-1.524" x2="1.203" y2="-0.9356" width="0.1524" layer="21" curve="52.126876"/>
-<wire x1="-1.203" y1="-0.9356" x2="0" y2="-1.524" width="0.1524" layer="21" curve="52.126876"/>
-<wire x1="-0.635" y1="0" x2="0" y2="0.635" width="0.1524" layer="51" curve="-90"/>
-<wire x1="-1.016" y1="0" x2="0" y2="1.016" width="0.1524" layer="51" curve="-90"/>
-<wire x1="0" y1="-0.635" x2="0.635" y2="0" width="0.1524" layer="51" curve="90"/>
-<wire x1="0" y1="-1.016" x2="1.016" y2="0" width="0.1524" layer="51" curve="90"/>
-<wire x1="0" y1="2.032" x2="1.561" y2="1.3009" width="0.254" layer="21" curve="-50.193108"/>
-<wire x1="-1.7929" y1="0.9562" x2="0" y2="2.032" width="0.254" layer="21" curve="-61.926949"/>
-<wire x1="0" y1="-2.032" x2="1.5512" y2="-1.3126" width="0.254" layer="21" curve="49.763022"/>
-<wire x1="-1.7643" y1="-1.0082" x2="0" y2="-2.032" width="0.254" layer="21" curve="60.255215"/>
-<wire x1="-2.032" y1="0" x2="-1.7891" y2="0.9634" width="0.254" layer="51" curve="-28.301701"/>
-<wire x1="-2.032" y1="0" x2="-1.7306" y2="-1.065" width="0.254" layer="51" curve="31.60822"/>
-<pad name="A" x="-1.27" y="0" drill="1.1" shape="octagon"/>
-<pad name="K" x="1.27" y="0" drill="1.1" shape="octagon"/>
-<text x="1.905" y="0.381" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="1.905" y="-1.651" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-</package>
-<package name="CHIP-LED0805">
-<description>&lt;b&gt;Hyper CHIPLED Hyper-Bright LED&lt;/b&gt;&lt;p&gt;
-LB R99A&lt;br&gt;
-Source: http://www.osram.convergy.de/ ... lb_r99a.pdf</description>
-<wire x1="-0.625" y1="0.45" x2="-0.625" y2="-0.45" width="0.1016" layer="51"/>
-<wire x1="0.625" y1="0.45" x2="0.625" y2="-0.475" width="0.1016" layer="51"/>
-<smd name="C" x="0" y="1.05" dx="1.5" dy="1.3" layer="1"/>
-<smd name="A" x="0" y="-1.05" dx="1.5" dy="1.3" layer="1"/>
-<text x="-1.27" y="-1.27" size="1.27" layer="25" rot="R90">&gt;NAME</text>
-<text x="2.54" y="-1.27" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
-<rectangle x1="-0.675" y1="0" x2="-0.525" y2="0.3" layer="21"/>
-<rectangle x1="0.525" y1="0" x2="0.675" y2="0.3" layer="21"/>
-<rectangle x1="-0.15" y1="0" x2="0.15" y2="0.3" layer="21"/>
-<rectangle x1="-0.675" y1="0.45" x2="0.675" y2="1.05" layer="51"/>
-<rectangle x1="-0.675" y1="-1.05" x2="0.675" y2="-0.45" layer="51"/>
-</package>
 <package name="SJ_2S">
 <description>Small solder jumper with big paste layer so it will short during reflow.</description>
 <wire x1="0.8" y1="-1" x2="-0.8" y2="-1" width="0.1524" layer="21"/>
@@ -2086,22 +2026,6 @@ Source: http://www.osram.convergy.de/ ... lb_r99a.pdf</description>
 <pin name="B" x="12.7" y="0" length="middle" rot="R180"/>
 <pin name="VCC" x="12.7" y="2.54" length="middle" rot="R180"/>
 </symbol>
-<symbol name="24CXX">
-<wire x1="-7.62" y1="5.08" x2="7.62" y2="5.08" width="0.254" layer="94"/>
-<wire x1="7.62" y1="5.08" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="7.62" y1="-7.62" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="-7.62" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
-<text x="-7.62" y="5.715" size="1.778" layer="95">&gt;NAME</text>
-<text x="-7.62" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="A2" x="-10.16" y="-2.54" length="short" direction="in"/>
-<pin name="A1" x="-10.16" y="0" length="short" direction="in"/>
-<pin name="A0" x="-10.16" y="2.54" length="short" direction="in"/>
-<pin name="WP" x="10.16" y="0" length="short" direction="in" rot="R180"/>
-<pin name="SCL" x="10.16" y="-2.54" length="short" rot="R180"/>
-<pin name="SDA" x="10.16" y="-5.08" length="short" rot="R180"/>
-<pin name="GND" x="-10.16" y="-5.08" length="short" direction="pwr"/>
-<pin name="VCC" x="10.16" y="2.54" length="short" direction="pwr" rot="R180"/>
-</symbol>
 <symbol name="PINHD3">
 <wire x1="-6.35" y1="-5.08" x2="1.27" y2="-5.08" width="0.4064" layer="94"/>
 <wire x1="1.27" y1="-5.08" x2="1.27" y2="5.08" width="0.4064" layer="94"/>
@@ -2355,31 +2279,6 @@ Source: http://www.osram.convergy.de/ ... lb_r99a.pdf</description>
 <pin name="VBUS" x="10.16" y="5.08" visible="pin" length="short" direction="pwr" rot="R180"/>
 <pin name="GND" x="10.16" y="-5.08" visible="pin" length="short" direction="pwr" rot="R180"/>
 <pin name="ID" x="10.16" y="-2.54" visible="pin" length="short" rot="R180"/>
-</symbol>
-<symbol name="LED">
-<wire x1="1.27" y1="0" x2="0" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="0" y1="-2.54" x2="-1.27" y2="0" width="0.254" layer="94"/>
-<wire x1="1.27" y1="-2.54" x2="0" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="0" y1="-2.54" x2="-1.27" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="1.27" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="-1.27" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="0" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="-2.032" y1="-0.762" x2="-3.429" y2="-2.159" width="0.1524" layer="94"/>
-<wire x1="-1.905" y1="-1.905" x2="-3.302" y2="-3.302" width="0.1524" layer="94"/>
-<text x="3.556" y="-4.572" size="1.778" layer="95" rot="R90">&gt;NAME</text>
-<text x="5.715" y="-4.572" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
-<pin name="C" x="0" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
-<pin name="A" x="0" y="2.54" visible="off" length="short" direction="pas" rot="R270"/>
-<polygon width="0.1524" layer="94">
-<vertex x="-3.429" y="-2.159"/>
-<vertex x="-3.048" y="-1.27"/>
-<vertex x="-2.54" y="-1.778"/>
-</polygon>
-<polygon width="0.1524" layer="94">
-<vertex x="-3.302" y="-3.302"/>
-<vertex x="-2.921" y="-2.413"/>
-<vertex x="-2.413" y="-2.921"/>
-</polygon>
 </symbol>
 <symbol name="DINA3_L">
 <frame x1="0" y1="0" x2="388.62" y2="264.16" columns="4" rows="4" layer="94" border-left="no" border-top="no" border-right="no" border-bottom="no"/>
@@ -2919,49 +2818,6 @@ Source: http://www.st.com/stonline/products/literature/ds/7194/ld1117axx.pdf</de
 </device>
 </devices>
 </deviceset>
-<deviceset name="AT24C*" prefix="IC">
-<description>2-wire serial &lt;B&gt;EEPROM&lt;/B&gt;</description>
-<gates>
-<gate name="G$1" symbol="24CXX" x="0" y="0"/>
-</gates>
-<devices>
-<device name="P" package="DIL08">
-<connects>
-<connect gate="G$1" pin="A0" pad="1"/>
-<connect gate="G$1" pin="A1" pad="2"/>
-<connect gate="G$1" pin="A2" pad="3"/>
-<connect gate="G$1" pin="GND" pad="4"/>
-<connect gate="G$1" pin="SCL" pad="6"/>
-<connect gate="G$1" pin="SDA" pad="5"/>
-<connect gate="G$1" pin="VCC" pad="8"/>
-<connect gate="G$1" pin="WP" pad="7"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="AT24C1024BW-SH-B" constant="no"/>
-<attribute name="OC_FARNELL" value="1362646" constant="no"/>
-<attribute name="OC_NEWARK" value="03P2044" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="" package="SO08">
-<connects>
-<connect gate="G$1" pin="A0" pad="1"/>
-<connect gate="G$1" pin="A1" pad="2"/>
-<connect gate="G$1" pin="A2" pad="3"/>
-<connect gate="G$1" pin="GND" pad="4"/>
-<connect gate="G$1" pin="SCL" pad="6"/>
-<connect gate="G$1" pin="SDA" pad="5"/>
-<connect gate="G$1" pin="VCC" pad="8"/>
-<connect gate="G$1" pin="WP" pad="7"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="W237-103" prefix="X" uservalue="yes">
 <description>&lt;b&gt;WAGO SCREW CLAMP&lt;/b&gt;</description>
 <gates>
@@ -3373,40 +3229,6 @@ Thru-hole RA Female Mini-B USB Connector 4UConnector: 18732&lt;/p&gt;
 </device>
 </devices>
 </deviceset>
-<deviceset name="LED" prefix="LED" uservalue="yes">
-<gates>
-<gate name="G$1" symbol="LED" x="0" y="0"/>
-</gates>
-<devices>
-<device name="5MM" package="LED5MM">
-<connects>
-<connect gate="G$1" pin="A" pad="A"/>
-<connect gate="G$1" pin="C" pad="K"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="3MM" package="LED3MM">
-<connects>
-<connect gate="G$1" pin="A" pad="A"/>
-<connect gate="G$1" pin="C" pad="K"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="0805" package="CHIP-LED0805">
-<connects>
-<connect gate="G$1" pin="A" pad="A"/>
-<connect gate="G$1" pin="C" pad="C"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="DINA3_L" prefix="FRAME">
 <gates>
 <gate name="G$1" symbol="DINA3_L" x="0" y="0"/>
@@ -3554,10 +3376,6 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <part name="GND7" library="mark_2" deviceset="GND" device=""/>
 <part name="IC7" library="mark_2" deviceset="MAX485" device=""/>
 <part name="X1" library="mark_2" deviceset="W237-103" device=""/>
-<part name="IC4" library="mark_2" deviceset="AT24C*" device="" value="M24C64"/>
-<part name="P+7" library="mark_2" deviceset="+5V" device=""/>
-<part name="GND10" library="mark_2" deviceset="GND" device=""/>
-<part name="GND12" library="mark_2" deviceset="GND" device=""/>
 <part name="Q1" library="mark_2" deviceset="IRLML6402" device=""/>
 <part name="GND13" library="mark_2" deviceset="GND" device=""/>
 <part name="IC5" library="mark_2" deviceset="MCP3424" device=""/>
@@ -3636,15 +3454,6 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <part name="P+18" library="mark_2" deviceset="+5V" device=""/>
 <part name="GND28" library="mark_2" deviceset="GND" device=""/>
 <part name="JP2" library="mark_2" deviceset="JUMPER-2" device="SMD-NO"/>
-<part name="R22" library="mark_2" deviceset="R-EU_" device="R0805"/>
-<part name="R23" library="mark_2" deviceset="R-EU_" device="R0805"/>
-<part name="R24" library="mark_2" deviceset="R-EU_" device="R0805"/>
-<part name="R25" library="mark_2" deviceset="R-EU_" device="R0805"/>
-<part name="LED3" library="mark_2" deviceset="LED" device="0805"/>
-<part name="LED4" library="mark_2" deviceset="LED" device="0805"/>
-<part name="LED5" library="mark_2" deviceset="LED" device="0805"/>
-<part name="LED6" library="mark_2" deviceset="LED" device="0805"/>
-<part name="P+19" library="mark_2" deviceset="+5V" device=""/>
 <part name="JP3" library="mark_2" deviceset="JUMPER-3" device="SMD"/>
 <part name="JP4" library="mark_2" deviceset="JUMPER-3" device="SMD"/>
 <part name="X2" library="mark_2" deviceset="W237-102" device=""/>
@@ -3708,12 +3517,6 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <instance part="GND7" gate="1" x="266.7" y="193.04"/>
 <instance part="IC7" gate="G$1" x="251.46" y="203.2"/>
 <instance part="X1" gate="G$1" x="276.86" y="200.66"/>
-<instance part="IC4" gate="G$1" x="121.92" y="-5.08"/>
-<instance part="P+7" gate="1" x="134.62" y="2.54" smashed="yes">
-<attribute name="VALUE" x="137.16" y="5.08" size="1.778" layer="96" rot="R180"/>
-</instance>
-<instance part="GND10" gate="1" x="109.22" y="-15.24"/>
-<instance part="GND12" gate="1" x="144.78" y="-7.62"/>
 <instance part="Q1" gate="G$1" x="-10.16" y="139.7" smashed="yes">
 <attribute name="NAME" x="-3.81" y="137.16" size="1.778" layer="95" rot="R180"/>
 </instance>
@@ -3883,17 +3686,6 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 </instance>
 <instance part="GND28" gate="1" x="154.94" y="73.66"/>
 <instance part="JP2" gate="A" x="160.02" y="78.74" rot="R270"/>
-<instance part="R22" gate="G$1" x="66.04" y="-5.08"/>
-<instance part="R23" gate="G$1" x="66.04" y="-7.62"/>
-<instance part="R24" gate="G$1" x="66.04" y="-10.16"/>
-<instance part="R25" gate="G$1" x="66.04" y="-12.7"/>
-<instance part="LED3" gate="G$1" x="71.12" y="0"/>
-<instance part="LED4" gate="G$1" x="76.2" y="0"/>
-<instance part="LED5" gate="G$1" x="81.28" y="0"/>
-<instance part="LED6" gate="G$1" x="86.36" y="0"/>
-<instance part="P+19" gate="1" x="86.36" y="10.16" smashed="yes">
-<attribute name="VALUE" x="88.9" y="12.7" size="1.778" layer="96" rot="R180"/>
-</instance>
 <instance part="JP3" gate="G$1" x="200.66" y="203.2" rot="R270"/>
 <instance part="JP4" gate="G$1" x="200.66" y="187.96" rot="R270"/>
 <instance part="X2" gate="G$1" x="264.16" y="48.26" rot="R180"/>
@@ -3965,11 +3757,6 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <junction x="266.7" y="198.12"/>
 <pinref part="X1" gate="G$1" pin="3"/>
 <wire x1="274.32" y1="198.12" x2="266.7" y2="198.12" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="IC4" gate="G$1" pin="WP"/>
-<pinref part="GND12" gate="1" pin="GND"/>
-<wire x1="132.08" y1="-5.08" x2="144.78" y2="-5.08" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="IC5" gate="A" pin="GND"/>
@@ -4072,24 +3859,6 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <pinref part="R7" gate="G$1" pin="1"/>
 <pinref part="GND21" gate="1" pin="GND"/>
 <wire x1="-22.86" y1="-7.62" x2="-25.4" y2="-7.62" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="GND10" gate="1" pin="GND"/>
-<wire x1="109.22" y1="-12.7" x2="109.22" y2="-10.16" width="0.1524" layer="91"/>
-<pinref part="IC4" gate="G$1" pin="A0"/>
-<wire x1="109.22" y1="-10.16" x2="109.22" y2="-7.62" width="0.1524" layer="91"/>
-<wire x1="109.22" y1="-7.62" x2="109.22" y2="-5.08" width="0.1524" layer="91"/>
-<wire x1="109.22" y1="-5.08" x2="109.22" y2="-2.54" width="0.1524" layer="91"/>
-<wire x1="109.22" y1="-2.54" x2="111.76" y2="-2.54" width="0.1524" layer="91"/>
-<junction x="109.22" y="-5.08"/>
-<junction x="109.22" y="-7.62"/>
-<junction x="109.22" y="-10.16"/>
-<pinref part="IC4" gate="G$1" pin="GND"/>
-<wire x1="111.76" y1="-10.16" x2="109.22" y2="-10.16" width="0.1524" layer="91"/>
-<pinref part="IC4" gate="G$1" pin="A2"/>
-<wire x1="111.76" y1="-7.62" x2="109.22" y2="-7.62" width="0.1524" layer="91"/>
-<pinref part="IC4" gate="G$1" pin="A1"/>
-<wire x1="111.76" y1="-5.08" x2="109.22" y2="-5.08" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="IC8" gate="G$1" pin="UGND"/>
@@ -4362,12 +4131,6 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <wire x1="266.7" y1="205.74" x2="264.16" y2="205.74" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="IC4" gate="G$1" pin="VCC"/>
-<pinref part="P+7" gate="1" pin="+5V"/>
-<wire x1="132.08" y1="-2.54" x2="134.62" y2="-2.54" width="0.1524" layer="91"/>
-<wire x1="134.62" y1="-2.54" x2="134.62" y2="0" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="IC5" gate="A" pin="VCC"/>
 <pinref part="P+10" gate="1" pin="+5V"/>
 <wire x1="27.94" y1="73.66" x2="27.94" y2="71.12" width="0.1524" layer="91"/>
@@ -4435,24 +4198,6 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <pinref part="R21" gate="G$1" pin="1"/>
 <pinref part="P+18" gate="1" pin="+5V"/>
 </segment>
-<segment>
-<pinref part="LED3" gate="G$1" pin="A"/>
-<wire x1="71.12" y1="2.54" x2="71.12" y2="5.08" width="0.1524" layer="91"/>
-<pinref part="LED6" gate="G$1" pin="A"/>
-<wire x1="71.12" y1="5.08" x2="76.2" y2="5.08" width="0.1524" layer="91"/>
-<wire x1="76.2" y1="5.08" x2="81.28" y2="5.08" width="0.1524" layer="91"/>
-<wire x1="81.28" y1="5.08" x2="86.36" y2="5.08" width="0.1524" layer="91"/>
-<wire x1="86.36" y1="5.08" x2="86.36" y2="2.54" width="0.1524" layer="91"/>
-<junction x="76.2" y="5.08"/>
-<junction x="81.28" y="5.08"/>
-<pinref part="LED4" gate="G$1" pin="A"/>
-<wire x1="76.2" y1="2.54" x2="76.2" y2="5.08" width="0.1524" layer="91"/>
-<pinref part="LED5" gate="G$1" pin="A"/>
-<wire x1="81.28" y1="2.54" x2="81.28" y2="5.08" width="0.1524" layer="91"/>
-<junction x="86.36" y="5.08"/>
-<pinref part="P+19" gate="1" pin="+5V"/>
-<wire x1="86.36" y1="7.62" x2="86.36" y2="5.08" width="0.1524" layer="91"/>
-</segment>
 </net>
 <net name="EN" class="0">
 <segment>
@@ -4480,11 +4225,6 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 </net>
 <net name="SCL" class="0">
 <segment>
-<pinref part="IC4" gate="G$1" pin="SCL"/>
-<wire x1="132.08" y1="-7.62" x2="139.7" y2="-7.62" width="0.1524" layer="91"/>
-<label x="134.62" y="-7.62" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="IC5" gate="A" pin="SCL"/>
 <wire x1="30.48" y1="63.5" x2="22.86" y2="63.5" width="0.1524" layer="91"/>
 <label x="22.86" y="63.5" size="1.778" layer="95"/>
@@ -4501,11 +4241,6 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 </segment>
 </net>
 <net name="SDA" class="0">
-<segment>
-<pinref part="IC4" gate="G$1" pin="SDA"/>
-<wire x1="132.08" y1="-10.16" x2="139.7" y2="-10.16" width="0.1524" layer="91"/>
-<label x="134.62" y="-10.16" size="1.778" layer="95"/>
-</segment>
 <segment>
 <pinref part="IC5" gate="A" pin="SDA"/>
 <wire x1="30.48" y1="66.04" x2="22.86" y2="66.04" width="0.1524" layer="91"/>
@@ -5083,64 +4818,6 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <pinref part="JP4" gate="G$1" pin="3"/>
 <wire x1="198.12" y1="182.88" x2="190.5" y2="182.88" width="0.1524" layer="91"/>
 <label x="190.5" y="182.88" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$37" class="0">
-<segment>
-<pinref part="R22" gate="G$1" pin="2"/>
-<pinref part="LED3" gate="G$1" pin="C"/>
-</segment>
-</net>
-<net name="N$39" class="0">
-<segment>
-<pinref part="R23" gate="G$1" pin="2"/>
-<pinref part="LED4" gate="G$1" pin="C"/>
-<wire x1="71.12" y1="-7.62" x2="76.2" y2="-7.62" width="0.1524" layer="91"/>
-<wire x1="76.2" y1="-7.62" x2="76.2" y2="-5.08" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$40" class="0">
-<segment>
-<pinref part="R24" gate="G$1" pin="2"/>
-<pinref part="LED5" gate="G$1" pin="C"/>
-<wire x1="71.12" y1="-10.16" x2="81.28" y2="-10.16" width="0.1524" layer="91"/>
-<wire x1="81.28" y1="-10.16" x2="81.28" y2="-5.08" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$41" class="0">
-<segment>
-<pinref part="R25" gate="G$1" pin="2"/>
-<pinref part="LED6" gate="G$1" pin="C"/>
-<wire x1="71.12" y1="-12.7" x2="86.36" y2="-12.7" width="0.1524" layer="91"/>
-<wire x1="86.36" y1="-12.7" x2="86.36" y2="-5.08" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$42" class="0">
-<segment>
-<pinref part="R25" gate="G$1" pin="1"/>
-<pinref part="IC6" gate="G$1" pin="GPB7"/>
-<wire x1="60.96" y1="-12.7" x2="58.42" y2="-12.7" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$43" class="0">
-<segment>
-<pinref part="R24" gate="G$1" pin="1"/>
-<pinref part="IC6" gate="G$1" pin="GPB6"/>
-<wire x1="60.96" y1="-10.16" x2="58.42" y2="-10.16" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$44" class="0">
-<segment>
-<pinref part="R23" gate="G$1" pin="1"/>
-<pinref part="IC6" gate="G$1" pin="GPB5"/>
-<wire x1="60.96" y1="-7.62" x2="58.42" y2="-7.62" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$45" class="0">
-<segment>
-<pinref part="R22" gate="G$1" pin="1"/>
-<pinref part="IC6" gate="G$1" pin="GPB4"/>
-<wire x1="60.96" y1="-5.08" x2="58.42" y2="-5.08" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
