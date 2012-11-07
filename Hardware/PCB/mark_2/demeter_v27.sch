@@ -3130,7 +3130,6 @@ Thru-hole RA Female Mini-B USB Connector 4UConnector: 18732&lt;/p&gt;
 <part name="IC2" library="mark_2" deviceset="LM1117" device="DT" value="LM1117-5.0"/>
 <part name="D1" library="mark_2" deviceset="S1M" device=""/>
 <part name="C3" library="mark_2" deviceset="CPOL-EU" device="PD" value="100uF"/>
-<part name="C4" library="mark_2" deviceset="CPOL-EU" device="PD" value="22uF"/>
 <part name="IC3" library="mark_2" deviceset="LM1117" device="DT" value="LM1117-3.3"/>
 <part name="C5" library="mark_2" deviceset="CPOL-EU" device="PD" value="100uF"/>
 <part name="GND2" library="mark_2" deviceset="GND" device=""/>
@@ -3274,7 +3273,6 @@ Thru-hole RA Female Mini-B USB Connector 4UConnector: 18732&lt;/p&gt;
 </instance>
 <instance part="D1" gate="D1" x="276.86" y="48.26"/>
 <instance part="C3" gate="G$1" x="320.04" y="43.18"/>
-<instance part="C4" gate="G$1" x="294.64" y="12.7"/>
 <instance part="IC3" gate="G$1" x="307.34" y="17.78" smashed="yes">
 <attribute name="NAME" x="302.26" y="22.86" size="1.778" layer="95"/>
 <attribute name="VALUE" x="302.26" y="20.32" size="1.778" layer="96"/>
@@ -3508,10 +3506,7 @@ Thru-hole RA Female Mini-B USB Connector 4UConnector: 18732&lt;/p&gt;
 <wire x1="307.34" y1="33.02" x2="307.34" y2="35.56" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="C4" gate="G$1" pin="-"/>
-<wire x1="294.64" y1="7.62" x2="294.64" y2="5.08" width="0.1524" layer="91"/>
 <pinref part="C5" gate="G$1" pin="-"/>
-<wire x1="294.64" y1="5.08" x2="307.34" y2="5.08" width="0.1524" layer="91"/>
 <wire x1="307.34" y1="5.08" x2="320.04" y2="5.08" width="0.1524" layer="91"/>
 <wire x1="320.04" y1="5.08" x2="320.04" y2="7.62" width="0.1524" layer="91"/>
 <junction x="307.34" y="5.08"/>
@@ -3854,9 +3849,6 @@ Thru-hole RA Female Mini-B USB Connector 4UConnector: 18732&lt;/p&gt;
 <segment>
 <pinref part="IC3" gate="G$1" pin="IN"/>
 <wire x1="299.72" y1="17.78" x2="294.64" y2="17.78" width="0.1524" layer="91"/>
-<pinref part="C4" gate="G$1" pin="+"/>
-<wire x1="294.64" y1="17.78" x2="294.64" y2="15.24" width="0.1524" layer="91"/>
-<junction x="294.64" y="17.78"/>
 <pinref part="P+4" gate="1" pin="+12V"/>
 <wire x1="294.64" y1="20.32" x2="294.64" y2="17.78" width="0.1524" layer="91"/>
 </segment>
