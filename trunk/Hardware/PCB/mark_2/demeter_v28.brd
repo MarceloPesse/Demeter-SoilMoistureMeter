@@ -118,6 +118,8 @@
 </layers>
 <board>
 <plain>
+<dimension x1="0" y1="59.055" x2="90.17" y2="60.325" x3="45.085" y3="63.5" layer="16" dtype="horizontal"/>
+<dimension x1="-3.81" y1="55.88" x2="-5.08" y2="0" x3="-8.255" y3="27.94" layer="16" dtype="vertical"/>
 </plain>
 <libraries>
 <library name="mark_2">
