@@ -240,26 +240,26 @@
 <wire x1="12.25" y1="0" x2="12.25" y2="-6.25" width="0.2032" layer="51"/>
 <wire x1="-12.25" y1="0" x2="-12.25" y2="-6.25" width="0.2032" layer="51"/>
 <wire x1="-12.25" y1="-6.25" x2="12.25" y2="-6.25" width="0.2032" layer="51"/>
-<pad name="10" x="-11" y="2" drill="1.1"/>
-<pad name="9" x="-11" y="4" drill="1.1"/>
-<pad name="8" x="-11" y="6" drill="1.1"/>
-<pad name="7" x="-11" y="8" drill="1.1"/>
-<pad name="6" x="-11" y="10" drill="1.1"/>
-<pad name="5" x="-11" y="12" drill="1.1"/>
-<pad name="4" x="-11" y="14" drill="1.1"/>
-<pad name="3" x="-11" y="16" drill="1.1"/>
-<pad name="2" x="-11" y="18" drill="1.1"/>
-<pad name="1" x="-11" y="20" drill="1.1"/>
-<pad name="11" x="11" y="2" drill="1.1"/>
-<pad name="12" x="11" y="4" drill="1.1"/>
-<pad name="13" x="11" y="6" drill="1.1"/>
-<pad name="14" x="11" y="8" drill="1.1"/>
-<pad name="15" x="11" y="10" drill="1.1"/>
-<pad name="16" x="11" y="12" drill="1.1"/>
-<pad name="17" x="11" y="14" drill="1.1"/>
-<pad name="18" x="11" y="16" drill="1.1"/>
-<pad name="19" x="11" y="18" drill="1.1"/>
-<pad name="20" x="11" y="20" drill="1.1"/>
+<pad name="10" x="-11" y="2" drill="1.1" diameter="1.778"/>
+<pad name="9" x="-11" y="4" drill="1.1" diameter="1.778"/>
+<pad name="8" x="-11" y="6" drill="1.1" diameter="1.778"/>
+<pad name="7" x="-11" y="8" drill="1.1" diameter="1.778"/>
+<pad name="6" x="-11" y="10" drill="1.1" diameter="1.778"/>
+<pad name="5" x="-11" y="12" drill="1.1" diameter="1.778"/>
+<pad name="4" x="-11" y="14" drill="1.1" diameter="1.778"/>
+<pad name="3" x="-11" y="16" drill="1.1" diameter="1.778"/>
+<pad name="2" x="-11" y="18" drill="1.1" diameter="1.778"/>
+<pad name="1" x="-11" y="20" drill="1.1" diameter="1.778"/>
+<pad name="11" x="11" y="2" drill="1.1" diameter="1.778"/>
+<pad name="12" x="11" y="4" drill="1.1" diameter="1.778"/>
+<pad name="13" x="11" y="6" drill="1.1" diameter="1.778"/>
+<pad name="14" x="11" y="8" drill="1.1" diameter="1.778"/>
+<pad name="15" x="11" y="10" drill="1.1" diameter="1.778"/>
+<pad name="16" x="11" y="12" drill="1.1" diameter="1.778"/>
+<pad name="17" x="11" y="14" drill="1.1" diameter="1.778"/>
+<pad name="18" x="11" y="16" drill="1.1" diameter="1.778"/>
+<pad name="19" x="11" y="18" drill="1.1" diameter="1.778"/>
+<pad name="20" x="11" y="20" drill="1.1" diameter="1.778"/>
 <text x="-8.89" y="2.54" size="0.4064" layer="25">&gt;Name</text>
 <text x="-8.89" y="1.27" size="0.4064" layer="27">&gt;Value</text>
 </package>
@@ -1213,7 +1213,7 @@ Source: http://www.microchip.com .. 39637a.pdf</description>
 <wire x1="-3.5" y1="6" x2="-3.5" y2="-6" width="0.2032" layer="21"/>
 <wire x1="-3.5" y1="-6" x2="3.5" y2="-6" width="0.2032" layer="21"/>
 <wire x1="7.5" y1="-6" x2="6.5" y2="-6" width="0.2032" layer="21"/>
-<pad name="SLEEVE" x="0" y="0" drill="1.3" diameter="2.1844"/>
+<pad name="SLEEVE" x="0" y="0" drill="1.3" diameter="2.54"/>
 <pad name="RSH" x="5" y="2.5" drill="1.3" diameter="2.1844"/>
 <pad name="RING" x="5" y="5" drill="1.3" diameter="2.1844"/>
 <pad name="TSH" x="5" y="-2.5" drill="1.3" diameter="2.1844"/>
@@ -1573,8 +1573,8 @@ Source: http://www.microchip.com .. 39637a.pdf</description>
 <circle x="-2.5" y="2.2098" radius="0.508" width="0.1524" layer="21"/>
 <circle x="2.5038" y="-1.27" radius="1.4986" width="0.1524" layer="51"/>
 <circle x="2.5038" y="2.2098" radius="0.508" width="0.1524" layer="21"/>
-<pad name="1" x="-2.5" y="-1.27" drill="1.1" shape="long" rot="R90"/>
-<pad name="2" x="2.5" y="-1.27" drill="1.1" shape="long" rot="R90"/>
+<pad name="1" x="-2.5" y="-1.27" drill="1.1" diameter="2.1844" shape="long" rot="R90"/>
+<pad name="2" x="2.5" y="-1.27" drill="1.1" diameter="2.1844" shape="long" rot="R90"/>
 <text x="-5.04" y="-7.62" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 <text x="-3.8462" y="-5.0038" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 <text x="-4.532" y="0.635" size="1.27" layer="21" ratio="10">1</text>
@@ -1604,9 +1604,9 @@ Source: http://www.microchip.com .. 39637a.pdf</description>
 <wire x1="3.81" y1="-0.635" x2="3.175" y2="-1.27" width="0.1524" layer="21"/>
 <wire x1="3.175" y1="-1.27" x2="1.905" y2="-1.27" width="0.1524" layer="21"/>
 <wire x1="1.905" y1="-1.27" x2="1.27" y2="-0.635" width="0.1524" layer="21"/>
-<pad name="1" x="-2.54" y="0" drill="1.1" shape="long" rot="R90"/>
-<pad name="2" x="0" y="0" drill="1.1" shape="long" rot="R90"/>
-<pad name="3" x="2.54" y="0" drill="1.1" shape="long" rot="R90"/>
+<pad name="1" x="-2.54" y="0" drill="1.1" diameter="1.778" shape="long" rot="R90"/>
+<pad name="2" x="0" y="0" drill="1.1" diameter="1.778" shape="long" rot="R90"/>
+<pad name="3" x="2.54" y="0" drill="1.1" diameter="1.778" shape="long" rot="R90"/>
 <text x="-3.8862" y="1.8288" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 <text x="-3.81" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
 <rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
@@ -1657,8 +1657,8 @@ Source: http://www.microchip.com .. 39637a.pdf</description>
 <wire x1="2.54" y1="-0.635" x2="1.905" y2="-1.27" width="0.1524" layer="21"/>
 <wire x1="1.905" y1="-1.27" x2="0.635" y2="-1.27" width="0.1524" layer="21"/>
 <wire x1="0.635" y1="-1.27" x2="0" y2="-0.635" width="0.1524" layer="21"/>
-<pad name="1" x="-1.27" y="0" drill="1.1" shape="long" rot="R90"/>
-<pad name="2" x="1.27" y="0" drill="1.1" shape="long" rot="R90"/>
+<pad name="1" x="-1.27" y="0" drill="1.1" diameter="1.778" shape="long" rot="R90"/>
+<pad name="2" x="1.27" y="0" drill="1.1" diameter="1.778" shape="long" rot="R90"/>
 <text x="-2.6162" y="1.8288" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 <text x="-2.54" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
 <rectangle x1="-1.524" y1="-0.254" x2="-1.016" y2="0.254" layer="51"/>
