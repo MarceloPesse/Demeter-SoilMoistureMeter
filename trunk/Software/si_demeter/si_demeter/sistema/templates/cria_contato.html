@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %}
+	Adicionar Contato
+{% endblock title %}
+
+{% block extrahead %}
+
+{% endblock extrahead %}
+
+
+
+{% block content %}
+    <form method="POST" action="/fazenda/{{fazenda.id}}/cria_contato/">
+        {{contato_form.as_table}}
+        <button type="submit" class="btn btn-info marginT10">Salvar alterações</button>
+    </form>
+{% endblock content %}
