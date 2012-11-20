@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.1">
+<eagle version="6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -3210,7 +3210,7 @@ Thru-hole RA Female Mini-B USB Connector 4UConnector: 18732&lt;/p&gt;
 <part name="GND16" library="mark_2" deviceset="GND" device=""/>
 <part name="R4" library="mark_2" deviceset="R-EU_" device="R0805"/>
 <part name="GND20" library="mark_2" deviceset="GND" device=""/>
-<part name="R8" library="mark_2" deviceset="R-EU_" device="R0805"/>
+<part name="R8" library="mark_2" deviceset="R-EU_" device="R0805" value="10k"/>
 <part name="D2" library="mark_2" deviceset="MBR0520" device="" value=""/>
 <part name="P+6" library="mark_2" deviceset="+5V" device=""/>
 <part name="Q2" library="mark_2" deviceset="IRLML6402" device="" value=""/>
@@ -3229,7 +3229,7 @@ Thru-hole RA Female Mini-B USB Connector 4UConnector: 18732&lt;/p&gt;
 <part name="Q5" library="mark_2" deviceset="IRLML6402" device=""/>
 <part name="JK3" library="mark_2" deviceset="AUDIO-JACK2" device="PTH"/>
 <part name="GND17" library="mark_2" deviceset="GND" device=""/>
-<part name="R6" library="mark_2" deviceset="R-EU_" device="R0805"/>
+<part name="R6" library="mark_2" deviceset="R-EU_" device="R0805" value="10k"/>
 <part name="GND18" library="mark_2" deviceset="GND" device=""/>
 <part name="D6" library="mark_2" deviceset="MBR0520" device="" value=""/>
 <part name="P+9" library="mark_2" deviceset="+5V" device=""/>
@@ -3240,7 +3240,7 @@ Thru-hole RA Female Mini-B USB Connector 4UConnector: 18732&lt;/p&gt;
 <part name="P+13" library="mark_2" deviceset="+5V" device=""/>
 <part name="GND8" library="mark_2" deviceset="GND" device=""/>
 <part name="JP1" library="mark_2" deviceset="AVR-ISP-6" device=""/>
-<part name="R3" library="mark_2" deviceset="R-EU_" device="R0805"/>
+<part name="R3" library="mark_2" deviceset="R-EU_" device="R0805" value="10k"/>
 <part name="P+14" library="mark_2" deviceset="+5V" device=""/>
 <part name="P+15" library="mark_2" deviceset="+5V" device=""/>
 <part name="GND22" library="mark_2" deviceset="GND" device=""/>
