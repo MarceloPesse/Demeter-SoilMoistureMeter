@@ -9,7 +9,7 @@
 <grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="2" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
@@ -1428,7 +1428,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="2.54" y="22.225" size="1.27" layer="25" rot="R180"/>
 <attribute name="VALUE" x="1.27" y="22.86" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="R1" library="mark_2" package="R0805" value="" x="6.35" y="21.59" rot="R270"/>
+<element name="R1" library="mark_2" package="R0805" value="1k" x="6.35" y="21.59" rot="R270"/>
 <element name="U$1" library="mark_2" package="XBEE-1" value="XBEE-1B1" x="21.59" y="25.4" rot="R180"/>
 <element name="C2" library="mark_2" package="PANASONIC_D" value="22uF" x="21.59" y="35.56" rot="R90"/>
 <element name="IC2" library="mark_2" package="DPACK" value="LM1117-5.0" x="16.51" y="46.99"/>
@@ -1445,14 +1445,14 @@ design rules under a new name.</description>
 <attribute name="OC_FARNELL" value="1332087" x="3.81" y="16.51" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="JK1" library="mark_2" package="AUDIO-JACK" value="" x="86.36" y="13.97" rot="R180"/>
-<element name="R4" library="mark_2" package="R0805" value="" x="78.105" y="16.51" rot="MR180"/>
+<element name="R4" library="mark_2" package="R0805" value="10k" x="78.105" y="16.51" rot="MR180"/>
 <element name="R8" library="mark_2" package="R0805" value="10k" x="58.42" y="27.94" rot="R180"/>
 <element name="D2" library="mark_2" package="SOD123" value="" x="70.485" y="11.43" rot="MR270"/>
 <element name="Q2" library="mark_2" package="SOT23" value="" x="73.66" y="17.78" rot="MR90"/>
 <element name="D3" library="mark_2" package="SOD123" value="" x="70.485" y="17.78" rot="MR270"/>
 <element name="Q3" library="mark_2" package="SOT23" value="IRLML6402" x="73.66" y="25.4" rot="MR90"/>
 <element name="JK2" library="mark_2" package="AUDIO-JACK" value="" x="86.36" y="27.94" rot="R180"/>
-<element name="R5" library="mark_2" package="R0805" value="" x="78.105" y="30.48" rot="MR180"/>
+<element name="R5" library="mark_2" package="R0805" value="10k" x="78.105" y="30.48" rot="MR180"/>
 <element name="D4" library="mark_2" package="SOD123" value="" x="70.485" y="25.4" rot="MR270"/>
 <element name="Q4" library="mark_2" package="SOT23" value="" x="73.66" y="31.75" rot="MR90"/>
 <element name="D5" library="mark_2" package="SOD123" value="" x="70.485" y="31.75" rot="MR270"/>
@@ -1473,17 +1473,17 @@ design rules under a new name.</description>
 <element name="CN1" library="mark_2" package="USB-MINIB" value="" x="45.085" y="4.445"/>
 <element name="R9" library="mark_2" package="R0805" value="22" x="46.99" y="12.7" rot="R270"/>
 <element name="R10" library="mark_2" package="R0805" value="22" x="43.18" y="12.7" rot="R270"/>
-<element name="R13" library="mark_2" package="R0805" value="" x="78.105" y="11.43" rot="MR180"/>
-<element name="R14" library="mark_2" package="R0805" value="" x="78.105" y="13.97" rot="MR180"/>
-<element name="R15" library="mark_2" package="R0805" value="" x="78.105" y="25.4" rot="MR180"/>
-<element name="R16" library="mark_2" package="R0805" value="" x="78.105" y="27.94" rot="MR180"/>
-<element name="R17" library="mark_2" package="R0805" value="" x="78.105" y="41.91" rot="MR180"/>
-<element name="R18" library="mark_2" package="R0805" value="" x="78.105" y="39.37" rot="MR180"/>
+<element name="R13" library="mark_2" package="R0805" value="1k5" x="78.105" y="11.43" rot="MR180"/>
+<element name="R14" library="mark_2" package="R0805" value="1k" x="78.105" y="13.97" rot="MR180"/>
+<element name="R15" library="mark_2" package="R0805" value="1k5" x="78.105" y="25.4" rot="MR180"/>
+<element name="R16" library="mark_2" package="R0805" value="1k" x="78.105" y="27.94" rot="MR180"/>
+<element name="R17" library="mark_2" package="R0805" value="1k" x="78.105" y="41.91" rot="MR180"/>
+<element name="R18" library="mark_2" package="R0805" value="1k5" x="78.105" y="39.37" rot="MR180"/>
 <element name="X2" library="mark_2" package="W237-102" value="" x="6.35" y="39.37" rot="R270"/>
 <element name="JP5" library="mark_2" package="1X03" value="" x="29.21" y="7.62" rot="R90"/>
 <element name="JP6" library="mark_2" package="1X02" value="" x="13.97" y="6.35" rot="R270"/>
 <element name="U$6" library="mark_2" package="DP9056_V1" value="" x="0" y="0"/>
-<element name="R7" library="mark_2" package="R0805" value="" x="6.35" y="28.575" rot="R90"/>
+<element name="R7" library="mark_2" package="R0805" value="1k" x="6.35" y="28.575" rot="R90"/>
 <element name="PWR" library="mark_2" package="CHIP-LED0805" value="" x="3.81" y="28.575" smashed="yes">
 <attribute name="NAME" x="5.08" y="27.94" size="1.27" layer="25"/>
 <attribute name="VALUE" x="6.35" y="27.305" size="1.27" layer="27" rot="R90"/>
@@ -1491,21 +1491,21 @@ design rules under a new name.</description>
 <element name="C6" library="mark_2" package="C0805K" value="100nF" x="58.42" y="9.525" rot="R180"/>
 <element name="C7" library="mark_2" package="C0805K" value="100nF" x="58.42" y="25.4" rot="R180"/>
 <element name="C11" library="mark_2" package="C0805K" value="100nF" x="19.05" y="9.779" rot="MR180"/>
-<element name="R11" library="mark_2" package="R0805" value="" x="77.47" y="13.97" rot="R270"/>
+<element name="R11" library="mark_2" package="R0805" value="1k" x="77.47" y="13.97" rot="R270"/>
 <element name="PWR1" library="mark_2" package="CHIP-LED0805" value="" x="75.565" y="13.97" rot="R180"/>
-<element name="R12" library="mark_2" package="R0805" value="" x="77.47" y="27.94" rot="R90"/>
+<element name="R12" library="mark_2" package="R0805" value="1k" x="77.47" y="27.94" rot="R90"/>
 <element name="PWR2" library="mark_2" package="CHIP-LED0805" value="" x="75.565" y="27.94"/>
 <element name="PWR3" library="mark_2" package="CHIP-LED0805" value="" x="75.565" y="41.91"/>
-<element name="R19" library="mark_2" package="R0805" value="" x="77.47" y="41.91" rot="R90"/>
+<element name="R19" library="mark_2" package="R0805" value="1k" x="77.47" y="41.91" rot="R90"/>
 <element name="R20" library="mark_2" package="R0805" value="10k" x="43.688" y="46.355" rot="MR180"/>
 <element name="JP2" library="mark_2" package="1X03" value="" x="44.958" y="49.53"/>
 <element name="TX" library="mark_2" package="CHIP-LED0805" value="" x="3.81" y="10.16" smashed="yes" rot="R180">
 <attribute name="NAME" x="2.54" y="10.795" size="1.27" layer="25" rot="R180"/>
 <attribute name="VALUE" x="1.27" y="11.43" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="R21" library="mark_2" package="R0805" value="" x="6.35" y="10.16" rot="R270"/>
+<element name="R21" library="mark_2" package="R0805" value="1k" x="6.35" y="10.16" rot="R270"/>
 <element name="RX" library="mark_2" package="CHIP-LED0805" value="" x="3.81" y="15.24"/>
-<element name="R22" library="mark_2" package="R0805" value="" x="6.35" y="15.24" rot="R90"/>
+<element name="R22" library="mark_2" package="R0805" value="1k" x="6.35" y="15.24" rot="R90"/>
 </elements>
 <signals>
 <signal name="GND">

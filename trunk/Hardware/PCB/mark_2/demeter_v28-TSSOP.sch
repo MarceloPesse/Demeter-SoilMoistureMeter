@@ -3178,7 +3178,7 @@ Thru-hole RA Female Mini-B USB Connector 4UConnector: 18732&lt;/p&gt;
 <parts>
 <part name="IC1" library="mark_2" deviceset="4050" device="D" value="4050"/>
 <part name="X-RSSI" library="mark_2" deviceset="LED" device="0805"/>
-<part name="R1" library="mark_2" deviceset="R-EU_" device="R0805"/>
+<part name="R1" library="mark_2" deviceset="R-EU_" device="R0805" value="1k"/>
 <part name="U$1" library="mark_2" deviceset="XBEE-1" device="B1"/>
 <part name="+3V2" library="mark_2" deviceset="+3V3" device=""/>
 <part name="GND3" library="mark_2" deviceset="GND" device=""/>
@@ -3208,7 +3208,7 @@ Thru-hole RA Female Mini-B USB Connector 4UConnector: 18732&lt;/p&gt;
 <part name="P+11" library="mark_2" deviceset="+5V" device=""/>
 <part name="JK1" library="mark_2" deviceset="AUDIO-JACK2" device="PTH"/>
 <part name="GND16" library="mark_2" deviceset="GND" device=""/>
-<part name="R4" library="mark_2" deviceset="R-EU_" device="R0805"/>
+<part name="R4" library="mark_2" deviceset="R-EU_" device="R0805" value="10k"/>
 <part name="GND20" library="mark_2" deviceset="GND" device=""/>
 <part name="R8" library="mark_2" deviceset="R-EU_" device="R0805" value="10k"/>
 <part name="D2" library="mark_2" deviceset="MBR0520" device="" value=""/>
@@ -3219,7 +3219,7 @@ Thru-hole RA Female Mini-B USB Connector 4UConnector: 18732&lt;/p&gt;
 <part name="Q3" library="mark_2" deviceset="IRLML6402" device=""/>
 <part name="JK2" library="mark_2" deviceset="AUDIO-JACK2" device="PTH"/>
 <part name="GND9" library="mark_2" deviceset="GND" device=""/>
-<part name="R5" library="mark_2" deviceset="R-EU_" device="R0805"/>
+<part name="R5" library="mark_2" deviceset="R-EU_" device="R0805" value="10k"/>
 <part name="GND11" library="mark_2" deviceset="GND" device=""/>
 <part name="D4" library="mark_2" deviceset="MBR0520" device="" value=""/>
 <part name="P+8" library="mark_2" deviceset="+5V" device=""/>
@@ -3253,12 +3253,12 @@ Thru-hole RA Female Mini-B USB Connector 4UConnector: 18732&lt;/p&gt;
 <part name="GND23" library="mark_2" deviceset="GND" device=""/>
 <part name="R9" library="mark_2" deviceset="R-EU_" device="R0805" value="22"/>
 <part name="R10" library="mark_2" deviceset="R-EU_" device="R0805" value="22"/>
-<part name="R13" library="mark_2" deviceset="R-EU_" device="R0805"/>
-<part name="R14" library="mark_2" deviceset="R-EU_" device="R0805"/>
-<part name="R15" library="mark_2" deviceset="R-EU_" device="R0805"/>
-<part name="R16" library="mark_2" deviceset="R-EU_" device="R0805"/>
-<part name="R17" library="mark_2" deviceset="R-EU_" device="R0805"/>
-<part name="R18" library="mark_2" deviceset="R-EU_" device="R0805"/>
+<part name="R13" library="mark_2" deviceset="R-EU_" device="R0805" value="1k5"/>
+<part name="R14" library="mark_2" deviceset="R-EU_" device="R0805" value="1k"/>
+<part name="R15" library="mark_2" deviceset="R-EU_" device="R0805" value="1k5"/>
+<part name="R16" library="mark_2" deviceset="R-EU_" device="R0805" value="1k"/>
+<part name="R17" library="mark_2" deviceset="R-EU_" device="R0805" value="1k"/>
+<part name="R18" library="mark_2" deviceset="R-EU_" device="R0805" value="1k5"/>
 <part name="FRAME1" library="mark_2" deviceset="DINA3_L" device=""/>
 <part name="GND28" library="mark_2" deviceset="GND" device=""/>
 <part name="X2" library="mark_2" deviceset="W237-102" device=""/>
@@ -3268,7 +3268,7 @@ Thru-hole RA Female Mini-B USB Connector 4UConnector: 18732&lt;/p&gt;
 <part name="P+7" library="mark_2" deviceset="+5V" device=""/>
 <part name="GND10" library="mark_2" deviceset="GND" device=""/>
 <part name="P+5" library="mark_2" deviceset="+5V" device=""/>
-<part name="R7" library="mark_2" deviceset="R-EU_" device="R0805"/>
+<part name="R7" library="mark_2" deviceset="R-EU_" device="R0805" value="1k"/>
 <part name="PWR" library="mark_2" deviceset="LED" device="0805"/>
 <part name="GND7" library="mark_2" deviceset="GND" device=""/>
 <part name="C6" library="mark_2" deviceset="C-EU" device="C0805K" value="100nF"/>
@@ -3280,21 +3280,21 @@ Thru-hole RA Female Mini-B USB Connector 4UConnector: 18732&lt;/p&gt;
 <part name="C11" library="mark_2" deviceset="C-EU" device="C0805K" value="100nF"/>
 <part name="GND21" library="mark_2" deviceset="GND" device=""/>
 <part name="+3V7" library="mark_2" deviceset="+3V3" device=""/>
-<part name="R11" library="mark_2" deviceset="R-EU_" device="R0805"/>
+<part name="R11" library="mark_2" deviceset="R-EU_" device="R0805" value="1k"/>
 <part name="PWR1" library="mark_2" deviceset="LED" device="0805"/>
 <part name="P+17" library="mark_2" deviceset="+5V" device=""/>
-<part name="R12" library="mark_2" deviceset="R-EU_" device="R0805"/>
+<part name="R12" library="mark_2" deviceset="R-EU_" device="R0805" value="1k"/>
 <part name="PWR2" library="mark_2" deviceset="LED" device="0805"/>
 <part name="PWR3" library="mark_2" deviceset="LED" device="0805"/>
-<part name="R19" library="mark_2" deviceset="R-EU_" device="R0805"/>
+<part name="R19" library="mark_2" deviceset="R-EU_" device="R0805" value="1k"/>
 <part name="P+18" library="mark_2" deviceset="+5V" device=""/>
 <part name="GND25" library="mark_2" deviceset="GND" device=""/>
 <part name="R20" library="mark_2" deviceset="R-EU_" device="R0805" value="10k"/>
 <part name="JP2" library="mark_2" deviceset="PINHD-1X3" device="180"/>
 <part name="TX" library="mark_2" deviceset="LED" device="0805"/>
-<part name="R21" library="mark_2" deviceset="R-EU_" device="R0805"/>
+<part name="R21" library="mark_2" deviceset="R-EU_" device="R0805" value="1k"/>
 <part name="RX" library="mark_2" deviceset="LED" device="0805"/>
-<part name="R22" library="mark_2" deviceset="R-EU_" device="R0805"/>
+<part name="R22" library="mark_2" deviceset="R-EU_" device="R0805" value="1k"/>
 <part name="+3V9" library="mark_2" deviceset="+3V3" device=""/>
 <part name="+3V8" library="mark_2" deviceset="+3V3" device=""/>
 </parts>
