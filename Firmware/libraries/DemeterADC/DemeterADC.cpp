@@ -1,5 +1,11 @@
+#include <Wire.h>
 #include "DemeterADC.h"
 
+#if ARDUINO >= 100
+ #include "Arduino.h"
+#else
+ #include "WProgram.h"
+#endif
 
 // I2C address for MCP3422 - base address for MCP3424
 #define MCP3422_ADDRESS 0X68
@@ -15,16 +21,19 @@
 uint8_t adcConfig = MCP342X_START | MCP342X_ONESHOT | MCP342X_18_BIT | MCP342X_GAIN_X1 | MCP342X_ONESHOT;
 
 
-void ADC::config(uint8_t channel) {
+void demeterADC::config(uint8_t channel) {
   if (channel > 4) channel = 4;
   channel = channel - 1; // Channel between 0 and 3
   
+  adcConfig = MCP342X_START | MCP342X_ONESHOT | MCP342X_18_BIT | MCP342X_GAIN_X1 | MCP342X_ONESHOT;
+  adcConfig |= channel << 5;
+  
   Wire.beginTransmission(MCP3422_ADDRESS);
-  Wire.write(adcConfig | (channel << 5) ); // Hope this work
+  Wire.write(adcConfig);
   Wire.endTransmission();
 }
 
-uint8_t ADC::read(int32_t &data) {
+uint8_t demeterADC::read(int32_t &data) {
   // pointer used to form int32 data
   uint8_t *p = (uint8_t *)&data;
   // timeout - not really needed?

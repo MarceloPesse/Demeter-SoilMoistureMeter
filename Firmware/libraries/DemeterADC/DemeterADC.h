@@ -1,11 +1,13 @@
-#include "Arduino.h"
-#include <Wire.h>
+#ifndef _DemeterADC_H_
+#define _DemeterADC_H_
 
-class ADC {
- private:
-  uint8_t adcConfig;
-
+class demeterADC{
  public:
   void config(uint8_t channel);
   uint8_t read(int32_t &data);
+  
+ private:
+  uint8_t adcConfig;
 };
+
+#endif
