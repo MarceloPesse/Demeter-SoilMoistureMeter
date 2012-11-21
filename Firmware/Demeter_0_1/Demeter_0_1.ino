@@ -11,9 +11,11 @@ Sensor sensor1 = {SEN_5V1, SEN_3V1, SEN_LED1, SEN_SN1, SEN_ADC1 };
 Sensor sensor2 = {SEN_5V2, SEN_3V2, SEN_LED2, SEN_SN2, SEN_ADC2 };
 Sensor sensor3 = {SEN_5V3, SEN_3V3, SEN_LED3, SEN_SN3, SEN_ADC3 };
 
+#define ID 1
+
 void setup() {
   Serial.begin(9600); 
-  Serial.println("Demeter");
+  Serial1.begin(9600);
   
   pinMode(XBEE_RESET, OUTPUT);
   digitalWrite(XBEE_RESET, HIGH);
@@ -26,23 +28,16 @@ void setup() {
 }
 
 void loop() {
-  Serial.print("1:");
-  Serial.print(sensorread(&sensor1, 5) );
-  //delay(1000);
-  Serial.print(" 2:");
-  Serial.print(sensorread(&sensor2, 5) );
-  //delay(1000);
-  Serial.print(" 3:");
-  Serial.println(sensorread(&sensor3, 5) );
-  //delay(1000);
-  /*mcp.digitalWrite(sensor1.v5, LOW);
-  
-  int32_t data;
-  adc.config(1);
-  if (!adc.read(data)) Serial.print("Error"); 
-  Serial.print("data: ");
-  Serial.println(data);
-  delay(1000);*/
+  if (Serial1.available() > 0){
+    if (Serial1.read() == 49){
+      Serial1.print("1:");
+      Serial1.print(sensorread(&sensor1, 5) );
+      Serial1.print(" 2:");
+      Serial1.print(sensorread(&sensor2, 5) );
+      Serial1.print(" 3:");
+      Serial1.println(sensorread(&sensor3, 5) );
+    }
+  }
 }
 
 void sensorbegin (Sensor* sensor){
