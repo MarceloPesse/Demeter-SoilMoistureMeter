@@ -1,17 +1,21 @@
 #include "DemeterDHT.h"
 
-DHT::DHT(uint8_t pin) {
+#if ARDUINO >= 100
+ #include "Arduino.h"
+#else
+ #include "WProgram.h"
+#endif
+
+void demeterDHT::begin(int pin) {
   _pin = pin;
   firstreading = true;
-}
-
-void DHT::begin(void) {
+  
   pinMode(_pin, INPUT);
   digitalWrite(_pin, HIGH);
   _lastreadtime = 0;
 }
 
-float DHT::readTemperature(void) {
+float demeterDHT::readTemperature(void) {
   float f;
 
   if (read()) {
@@ -22,7 +26,7 @@ float DHT::readTemperature(void) {
   return NAN;
 }
 
-float DHT::readHumidity(void) {
+float demeterDHT::readHumidity(void) {
   float f;
   if (read()) {
     f = data[0];
@@ -32,10 +36,10 @@ float DHT::readHumidity(void) {
   return NAN;
 }
 
-boolean DHT::read(void) {
-  uint8_t laststate = HIGH;
-  uint8_t counter = 0;
-  uint8_t j = 0, i;
+int demeterDHT::read(void) {
+  int laststate = HIGH;
+  int counter = 0;
+  int j = 0, i;
   unsigned long currenttime;
 
   // pull the pin high and wait 250 milliseconds

@@ -1,9 +1,12 @@
 #include <Wire.h>
+
 #include <DemeterMCP.h>
 #include <DemeterADC.h>
+#include <DemeterDHT.h>
 
 #include "DemeterPIN.h"
 
+demeterDHT dht;
 demeterMCP mcp;
 demeterADC adc;
 
@@ -21,6 +24,7 @@ void setup() {
   digitalWrite(XBEE_RESET, HIGH);
   
   mcp.begin();
+  dht.begin(SEN_DHT);
   
   sensorbegin(&sensor1);
   sensorbegin(&sensor2);
@@ -35,7 +39,11 @@ void loop() {
       Serial1.print(" 2:");
       Serial1.print(sensorread(&sensor2, 5) );
       Serial1.print(" 3:");
-      Serial1.println(sensorread(&sensor3, 5) );
+      Serial1.print(sensorread(&sensor3, 5) );
+      Serial1.print(" T:");
+      Serial1.print( (int)dht.readTemperature() );
+      Serial1.print(" H:");
+      Serial1.println( (int)dht.readHumidity() );
     }
   }
 }

@@ -3,7 +3,7 @@
 #define XBEE_CTS 6
 #define XBEE_RTS 8
 
-#define DHT 9
+#define SEN_DHT 9
 
 #define RS485_EN 11
 
