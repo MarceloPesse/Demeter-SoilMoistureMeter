@@ -1,0 +1,10 @@
+C:\Users\Camilo\Desktop\Demeter\Demeter\bin\Release\Demeter.exe
+C:\Users\Camilo\Desktop\Demeter\Demeter\bin\Release\Demeter.pdb
+C:\Users\Camilo\Desktop\Demeter\Demeter\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Camilo\Desktop\Demeter\Demeter\obj\Release\Demeter.Properties.Resources.resources
+C:\Users\Camilo\Desktop\Demeter\Demeter\obj\Release\ResGen.read.1.tlog
+C:\Users\Camilo\Desktop\Demeter\Demeter\obj\Release\ResGen.write.1.tlog
+C:\Users\Camilo\Desktop\Demeter\Demeter\obj\Release\Demeter.exe
+C:\Users\Camilo\Desktop\Demeter\Demeter\obj\Release\Demeter.pdb
+C:\Users\Camilo\Desktop\Demeter\Demeter\obj\Release\Demeter.frmDemeter.resources
+C:\Users\Camilo\Desktop\Demeter\Demeter\bin\Release\MySql.Data.dll
