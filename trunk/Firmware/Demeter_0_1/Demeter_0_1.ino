@@ -6,9 +6,9 @@
 
 #include "DemeterPIN.h"
 
-demeterDHT dht;
 demeterMCP mcp;
 demeterADC adc;
+demeterDHT dht;
 
 Sensor sensor1 = {SEN_5V1, SEN_3V1, SEN_LED1, SEN_SN1, SEN_ADC1 };
 Sensor sensor2 = {SEN_5V2, SEN_3V2, SEN_LED2, SEN_SN2, SEN_ADC2 };
@@ -41,9 +41,9 @@ void loop() {
       Serial1.print(" 3:");
       Serial1.print(sensorread(&sensor3, 5) );
       Serial1.print(" T:");
-      Serial1.print( (int)dht.readTemperature() );
+      Serial1.print( (int)dht.temperature() );
       Serial1.print(" H:");
-      Serial1.println( (int)dht.readHumidity() );
+      Serial1.println( (int)dht.humidity() );
     }
   }
 }

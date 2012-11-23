@@ -15,7 +15,7 @@ void demeterDHT::begin(int pin) {
   _lastreadtime = 0;
 }
 
-float demeterDHT::readTemperature(void) {
+float demeterDHT::temperature(void) {
   float f;
 
   if (read()) {
@@ -26,7 +26,7 @@ float demeterDHT::readTemperature(void) {
   return NAN;
 }
 
-float demeterDHT::readHumidity(void) {
+float demeterDHT::humidity(void) {
   float f;
   if (read()) {
     f = data[0];
