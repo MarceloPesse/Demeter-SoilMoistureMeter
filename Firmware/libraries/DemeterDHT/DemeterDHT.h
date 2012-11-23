@@ -6,8 +6,8 @@
 class demeterDHT{
  public:
   void begin(int pin);
-  float readTemperature(void);
-  float readHumidity(void);
+  float temperature(void);
+  float humidity(void);
   
  private:
   int data[6];
