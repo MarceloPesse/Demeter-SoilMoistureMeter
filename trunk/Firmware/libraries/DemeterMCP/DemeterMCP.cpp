@@ -9,15 +9,15 @@
 #endif
 
 // minihelper
-static inline void wiresend(uint8_t x) {
+static inline void wiresend(int x) {
 #if ARDUINO >= 100
-  Wire.write((uint8_t)x);
+  Wire.write((int)x);
 #else
   Wire.send(x);
 #endif
 }
 
-static inline uint8_t wirerecv(void) {
+static inline int wirerecv(void) {
 #if ARDUINO >= 100
   return Wire.read();
 #else
@@ -27,7 +27,7 @@ static inline uint8_t wirerecv(void) {
 
 ////////////////////////////////////////////////////////////////////////////////
 
-void demeterMCP::begin(uint8_t addr) {
+void demeterMCP::begin(int addr) {
   if (addr > 7) {
     addr = 7;
   }
@@ -53,9 +53,9 @@ void demeterMCP::begin(void) {
   begin(0);
 }
 
-void demeterMCP::pinMode(uint8_t p, uint8_t d) {
-  uint8_t iodir;
-  uint8_t iodiraddr;
+void demeterMCP::pinMode(int p, int d) {
+  int iodir;
+  int iodiraddr;
 
   // only 16 bits!
   if (p > 15)
@@ -90,9 +90,9 @@ void demeterMCP::pinMode(uint8_t p, uint8_t d) {
   Wire.endTransmission();
 }
 
-void demeterMCP::digitalWrite(uint8_t p, uint8_t d) {
-  uint8_t gpio;
-  uint8_t gpioaddr, olataddr;
+void demeterMCP::digitalWrite(int p, int d) {
+  int gpio;
+  int gpioaddr, olataddr;
 
   // only 16 bits!
   if (p > 15)
@@ -129,9 +129,9 @@ void demeterMCP::digitalWrite(uint8_t p, uint8_t d) {
   Wire.endTransmission();
 }
 
-void demeterMCP::pullUp(uint8_t p, uint8_t d) {
-  uint8_t gppu;
-  uint8_t gppuaddr;
+void demeterMCP::pullUp(int p, int d) {
+  int gppu;
+  int gppuaddr;
 
   // only 16 bits!
   if (p > 15)
@@ -167,8 +167,8 @@ void demeterMCP::pullUp(uint8_t p, uint8_t d) {
   Wire.endTransmission();
 }
 
-uint8_t demeterMCP::digitalRead(uint8_t p) {
-  uint8_t gpioaddr;
+int demeterMCP::digitalRead(int p) {
+  int gpioaddr;
 
   // only 16 bits!
   if (p > 15)

@@ -4,16 +4,16 @@
 // Don't forget the Wire library
 class demeterMCP{
  public:
-  void begin(uint8_t addr);
+  void begin(int addr);
   void begin(void);
 
-  void pinMode(uint8_t p, uint8_t d);
-  void digitalWrite(uint8_t p, uint8_t d);
-  void pullUp(uint8_t p, uint8_t d);
-  uint8_t digitalRead(uint8_t p);
+  void pinMode(int p, int d);
+  void digitalWrite(int p, int d);
+  void pullUp(int p, int d);
+  int digitalRead(int p);
 
  private:
-  uint8_t i2caddr;
+  int i2caddr;
 };
 
 #define MCP23017_ADDRESS 0x20

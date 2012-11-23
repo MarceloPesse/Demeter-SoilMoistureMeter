@@ -3,12 +3,14 @@
 #include <DemeterMCP.h>
 #include <DemeterADC.h>
 #include <DemeterDHT.h>
+#include <DemeterCOM.h>
 
 #include "DemeterPIN.h"
 
 demeterMCP mcp;
 demeterADC adc;
 demeterDHT dht;
+demeterCOM com;
 
 Sensor sensor1 = {SEN_5V1, SEN_3V1, SEN_LED1, SEN_SN1, SEN_ADC1 };
 Sensor sensor2 = {SEN_5V2, SEN_3V2, SEN_LED2, SEN_SN2, SEN_ADC2 };
@@ -17,11 +19,7 @@ Sensor sensor3 = {SEN_5V3, SEN_3V3, SEN_LED3, SEN_SN3, SEN_ADC3 };
 #define ID 1
 
 void setup() {
-  Serial.begin(9600); 
-  Serial1.begin(9600);
-  
-  pinMode(XBEE_RESET, OUTPUT);
-  digitalWrite(XBEE_RESET, HIGH);
+  com.begin(XBEE_RESET, RS485_EN);
   
   mcp.begin();
   dht.begin(SEN_DHT);
