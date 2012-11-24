@@ -32,3 +32,12 @@ struct Sensor{
   uint8_t sen;
   uint8_t adc;
 };
+
+struct Board{
+  uint8_t sen1;
+  uint8_t ten1;
+  uint8_t sen2;
+  uint8_t ten2;
+  uint8_t sen3;
+  uint8_t ten3;
+};
