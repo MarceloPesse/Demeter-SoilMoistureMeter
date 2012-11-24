@@ -25,6 +25,14 @@
 #define SEN_ADC2 2
 #define SEN_ADC3 3
 
+#define EE_BOARD 0
+#define EE_SEN1 1
+#define EE_TEN1 2
+#define EE_SEN2 3
+#define EE_TEN2 4
+#define EE_SEN3 5
+#define EE_TEN3 6
+
 struct Sensor{
   uint8_t v5;
   uint8_t v3;
