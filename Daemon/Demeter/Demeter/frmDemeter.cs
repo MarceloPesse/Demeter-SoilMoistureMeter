@@ -40,7 +40,7 @@ namespace Demeter
             InitializeComponent();
             LoadListboxes();
 
-            _Connection = new Connector("10.10.10.1", "demeter", "root", "admin");
+            //_Connection = new Connector("10.10.10.1", "demeter", "root", "admin");
 
             _trReader.Elapsed += new ElapsedEventHandler(_trReader_Elapsed);
 
@@ -232,7 +232,7 @@ namespace Demeter
             //Read registers and display data in desired format:
             try
             {
-                response = _Protocol.SendRemoteString("#1");
+                response = _Protocol.SendRemoteString("#01:1");
 
                 string[] sSplits;
 
@@ -248,7 +248,7 @@ namespace Demeter
                         dPh = oSD.Data;
 
                         lSamples.Add(oSD);
-                        _Connection.RegistraLeitura(oSD);
+                        //_Connection.RegistraLeitura(oSD);
 
                         DoGUIUpdate(DateTime.Now.ToString("HH:mm:ss") + " - " + response, sph, dPh);
 
@@ -319,33 +319,37 @@ namespace Demeter
 
 
 
-        //# n sensor + id do sensor + 16bits
+        //#n placa [2] : n sensor[1] : id sensor[2] : dados 16bits[4]
+        //#01:1;06:0000
         private SampleData ParseSample(string sSample)
         {
             SampleData sSD;
             string[] sSplits;
-            char[] sep = new char[] { '+' };
+            char[] sep = new char[] { ';' , ':' };
             if (sSample == null)
                 return null;
 
             sSplits = sSample.Split(sep, StringSplitOptions.RemoveEmptyEntries);
 
-            //if (!sSplits[0].Contains("Sample"))
-            //    return null;
-
-            double dData;
-            int id, idtype;
-
-            if (!int.TryParse(sSplits[1], out id))
+            if (!sSplits[0].StartsWith("#"))
                 return null;
 
-            if (!int.TryParse(sSplits[2], out idtype))
+            int idPlaca, idSensorPlaca, idSensor, iData;
+
+            if (!int.TryParse(sSplits[0].Replace('#', ' '), out idPlaca))
                 return null;
 
-            if (!Double.TryParse(sSplits[3], System.Globalization.NumberStyles.Any, CultureInfo.GetCultureInfo("en-US"), out dData))
+            if (!int.TryParse(sSplits[1], out idSensorPlaca))
                 return null;
 
-            sSD = new SampleData(id, idtype, dData, DateTime.Now);
+
+            if (!int.TryParse(sSplits[2], out idSensor))
+                return null;
+
+            if (!int.TryParse(sSplits[3], NumberStyles.HexNumber, CultureInfo.CurrentCulture, out iData))
+                return null;
+
+            sSD = new SampleData(idPlaca, idSensor, iData, DateTime.Now);
 
             return sSD;
         }
