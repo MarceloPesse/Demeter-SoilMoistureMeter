@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+
+{% block title %}
+	{{fazenda.nome_fazenda}}
+{% endblock title %}
+
+
+{% block title2 %}
+        {{fazenda.nome_fazenda}}
+{% endblock title2 %}
+
+{% block extrahead %}{% endblock extrahead %}
+
+
+{% block content %}
+    <div class="fazenda_mapa">
+        <img src="/static/img/mapa.png"/ width="300" height="300" alt="mapa">
+    </div>
+    
+    <div class="fazenda_form">
+        <form method="POST" action="/fazenda/{{fazenda.id}}/">
+            <div class="fazenda_form_box">
+                <span class="fazenda_form_text">Nome da Fazenda:</span>
+                <span class="fazenda_form_text">{{fazenda_form.nome_fazenda}}</span>
+            </div>
+            <div class="fazenda_form_box">
+                <span class="fazenda_form_text">Descrição:</span>
+                <span class="fazenda_form_text">{{fazenda_form.descricao_fazenda}}</span>
+            </div>
+            <div class="fazenda_form_box">
+                <span class="fazenda_form_text">Endereço:</span>
+                <span class="fazenda_form_text">{{fazenda_form.endereco}}</span>
+            </div>
+            <div class="fazenda_form_box">
+                <span class="fazenda_form_text">Cidade:</span>
+                <span class="fazenda_form_text">{{fazenda_form.cidade}}</span>
+            </div>
+            <div class="fazenda_form_box">
+                <span class="fazenda_form_text">Estado:</span>
+                <span class="fazenda_form_text">{{fazenda_form.estado}}</span>
+            </div>
+            <div class="fazenda_form_box">
+                <button type="submit" class="btn btn-info marginT10">Salvar alterações</button>
+            </div>
+        </form>
+        <div class="fazenda_form_box">
+            <span class="fazenda_form_text"><a href='/exclui_fazenda/{{fazenda.id}}/' class="inicio_excluir"><img alt="Excluir fazenda" onclick="alertExcluirFaz()" src="/static/img/ico_close_off.png" onmouseover="src='/static/img/ico_close_over.png'" onmouseout="src='/static/img/ico_close_off.png'"/> - Excluir fazenda</a></span>
+        </div>
+        <div class="fazenda_form_box">
+            <span><a href='/fazenda/{{fazenda.id}}/cria_setor/' class="inicio_excluir">Criar Setor</a></span>
+        </div>
+    </div>
+    {% for setor in setores %}
+        <a href='/fazenda/{{fazenda.id}}/setor/{{setor.id}}/'>{{setor.numero_setor}}</a>
+    {% endfor %}
+    
+{% endblock content %}
