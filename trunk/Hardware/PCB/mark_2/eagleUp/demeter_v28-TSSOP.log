@@ -1,4 +1,7 @@
 Missing packages:
+<<<<<<< .mine
+XBEE-1
+=======
 PANASONIC_D
 C0805K
 USB-MINIB
@@ -10,7 +13,10 @@ DPACK
 SO16
 XBEE-1
 TQFP44
+>>>>>>> .r57
 AUDIO-JACK
+<<<<<<< .mine
+=======
 1X03
 1X02
 AVR-ISP-6
@@ -18,5 +24,5 @@ HC49UP
 CHIP-LED0805
 SOT23
 R0805
+>>>>>>> .r57
 DP9056_V1
-W237-102
