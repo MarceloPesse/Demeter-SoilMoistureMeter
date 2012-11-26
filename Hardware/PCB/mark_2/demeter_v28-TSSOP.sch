@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.1">
+<eagle version="6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -114,7 +114,7 @@
 <layer number="249" name="Edge" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
 <layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
-<layer number="254" name="cooling" color="7" fill="1" visible="no" active="yes"/>
+<layer number="254" name="cooling" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <schematic xreflabel="%F%N/%S.%C%R" xrefpart="/%S.%C%R">
 <libraries>
@@ -262,6 +262,8 @@
 <pad name="20" x="11" y="20" drill="1.1" diameter="1.778"/>
 <text x="-8.89" y="2.54" size="0.4064" layer="25">&gt;Name</text>
 <text x="-8.89" y="1.27" size="0.4064" layer="27">&gt;Value</text>
+<wire x1="-12.25" y1="21.25" x2="-8.937" y2="24.171" width="0.2032" layer="21"/>
+<wire x1="12.25" y1="21.25" x2="8.937" y2="24.171" width="0.2032" layer="21"/>
 </package>
 <package name="XBEE-SILK">
 <wire x1="-5" y1="27.6" x2="5" y2="27.6" width="0.2032" layer="51"/>
@@ -610,8 +612,8 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <wire x1="-2.95" y1="-0.95" x2="2.95" y2="-0.95" width="0.1016" layer="21" curve="144.299363"/>
 <wire x1="-2.1" y1="2.25" x2="-2.1" y2="-2.2" width="0.1016" layer="51"/>
 <circle x="0" y="0" radius="3.1" width="0.1016" layer="51"/>
-<smd name="-" x="-2.4" y="0" dx="3" dy="1.4" layer="1"/>
-<smd name="+" x="2.4" y="0" dx="3" dy="1.4" layer="1"/>
+<smd name="-" x="-2.527" y="0" dx="3.254" dy="1.4" layer="1"/>
+<smd name="+" x="2.527" y="0" dx="3.254" dy="1.4" layer="1"/>
 <text x="-1.75" y="1" size="1.016" layer="25">&gt;NAME</text>
 <text x="-1.75" y="-1.975" size="1.016" layer="27">&gt;VALUE</text>
 <rectangle x1="-3.65" y1="-0.35" x2="-3.05" y2="0.35" layer="51"/>
@@ -1573,12 +1575,10 @@ Source: http://www.microchip.com .. 39637a.pdf</description>
 <circle x="-2.5" y="2.2098" radius="0.508" width="0.1524" layer="21"/>
 <circle x="2.5038" y="-1.27" radius="1.4986" width="0.1524" layer="51"/>
 <circle x="2.5038" y="2.2098" radius="0.508" width="0.1524" layer="21"/>
-<pad name="1" x="-2.5" y="-1.27" drill="1.1" diameter="2.1844" shape="long" rot="R90"/>
-<pad name="2" x="2.5" y="-1.27" drill="1.1" diameter="2.1844" shape="long" rot="R90"/>
+<pad name="1" x="-2.5" y="-1.27" drill="1.3" diameter="2.1844" shape="long" rot="R90"/>
+<pad name="2" x="2.5" y="-1.27" drill="1.3" diameter="2.1844" shape="long" rot="R90"/>
 <text x="-5.04" y="-7.62" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 <text x="-3.8462" y="-5.0038" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-4.532" y="0.635" size="1.27" layer="21" ratio="10">1</text>
-<text x="0.421" y="0.635" size="1.27" layer="21" ratio="10">2</text>
 </package>
 <package name="1X03">
 <description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
@@ -1726,45 +1726,41 @@ Source: http://www.osram.convergy.de/ ... lb_r99a.pdf</description>
 </package>
 <package name="TSSOP14">
 <description>&lt;b&gt;Thin Shrink Small Outline Plastic 14&lt;/b&gt;&lt;p&gt;</description>
-<wire x1="-2.5146" y1="-2.2828" x2="2.5146" y2="-2.2828" width="0.1524" layer="21"/>
-<wire x1="2.5146" y1="2.2828" x2="2.5146" y2="-2.2828" width="0.1524" layer="21"/>
-<wire x1="2.5146" y1="2.2828" x2="-2.5146" y2="2.2828" width="0.1524" layer="21"/>
-<wire x1="-2.5146" y1="-2.2828" x2="-2.5146" y2="2.2828" width="0.1524" layer="21"/>
-<wire x1="-2.286" y1="-2.0542" x2="2.286" y2="-2.0542" width="0.0508" layer="21"/>
-<wire x1="2.286" y1="2.0542" x2="2.286" y2="-2.0542" width="0.0508" layer="21"/>
-<wire x1="2.286" y1="2.0542" x2="-2.286" y2="2.0542" width="0.0508" layer="21"/>
-<wire x1="-2.286" y1="-2.0542" x2="-2.286" y2="2.0542" width="0.0508" layer="21"/>
+<wire x1="-2.5146" y1="-2.1558" x2="2.5146" y2="-2.1558" width="0.1524" layer="21"/>
+<wire x1="2.5146" y1="2.1558" x2="2.5146" y2="-2.1558" width="0.1524" layer="21"/>
+<wire x1="2.5146" y1="2.1558" x2="-2.5146" y2="2.1558" width="0.1524" layer="21"/>
+<wire x1="-2.5146" y1="-2.1558" x2="-2.5146" y2="2.1558" width="0.1524" layer="21"/>
 <circle x="-1.6256" y="-1.2192" radius="0.4572" width="0.1524" layer="21"/>
-<smd name="1" x="-1.95" y="-2.9178" dx="0.3048" dy="0.9906" layer="1"/>
-<smd name="2" x="-1.3" y="-2.9178" dx="0.3048" dy="0.9906" layer="1"/>
-<smd name="3" x="-0.65" y="-2.9178" dx="0.3048" dy="0.9906" layer="1"/>
-<smd name="4" x="0" y="-2.9178" dx="0.3048" dy="0.9906" layer="1"/>
-<smd name="5" x="0.65" y="-2.9178" dx="0.3048" dy="0.9906" layer="1"/>
-<smd name="6" x="1.3" y="-2.9178" dx="0.3048" dy="0.9906" layer="1"/>
-<smd name="7" x="1.95" y="-2.9178" dx="0.3048" dy="0.9906" layer="1"/>
-<smd name="8" x="1.95" y="2.9178" dx="0.3048" dy="0.9906" layer="1"/>
-<smd name="9" x="1.3" y="2.9178" dx="0.3048" dy="0.9906" layer="1"/>
-<smd name="10" x="0.65" y="2.9178" dx="0.3048" dy="0.9906" layer="1"/>
-<smd name="11" x="0" y="2.9178" dx="0.3048" dy="0.9906" layer="1"/>
-<smd name="12" x="-0.65" y="2.9178" dx="0.3048" dy="0.9906" layer="1"/>
-<smd name="13" x="-1.3" y="2.9178" dx="0.3048" dy="0.9906" layer="1"/>
-<smd name="14" x="-1.95" y="2.9178" dx="0.3048" dy="0.9906" layer="1"/>
+<smd name="1" x="-1.95" y="-2.9178" dx="0.3048" dy="1.143" layer="1"/>
+<smd name="2" x="-1.3" y="-2.9178" dx="0.3048" dy="1.143" layer="1"/>
+<smd name="3" x="-0.65" y="-2.9178" dx="0.3048" dy="1.143" layer="1"/>
+<smd name="4" x="0" y="-2.9178" dx="0.3048" dy="1.143" layer="1"/>
+<smd name="5" x="0.65" y="-2.9178" dx="0.3048" dy="1.143" layer="1"/>
+<smd name="6" x="1.3" y="-2.9178" dx="0.3048" dy="1.143" layer="1"/>
+<smd name="7" x="1.95" y="-2.9178" dx="0.3048" dy="1.143" layer="1"/>
+<smd name="8" x="1.95" y="2.9178" dx="0.3048" dy="1.143" layer="1"/>
+<smd name="9" x="1.3" y="2.9178" dx="0.3048" dy="1.143" layer="1"/>
+<smd name="10" x="0.65" y="2.9178" dx="0.3048" dy="1.143" layer="1"/>
+<smd name="11" x="0" y="2.9178" dx="0.3048" dy="1.143" layer="1"/>
+<smd name="12" x="-0.65" y="2.9178" dx="0.3048" dy="1.143" layer="1"/>
+<smd name="13" x="-1.3" y="2.9178" dx="0.3048" dy="1.143" layer="1"/>
+<smd name="14" x="-1.95" y="2.9178" dx="0.3048" dy="1.143" layer="1"/>
 <text x="-2.8956" y="-2.0828" size="1.016" layer="25" ratio="10" rot="R90">&gt;NAME</text>
 <text x="3.8862" y="-2.0828" size="1.016" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
-<rectangle x1="-2.0516" y1="-3.121" x2="-1.8484" y2="-2.2828" layer="51"/>
-<rectangle x1="-1.4016" y1="-3.121" x2="-1.1984" y2="-2.2828" layer="51"/>
-<rectangle x1="-0.7516" y1="-3.121" x2="-0.5484" y2="-2.2828" layer="51"/>
-<rectangle x1="-0.1016" y1="-3.121" x2="0.1016" y2="-2.2828" layer="51"/>
-<rectangle x1="0.5484" y1="-3.121" x2="0.7516" y2="-2.2828" layer="51"/>
-<rectangle x1="1.1984" y1="-3.121" x2="1.4016" y2="-2.2828" layer="51"/>
-<rectangle x1="1.8484" y1="-3.121" x2="2.0516" y2="-2.2828" layer="51"/>
-<rectangle x1="1.8484" y1="2.2828" x2="2.0516" y2="3.121" layer="51"/>
-<rectangle x1="1.1984" y1="2.2828" x2="1.4016" y2="3.121" layer="51"/>
-<rectangle x1="0.5484" y1="2.2828" x2="0.7516" y2="3.121" layer="51"/>
-<rectangle x1="-0.1016" y1="2.2828" x2="0.1016" y2="3.121" layer="51"/>
-<rectangle x1="-0.7516" y1="2.2828" x2="-0.5484" y2="3.121" layer="51"/>
-<rectangle x1="-1.4016" y1="2.2828" x2="-1.1984" y2="3.121" layer="51"/>
-<rectangle x1="-2.0516" y1="2.2828" x2="-1.8484" y2="3.121" layer="51"/>
+<rectangle x1="-2.0516" y1="-2.994" x2="-1.8484" y2="-2.1558" layer="51"/>
+<rectangle x1="-1.4016" y1="-2.994" x2="-1.1984" y2="-2.1558" layer="51"/>
+<rectangle x1="-0.7516" y1="-2.994" x2="-0.5484" y2="-2.1558" layer="51"/>
+<rectangle x1="-0.1016" y1="-2.994" x2="0.1016" y2="-2.1558" layer="51"/>
+<rectangle x1="0.5484" y1="-2.994" x2="0.7516" y2="-2.1558" layer="51"/>
+<rectangle x1="1.1984" y1="-2.994" x2="1.4016" y2="-2.1558" layer="51"/>
+<rectangle x1="1.8484" y1="-2.994" x2="2.0516" y2="-2.1558" layer="51"/>
+<rectangle x1="1.8484" y1="2.1558" x2="2.0516" y2="2.994" layer="51"/>
+<rectangle x1="1.1984" y1="2.1558" x2="1.4016" y2="2.994" layer="51"/>
+<rectangle x1="0.5484" y1="2.1558" x2="0.7516" y2="2.994" layer="51"/>
+<rectangle x1="-0.1016" y1="2.1558" x2="0.1016" y2="2.994" layer="51"/>
+<rectangle x1="-0.7516" y1="2.1558" x2="-0.5484" y2="2.994" layer="51"/>
+<rectangle x1="-1.4016" y1="2.1558" x2="-1.1984" y2="2.994" layer="51"/>
+<rectangle x1="-2.0516" y1="2.1558" x2="-1.8484" y2="2.994" layer="51"/>
 </package>
 </packages>
 <symbols>
@@ -3176,10 +3172,10 @@ Thru-hole RA Female Mini-B USB Connector 4UConnector: 18732&lt;/p&gt;
 </class>
 </classes>
 <parts>
-<part name="IC1" library="mark_2" deviceset="4050" device="D" value="4050"/>
+<part name="IC5" library="mark_2" deviceset="4050" device="D" value="4050"/>
 <part name="RSSI" library="mark_2" deviceset="LED" device="0805"/>
-<part name="R1" library="mark_2" deviceset="R-EU_" device="R0805" value="1k"/>
-<part name="IC4" library="mark_2" deviceset="XBEE-1" device="B1" value="XBEE"/>
+<part name="R17" library="mark_2" deviceset="R-EU_" device="R0805" value="1k"/>
+<part name="IC6" library="mark_2" deviceset="XBEE-1" device="B1" value="XBEE"/>
 <part name="+3V2" library="mark_2" deviceset="+3V3" device=""/>
 <part name="GND3" library="mark_2" deviceset="GND" device=""/>
 <part name="GND4" library="mark_2" deviceset="GND" device=""/>
@@ -3188,113 +3184,113 @@ Thru-hole RA Female Mini-B USB Connector 4UConnector: 18732&lt;/p&gt;
 <part name="P+1" library="mark_2" deviceset="+5V" device=""/>
 <part name="+3V1" library="mark_2" deviceset="+3V3" device=""/>
 <part name="P+2" library="mark_2" deviceset="+12V" device=""/>
-<part name="C2" library="mark_2" deviceset="CPOL-EU" device="PD" value="22uF"/>
+<part name="C1" library="mark_2" deviceset="CPOL-EU" device="PD" value="22uF"/>
 <part name="GND1" library="mark_2" deviceset="GND" device=""/>
-<part name="IC2" library="mark_2" deviceset="LM1117" device="DT" value="LM1117-5.0"/>
-<part name="D1" library="mark_2" deviceset="S1M" device=""/>
-<part name="C3" library="mark_2" deviceset="CPOL-EU" device="PD" value="100uF"/>
-<part name="IC3" library="mark_2" deviceset="LM1117" device="DT" value="LM1117-3.3"/>
-<part name="C5" library="mark_2" deviceset="CPOL-EU" device="PD" value="100uF"/>
+<part name="IC3" library="mark_2" deviceset="LM1117" device="DT" value="LM1117-5.0"/>
+<part name="D7" library="mark_2" deviceset="S1M" device=""/>
+<part name="C2" library="mark_2" deviceset="CPOL-EU" device="PD" value="100uF"/>
+<part name="IC4" library="mark_2" deviceset="LM1117" device="DT" value="LM1117-3.3"/>
+<part name="C6" library="mark_2" deviceset="CPOL-EU" device="PD" value="100uF"/>
 <part name="GND2" library="mark_2" deviceset="GND" device=""/>
 <part name="P+3" library="mark_2" deviceset="+12V" device=""/>
 <part name="P+4" library="mark_2" deviceset="+12V" device=""/>
 <part name="Q1" library="mark_2" deviceset="IRLML6402" device=""/>
 <part name="GND13" library="mark_2" deviceset="GND" device=""/>
-<part name="IC5" library="mark_2" deviceset="MCP3424" device="T" value="MCP3424"/>
+<part name="IC1" library="mark_2" deviceset="MCP3424" device="T" value="MCP3424"/>
 <part name="P+10" library="mark_2" deviceset="+5V" device=""/>
 <part name="GND14" library="mark_2" deviceset="GND" device=""/>
-<part name="IC6" library="mark_2" deviceset="MCP23017" device="SO"/>
+<part name="IC2" library="mark_2" deviceset="MCP23017" device="SO" value="MCP23017"/>
 <part name="GND15" library="mark_2" deviceset="GND" device=""/>
 <part name="P+11" library="mark_2" deviceset="+5V" device=""/>
 <part name="JK1" library="mark_2" deviceset="AUDIO-JACK2" device="PTH"/>
 <part name="GND16" library="mark_2" deviceset="GND" device=""/>
-<part name="R4" library="mark_2" deviceset="R-EU_" device="R0805" value="10k"/>
+<part name="R1" library="mark_2" deviceset="R-EU_" device="R0805" value="10k"/>
 <part name="GND20" library="mark_2" deviceset="GND" device=""/>
-<part name="R8" library="mark_2" deviceset="R-EU_" device="R0805" value="10k"/>
-<part name="D2" library="mark_2" deviceset="MBR0520" device="" value=""/>
+<part name="R10" library="mark_2" deviceset="R-EU_" device="R0805" value="10k"/>
+<part name="D1" library="mark_2" deviceset="MBR0520" device="" value=""/>
 <part name="P+6" library="mark_2" deviceset="+5V" device=""/>
 <part name="Q2" library="mark_2" deviceset="IRLML6402" device="" value=""/>
-<part name="D3" library="mark_2" deviceset="MBR0520" device="" value=""/>
+<part name="D2" library="mark_2" deviceset="MBR0520" device="" value=""/>
 <part name="+3V4" library="mark_2" deviceset="+3V3" device=""/>
 <part name="Q3" library="mark_2" deviceset="IRLML6402" device=""/>
 <part name="JK2" library="mark_2" deviceset="AUDIO-JACK2" device="PTH"/>
 <part name="GND9" library="mark_2" deviceset="GND" device=""/>
-<part name="R5" library="mark_2" deviceset="R-EU_" device="R0805" value="10k"/>
+<part name="R4" library="mark_2" deviceset="R-EU_" device="R0805" value="10k"/>
 <part name="GND11" library="mark_2" deviceset="GND" device=""/>
-<part name="D4" library="mark_2" deviceset="MBR0520" device="" value=""/>
+<part name="D3" library="mark_2" deviceset="MBR0520" device="" value=""/>
 <part name="P+8" library="mark_2" deviceset="+5V" device=""/>
 <part name="Q4" library="mark_2" deviceset="IRLML6402" device="" value=""/>
-<part name="D5" library="mark_2" deviceset="MBR0520" device="" value=""/>
+<part name="D4" library="mark_2" deviceset="MBR0520" device="" value=""/>
 <part name="+3V5" library="mark_2" deviceset="+3V3" device=""/>
 <part name="Q5" library="mark_2" deviceset="IRLML6402" device=""/>
 <part name="JK3" library="mark_2" deviceset="AUDIO-JACK2" device="PTH"/>
 <part name="GND17" library="mark_2" deviceset="GND" device=""/>
-<part name="R6" library="mark_2" deviceset="R-EU_" device="R0805" value="10k"/>
+<part name="R7" library="mark_2" deviceset="R-EU_" device="R0805" value="10k"/>
 <part name="GND18" library="mark_2" deviceset="GND" device=""/>
-<part name="D6" library="mark_2" deviceset="MBR0520" device="" value=""/>
+<part name="D5" library="mark_2" deviceset="MBR0520" device="" value=""/>
 <part name="P+9" library="mark_2" deviceset="+5V" device=""/>
 <part name="Q6" library="mark_2" deviceset="IRLML6402" device="" value=""/>
-<part name="D7" library="mark_2" deviceset="MBR0520" device="" value=""/>
+<part name="D6" library="mark_2" deviceset="MBR0520" device="" value=""/>
 <part name="+3V6" library="mark_2" deviceset="+3V3" device=""/>
-<part name="IC8" library="mark_2" deviceset="ATMEGA32U4" device="-AU"/>
+<part name="IC7" library="mark_2" deviceset="ATMEGA32U4" device="-AU" value="ATMEGA32U4"/>
 <part name="P+13" library="mark_2" deviceset="+5V" device=""/>
 <part name="GND8" library="mark_2" deviceset="GND" device=""/>
-<part name="JP1" library="mark_2" deviceset="AVR-ISP-6" device="" value="AVR-ISP"/>
-<part name="R3" library="mark_2" deviceset="R-EU_" device="R0805" value="10k"/>
+<part name="JP4" library="mark_2" deviceset="AVR-ISP-6" device="" value="AVR-ISP"/>
+<part name="R18" library="mark_2" deviceset="R-EU_" device="R0805" value="10k"/>
 <part name="P+14" library="mark_2" deviceset="+5V" device=""/>
 <part name="P+15" library="mark_2" deviceset="+5V" device=""/>
 <part name="GND22" library="mark_2" deviceset="GND" device=""/>
-<part name="C1" library="mark_2" deviceset="C-EU" device="C0805K" value="1uF"/>
+<part name="C7" library="mark_2" deviceset="C-EU" device="C0805K" value="1uF"/>
 <part name="C8" library="mark_2" deviceset="C-EU" device="C0805K" value="100nF"/>
-<part name="Q9" library="mark_2" deviceset="CRYSTAL" device="HC49UP"/>
+<part name="K1" library="mark_2" deviceset="CRYSTAL" device="HC49UP"/>
 <part name="C9" library="mark_2" deviceset="C-EU" device="C0805K" value="22pF"/>
 <part name="C10" library="mark_2" deviceset="C-EU" device="C0805K" value="22pF"/>
 <part name="CN1" library="mark_2" deviceset="USB" device="MINIB"/>
 <part name="GND23" library="mark_2" deviceset="GND" device=""/>
-<part name="R9" library="mark_2" deviceset="R-EU_" device="R0805" value="22"/>
-<part name="R10" library="mark_2" deviceset="R-EU_" device="R0805" value="22"/>
-<part name="R13" library="mark_2" deviceset="R-EU_" device="R0805" value="1k5"/>
-<part name="R14" library="mark_2" deviceset="R-EU_" device="R0805" value="1k"/>
-<part name="R15" library="mark_2" deviceset="R-EU_" device="R0805" value="1k5"/>
-<part name="R16" library="mark_2" deviceset="R-EU_" device="R0805" value="1k"/>
-<part name="R17" library="mark_2" deviceset="R-EU_" device="R0805" value="1k"/>
-<part name="R18" library="mark_2" deviceset="R-EU_" device="R0805" value="1k5"/>
+<part name="R20" library="mark_2" deviceset="R-EU_" device="R0805" value="22"/>
+<part name="R21" library="mark_2" deviceset="R-EU_" device="R0805" value="22"/>
+<part name="R2" library="mark_2" deviceset="R-EU_" device="R0805" value="1k5"/>
+<part name="R3" library="mark_2" deviceset="R-EU_" device="R0805" value="1k"/>
+<part name="R5" library="mark_2" deviceset="R-EU_" device="R0805" value="1k5"/>
+<part name="R6" library="mark_2" deviceset="R-EU_" device="R0805" value="1k"/>
+<part name="R9" library="mark_2" deviceset="R-EU_" device="R0805" value="1k"/>
+<part name="R8" library="mark_2" deviceset="R-EU_" device="R0805" value="1k5"/>
 <part name="FRAME1" library="mark_2" deviceset="DINA3_L" device=""/>
 <part name="GND28" library="mark_2" deviceset="GND" device=""/>
-<part name="X2" library="mark_2" deviceset="W237-102" device="" value="POWER"/>
+<part name="X1" library="mark_2" deviceset="W237-102" device="" value="POWER"/>
 <part name="GND24" library="mark_2" deviceset="GND" device=""/>
-<part name="JP5" library="mark_2" deviceset="PINHD-1X3" device="180"/>
-<part name="JP6" library="mark_2" deviceset="PINHD-1X2" device=""/>
+<part name="JP1" library="mark_2" deviceset="PINHD-1X3" device="180"/>
+<part name="JP2" library="mark_2" deviceset="PINHD-1X2" device=""/>
 <part name="P+7" library="mark_2" deviceset="+5V" device=""/>
 <part name="GND10" library="mark_2" deviceset="GND" device=""/>
 <part name="P+5" library="mark_2" deviceset="+5V" device=""/>
-<part name="R7" library="mark_2" deviceset="R-EU_" device="R0805" value="1k"/>
+<part name="R14" library="mark_2" deviceset="R-EU_" device="R0805" value="1k"/>
 <part name="PWR" library="mark_2" deviceset="LED" device="0805"/>
 <part name="GND7" library="mark_2" deviceset="GND" device=""/>
-<part name="C6" library="mark_2" deviceset="C-EU" device="C0805K" value="100nF"/>
+<part name="C4" library="mark_2" deviceset="C-EU" device="C0805K" value="100nF"/>
 <part name="P+12" library="mark_2" deviceset="+5V" device=""/>
 <part name="GND12" library="mark_2" deviceset="GND" device=""/>
-<part name="C7" library="mark_2" deviceset="C-EU" device="C0805K" value="100nF"/>
+<part name="C5" library="mark_2" deviceset="C-EU" device="C0805K" value="100nF"/>
 <part name="P+16" library="mark_2" deviceset="+5V" device=""/>
 <part name="GND19" library="mark_2" deviceset="GND" device=""/>
-<part name="C11" library="mark_2" deviceset="C-EU" device="C0805K" value="100nF"/>
+<part name="C3" library="mark_2" deviceset="C-EU" device="C0805K" value="100nF"/>
 <part name="GND21" library="mark_2" deviceset="GND" device=""/>
 <part name="+3V7" library="mark_2" deviceset="+3V3" device=""/>
-<part name="R11" library="mark_2" deviceset="R-EU_" device="R0805" value="1k"/>
-<part name="PWR1" library="mark_2" deviceset="LED" device="0805"/>
+<part name="R13" library="mark_2" deviceset="R-EU_" device="R0805" value="1k"/>
+<part name="PWR3" library="mark_2" deviceset="LED" device="0805"/>
 <part name="P+17" library="mark_2" deviceset="+5V" device=""/>
 <part name="R12" library="mark_2" deviceset="R-EU_" device="R0805" value="1k"/>
 <part name="PWR2" library="mark_2" deviceset="LED" device="0805"/>
-<part name="PWR3" library="mark_2" deviceset="LED" device="0805"/>
-<part name="R19" library="mark_2" deviceset="R-EU_" device="R0805" value="1k"/>
+<part name="PWR1" library="mark_2" deviceset="LED" device="0805"/>
+<part name="R11" library="mark_2" deviceset="R-EU_" device="R0805" value="1k"/>
 <part name="P+18" library="mark_2" deviceset="+5V" device=""/>
 <part name="GND25" library="mark_2" deviceset="GND" device=""/>
-<part name="R20" library="mark_2" deviceset="R-EU_" device="R0805" value="10k"/>
-<part name="JP2" library="mark_2" deviceset="PINHD-1X3" device="180"/>
+<part name="R19" library="mark_2" deviceset="R-EU_" device="R0805" value="10k"/>
+<part name="JP3" library="mark_2" deviceset="PINHD-1X3" device="180"/>
 <part name="TX" library="mark_2" deviceset="LED" device="0805"/>
-<part name="R21" library="mark_2" deviceset="R-EU_" device="R0805" value="1k"/>
+<part name="R15" library="mark_2" deviceset="R-EU_" device="R0805" value="1k"/>
 <part name="RX" library="mark_2" deviceset="LED" device="0805"/>
-<part name="R22" library="mark_2" deviceset="R-EU_" device="R0805" value="1k"/>
+<part name="R16" library="mark_2" deviceset="R-EU_" device="R0805" value="1k"/>
 <part name="+3V9" library="mark_2" deviceset="+3V3" device=""/>
 <part name="+3V8" library="mark_2" deviceset="+3V3" device=""/>
 </parts>
@@ -3303,44 +3299,44 @@ Thru-hole RA Female Mini-B USB Connector 4UConnector: 18732&lt;/p&gt;
 <plain>
 </plain>
 <instances>
-<instance part="IC1" gate="D" x="182.88" y="121.92" smashed="yes" rot="R180">
+<instance part="IC5" gate="D" x="182.88" y="121.92" smashed="yes" rot="R180">
 <attribute name="NAME" x="180.34" y="118.745" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="180.34" y="127" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="RSSI" gate="G$1" x="101.6" y="96.52" rot="R270"/>
-<instance part="R1" gate="G$1" x="109.22" y="96.52"/>
-<instance part="IC4" gate="G$1" x="147.32" y="106.68"/>
+<instance part="R17" gate="G$1" x="109.22" y="96.52"/>
+<instance part="IC6" gate="G$1" x="147.32" y="106.68"/>
 <instance part="+3V2" gate="G$1" x="124.46" y="121.92" smashed="yes">
 <attribute name="VALUE" x="127" y="124.46" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="GND3" gate="1" x="91.44" y="93.98"/>
 <instance part="GND4" gate="1" x="124.46" y="88.9"/>
-<instance part="IC1" gate="P" x="182.88" y="121.92" smashed="yes"/>
+<instance part="IC5" gate="P" x="182.88" y="121.92" smashed="yes"/>
 <instance part="+3V3" gate="G$1" x="182.88" y="132.08" smashed="yes">
 <attribute name="VALUE" x="185.42" y="134.62" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="GND6" gate="1" x="182.88" y="111.76"/>
-<instance part="IC1" gate="A" x="106.68" y="86.36"/>
-<instance part="IC1" gate="B" x="106.68" y="106.68"/>
-<instance part="IC1" gate="C" x="106.68" y="116.84"/>
+<instance part="IC5" gate="A" x="106.68" y="86.36"/>
+<instance part="IC5" gate="B" x="106.68" y="106.68"/>
+<instance part="IC5" gate="C" x="106.68" y="116.84"/>
 <instance part="P+1" gate="1" x="330.2" y="53.34"/>
 <instance part="+3V1" gate="G$1" x="330.2" y="22.86"/>
 <instance part="P+2" gate="1" x="284.48" y="53.34" smashed="yes">
 <attribute name="VALUE" x="281.94" y="55.88" size="1.778" layer="96"/>
 </instance>
-<instance part="C2" gate="G$1" x="294.64" y="43.18"/>
+<instance part="C1" gate="G$1" x="294.64" y="43.18"/>
 <instance part="GND1" gate="1" x="307.34" y="0"/>
-<instance part="IC2" gate="G$1" x="307.34" y="48.26" smashed="yes">
+<instance part="IC3" gate="G$1" x="307.34" y="48.26" smashed="yes">
 <attribute name="NAME" x="302.26" y="53.34" size="1.778" layer="95"/>
 <attribute name="VALUE" x="302.26" y="50.8" size="1.778" layer="96"/>
 </instance>
-<instance part="D1" gate="D1" x="276.86" y="48.26"/>
-<instance part="C3" gate="G$1" x="320.04" y="43.18"/>
-<instance part="IC3" gate="G$1" x="307.34" y="17.78" smashed="yes">
+<instance part="D7" gate="D1" x="276.86" y="48.26"/>
+<instance part="C2" gate="G$1" x="320.04" y="43.18"/>
+<instance part="IC4" gate="G$1" x="307.34" y="17.78" smashed="yes">
 <attribute name="NAME" x="302.26" y="22.86" size="1.778" layer="95"/>
 <attribute name="VALUE" x="302.26" y="20.32" size="1.778" layer="96"/>
 </instance>
-<instance part="C5" gate="G$1" x="320.04" y="12.7"/>
+<instance part="C6" gate="G$1" x="320.04" y="12.7"/>
 <instance part="GND2" gate="1" x="307.34" y="30.48"/>
 <instance part="P+3" gate="1" x="294.64" y="53.34" smashed="yes">
 <attribute name="VALUE" x="292.1" y="55.88" size="1.778" layer="96"/>
@@ -3352,18 +3348,18 @@ Thru-hole RA Female Mini-B USB Connector 4UConnector: 18732&lt;/p&gt;
 <attribute name="NAME" x="1.27" y="200.66" size="1.778" layer="95" rot="R180"/>
 </instance>
 <instance part="GND13" gate="1" x="15.24" y="43.18"/>
-<instance part="IC5" gate="A" x="-2.54" y="58.42"/>
+<instance part="IC1" gate="A" x="-2.54" y="58.42"/>
 <instance part="P+10" gate="1" x="-20.32" y="71.12"/>
 <instance part="GND14" gate="1" x="-20.32" y="43.18"/>
-<instance part="IC6" gate="G$1" x="-2.54" y="2.54"/>
+<instance part="IC2" gate="G$1" x="-2.54" y="2.54"/>
 <instance part="GND15" gate="1" x="-17.78" y="-22.86"/>
 <instance part="P+11" gate="1" x="-20.32" y="33.02"/>
 <instance part="JK1" gate="G$1" x="12.7" y="190.5" rot="R180"/>
 <instance part="GND16" gate="1" x="5.08" y="182.88"/>
-<instance part="R4" gate="G$1" x="-12.7" y="193.04"/>
+<instance part="R1" gate="G$1" x="-12.7" y="193.04"/>
 <instance part="GND20" gate="1" x="-20.32" y="190.5"/>
-<instance part="R8" gate="G$1" x="-22.86" y="22.86" rot="R90"/>
-<instance part="D2" gate="G$1" x="-2.54" y="213.36" smashed="yes" rot="R270">
+<instance part="R10" gate="G$1" x="-22.86" y="22.86" rot="R90"/>
+<instance part="D1" gate="G$1" x="-2.54" y="213.36" smashed="yes" rot="R270">
 <attribute name="NAME" x="-7.62" y="213.8426" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-4.8514" y="210.82" size="1.778" layer="96" rot="R270"/>
 </instance>
@@ -3374,7 +3370,7 @@ Thru-hole RA Female Mini-B USB Connector 4UConnector: 18732&lt;/p&gt;
 <attribute name="NAME" x="1.27" y="208.28" size="1.778" layer="95" rot="MR180"/>
 <attribute name="VALUE" x="1.27" y="203.2" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="D3" gate="G$1" x="5.08" y="213.36" smashed="yes" rot="R270">
+<instance part="D2" gate="G$1" x="5.08" y="213.36" smashed="yes" rot="R270">
 <attribute name="NAME" x="10.16" y="215.4174" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="2.7686" y="210.82" size="1.778" layer="96" rot="R270"/>
 </instance>
@@ -3386,9 +3382,9 @@ Thru-hole RA Female Mini-B USB Connector 4UConnector: 18732&lt;/p&gt;
 </instance>
 <instance part="JK2" gate="G$1" x="12.7" y="144.78" rot="R180"/>
 <instance part="GND9" gate="1" x="5.08" y="137.16"/>
-<instance part="R5" gate="G$1" x="-12.7" y="147.32"/>
+<instance part="R4" gate="G$1" x="-12.7" y="147.32"/>
 <instance part="GND11" gate="1" x="-20.32" y="144.78"/>
-<instance part="D4" gate="G$1" x="-2.54" y="167.64" smashed="yes" rot="R270">
+<instance part="D3" gate="G$1" x="-2.54" y="167.64" smashed="yes" rot="R270">
 <attribute name="NAME" x="-7.62" y="168.1226" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-4.8514" y="165.1" size="1.778" layer="96" rot="R270"/>
 </instance>
@@ -3399,7 +3395,7 @@ Thru-hole RA Female Mini-B USB Connector 4UConnector: 18732&lt;/p&gt;
 <attribute name="NAME" x="1.27" y="162.56" size="1.778" layer="95" rot="MR180"/>
 <attribute name="VALUE" x="1.27" y="157.48" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="D5" gate="G$1" x="5.08" y="167.64" smashed="yes" rot="R270">
+<instance part="D4" gate="G$1" x="5.08" y="167.64" smashed="yes" rot="R270">
 <attribute name="NAME" x="10.16" y="169.6974" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="2.7686" y="165.1" size="1.778" layer="96" rot="R270"/>
 </instance>
@@ -3411,9 +3407,9 @@ Thru-hole RA Female Mini-B USB Connector 4UConnector: 18732&lt;/p&gt;
 </instance>
 <instance part="JK3" gate="G$1" x="12.7" y="99.06" rot="R180"/>
 <instance part="GND17" gate="1" x="5.08" y="91.44"/>
-<instance part="R6" gate="G$1" x="-12.7" y="101.6"/>
+<instance part="R7" gate="G$1" x="-12.7" y="101.6"/>
 <instance part="GND18" gate="1" x="-20.32" y="99.06"/>
-<instance part="D6" gate="G$1" x="-2.54" y="121.92" smashed="yes" rot="R270">
+<instance part="D5" gate="G$1" x="-2.54" y="121.92" smashed="yes" rot="R270">
 <attribute name="NAME" x="-7.62" y="122.4026" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-4.8514" y="119.38" size="1.778" layer="96" rot="R270"/>
 </instance>
@@ -3424,20 +3420,20 @@ Thru-hole RA Female Mini-B USB Connector 4UConnector: 18732&lt;/p&gt;
 <attribute name="NAME" x="1.27" y="116.84" size="1.778" layer="95" rot="MR180"/>
 <attribute name="VALUE" x="1.27" y="111.76" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="D7" gate="G$1" x="5.08" y="121.92" smashed="yes" rot="R270">
+<instance part="D6" gate="G$1" x="5.08" y="121.92" smashed="yes" rot="R270">
 <attribute name="NAME" x="10.16" y="123.9774" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="2.7686" y="119.38" size="1.778" layer="96" rot="R270"/>
 </instance>
 <instance part="+3V6" gate="G$1" x="5.08" y="127" smashed="yes">
 <attribute name="VALUE" x="7.62" y="129.54" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="IC8" gate="G$1" x="91.44" y="10.16"/>
+<instance part="IC7" gate="G$1" x="91.44" y="10.16"/>
 <instance part="P+13" gate="1" x="55.88" y="43.18" smashed="yes">
 <attribute name="VALUE" x="58.42" y="45.72" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="GND8" gate="1" x="55.88" y="-22.86"/>
-<instance part="JP1" gate="G$1" x="170.18" y="20.32"/>
-<instance part="R3" gate="G$1" x="66.04" y="60.96" rot="R90"/>
+<instance part="JP4" gate="G$1" x="170.18" y="20.32"/>
+<instance part="R18" gate="G$1" x="66.04" y="60.96" rot="R90"/>
 <instance part="P+14" gate="1" x="66.04" y="68.58" smashed="yes">
 <attribute name="VALUE" x="68.58" y="71.12" size="1.778" layer="96" rot="R180"/>
 </instance>
@@ -3445,7 +3441,7 @@ Thru-hole RA Female Mini-B USB Connector 4UConnector: 18732&lt;/p&gt;
 <attribute name="VALUE" x="160.02" y="30.48" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="GND22" gate="1" x="157.48" y="12.7"/>
-<instance part="C1" gate="G$1" x="63.5" y="17.78" smashed="yes" rot="R270">
+<instance part="C7" gate="G$1" x="63.5" y="17.78" smashed="yes" rot="R270">
 <attribute name="NAME" x="57.404" y="18.161" size="1.778" layer="95"/>
 <attribute name="VALUE" x="65.024" y="18.161" size="1.778" layer="96"/>
 </instance>
@@ -3453,7 +3449,7 @@ Thru-hole RA Female Mini-B USB Connector 4UConnector: 18732&lt;/p&gt;
 <attribute name="NAME" x="57.404" y="13.081" size="1.778" layer="95"/>
 <attribute name="VALUE" x="65.024" y="13.081" size="1.778" layer="96"/>
 </instance>
-<instance part="Q9" gate="G$1" x="66.04" y="2.54" smashed="yes" rot="R90">
+<instance part="K1" gate="G$1" x="66.04" y="2.54" smashed="yes" rot="R90">
 <attribute name="NAME" x="68.58" y="3.556" size="1.778" layer="95"/>
 <attribute name="VALUE" x="68.58" y="5.08" size="1.778" layer="96" rot="R90"/>
 </instance>
@@ -3467,68 +3463,68 @@ Thru-hole RA Female Mini-B USB Connector 4UConnector: 18732&lt;/p&gt;
 </instance>
 <instance part="CN1" gate="G$1" x="165.1" y="-12.7"/>
 <instance part="GND23" gate="1" x="187.96" y="-20.32"/>
-<instance part="R9" gate="G$1" x="180.34" y="-10.16" smashed="yes" rot="R180">
+<instance part="R20" gate="G$1" x="180.34" y="-10.16" smashed="yes" rot="R180">
 <attribute name="VALUE" x="181.61" y="-9.398" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="R10" gate="G$1" x="180.34" y="-12.7" smashed="yes" rot="R180">
+<instance part="R21" gate="G$1" x="180.34" y="-12.7" smashed="yes" rot="R180">
 <attribute name="VALUE" x="181.61" y="-11.938" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="R13" gate="G$1" x="-2.54" y="187.96"/>
-<instance part="R14" gate="G$1" x="-2.54" y="185.42"/>
-<instance part="R15" gate="G$1" x="-2.54" y="142.24"/>
-<instance part="R16" gate="G$1" x="-2.54" y="139.7"/>
-<instance part="R17" gate="G$1" x="-2.54" y="93.98"/>
-<instance part="R18" gate="G$1" x="-2.54" y="96.52"/>
+<instance part="R2" gate="G$1" x="-2.54" y="187.96"/>
+<instance part="R3" gate="G$1" x="-2.54" y="185.42"/>
+<instance part="R5" gate="G$1" x="-2.54" y="142.24"/>
+<instance part="R6" gate="G$1" x="-2.54" y="139.7"/>
+<instance part="R9" gate="G$1" x="-2.54" y="93.98"/>
+<instance part="R8" gate="G$1" x="-2.54" y="96.52"/>
 <instance part="FRAME1" gate="G$1" x="-33.02" y="-35.56"/>
 <instance part="FRAME1" gate="G$2" x="254" y="-35.56"/>
 <instance part="GND28" gate="1" x="124.46" y="30.48"/>
-<instance part="X2" gate="G$1" x="269.24" y="45.72"/>
+<instance part="X1" gate="G$1" x="269.24" y="45.72"/>
 <instance part="GND24" gate="1" x="284.48" y="40.64"/>
-<instance part="JP5" gate="A" x="71.12" y="121.92"/>
-<instance part="JP6" gate="G$1" x="71.12" y="106.68"/>
+<instance part="JP1" gate="A" x="71.12" y="121.92"/>
+<instance part="JP2" gate="G$1" x="71.12" y="106.68"/>
 <instance part="P+7" gate="1" x="60.96" y="114.3"/>
 <instance part="GND10" gate="1" x="60.96" y="101.6"/>
 <instance part="P+5" gate="1" x="345.44" y="53.34"/>
-<instance part="R7" gate="G$1" x="345.44" y="45.72" rot="R90"/>
+<instance part="R14" gate="G$1" x="345.44" y="45.72" rot="R90"/>
 <instance part="PWR" gate="G$1" x="345.44" y="38.1"/>
 <instance part="GND7" gate="1" x="345.44" y="30.48"/>
-<instance part="C6" gate="G$1" x="266.7" y="12.7" smashed="yes">
+<instance part="C4" gate="G$1" x="266.7" y="12.7" smashed="yes">
 <attribute name="NAME" x="266.319" y="6.604" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="266.319" y="14.224" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="P+12" gate="1" x="266.7" y="17.78"/>
 <instance part="GND12" gate="1" x="266.7" y="5.08"/>
-<instance part="C7" gate="G$1" x="274.32" y="12.7" smashed="yes">
+<instance part="C5" gate="G$1" x="274.32" y="12.7" smashed="yes">
 <attribute name="NAME" x="273.939" y="6.604" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="273.939" y="14.224" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="P+16" gate="1" x="274.32" y="17.78"/>
 <instance part="GND19" gate="1" x="274.32" y="5.08"/>
-<instance part="C11" gate="G$1" x="259.08" y="12.7" smashed="yes">
+<instance part="C3" gate="G$1" x="259.08" y="12.7" smashed="yes">
 <attribute name="NAME" x="258.699" y="6.604" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="258.699" y="14.224" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="GND21" gate="1" x="259.08" y="5.08"/>
 <instance part="+3V7" gate="G$1" x="259.08" y="17.78"/>
-<instance part="R11" gate="G$1" x="35.56" y="-2.54" rot="R90"/>
-<instance part="PWR1" gate="G$1" x="20.32" y="-12.7" rot="R270"/>
+<instance part="R13" gate="G$1" x="35.56" y="-2.54" rot="R90"/>
+<instance part="PWR3" gate="G$1" x="20.32" y="-12.7" rot="R270"/>
 <instance part="P+17" gate="1" x="30.48" y="10.16" smashed="yes">
 <attribute name="VALUE" x="33.02" y="12.7" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="R12" gate="G$1" x="30.48" y="-2.54" rot="R90"/>
 <instance part="PWR2" gate="G$1" x="20.32" y="-10.16" rot="R270"/>
-<instance part="PWR3" gate="G$1" x="20.32" y="-7.62" rot="R270"/>
-<instance part="R19" gate="G$1" x="25.4" y="-2.54" rot="R90"/>
+<instance part="PWR1" gate="G$1" x="20.32" y="-7.62" rot="R270"/>
+<instance part="R11" gate="G$1" x="25.4" y="-2.54" rot="R90"/>
 <instance part="P+18" gate="1" x="160.02" y="63.5" smashed="yes">
 <attribute name="VALUE" x="162.56" y="66.04" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="GND25" gate="1" x="160.02" y="38.1"/>
-<instance part="R20" gate="G$1" x="162.56" y="53.34" rot="R90"/>
-<instance part="JP2" gate="A" x="172.72" y="45.72"/>
+<instance part="R19" gate="G$1" x="162.56" y="53.34" rot="R90"/>
+<instance part="JP3" gate="A" x="172.72" y="45.72"/>
 <instance part="TX" gate="G$1" x="93.98" y="139.7"/>
-<instance part="R21" gate="G$1" x="93.98" y="147.32" rot="R90"/>
+<instance part="R15" gate="G$1" x="93.98" y="147.32" rot="R90"/>
 <instance part="RX" gate="G$1" x="106.68" y="139.7"/>
-<instance part="R22" gate="G$1" x="106.68" y="147.32" rot="R90"/>
+<instance part="R16" gate="G$1" x="106.68" y="147.32" rot="R90"/>
 <instance part="+3V9" gate="G$1" x="106.68" y="154.94" smashed="yes">
 <attribute name="VALUE" x="109.22" y="157.48" size="1.778" layer="96" rot="R180"/>
 </instance>
@@ -3546,54 +3542,54 @@ Thru-hole RA Female Mini-B USB Connector 4UConnector: 18732&lt;/p&gt;
 <wire x1="91.44" y1="96.52" x2="96.52" y2="96.52" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="IC4" gate="G$1" pin="GND"/>
+<pinref part="IC6" gate="G$1" pin="GND"/>
 <pinref part="GND4" gate="1" pin="GND"/>
 <wire x1="124.46" y1="91.44" x2="124.46" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="124.46" y1="93.98" x2="127" y2="93.98" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="IC1" gate="P" pin="VSS"/>
+<pinref part="IC5" gate="P" pin="VSS"/>
 <pinref part="GND6" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="C2" gate="G$1" pin="-"/>
+<pinref part="C1" gate="G$1" pin="-"/>
 <wire x1="294.64" y1="38.1" x2="294.64" y2="35.56" width="0.1524" layer="91"/>
-<pinref part="IC2" gate="G$1" pin="ADJ"/>
+<pinref part="IC3" gate="G$1" pin="ADJ"/>
 <wire x1="294.64" y1="35.56" x2="307.34" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="307.34" y1="35.56" x2="307.34" y2="40.64" width="0.1524" layer="91"/>
 <junction x="307.34" y="35.56"/>
-<pinref part="C3" gate="G$1" pin="-"/>
+<pinref part="C2" gate="G$1" pin="-"/>
 <wire x1="307.34" y1="35.56" x2="320.04" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="320.04" y1="35.56" x2="320.04" y2="38.1" width="0.1524" layer="91"/>
 <pinref part="GND2" gate="1" pin="GND"/>
 <wire x1="307.34" y1="33.02" x2="307.34" y2="35.56" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="C5" gate="G$1" pin="-"/>
+<pinref part="C6" gate="G$1" pin="-"/>
 <wire x1="307.34" y1="5.08" x2="320.04" y2="5.08" width="0.1524" layer="91"/>
 <wire x1="320.04" y1="5.08" x2="320.04" y2="7.62" width="0.1524" layer="91"/>
 <junction x="307.34" y="5.08"/>
-<pinref part="IC3" gate="G$1" pin="ADJ"/>
+<pinref part="IC4" gate="G$1" pin="ADJ"/>
 <wire x1="307.34" y1="10.16" x2="307.34" y2="5.08" width="0.1524" layer="91"/>
 <pinref part="GND1" gate="1" pin="GND"/>
 <wire x1="307.34" y1="5.08" x2="307.34" y2="2.54" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="IC5" gate="A" pin="GND"/>
+<pinref part="IC1" gate="A" pin="GND"/>
 <pinref part="GND14" gate="1" pin="GND"/>
 <wire x1="-20.32" y1="45.72" x2="-20.32" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="-20.32" y1="48.26" x2="-17.78" y2="48.26" width="0.1524" layer="91"/>
 <junction x="-20.32" y="48.26"/>
-<pinref part="IC5" gate="A" pin="ADR0"/>
+<pinref part="IC1" gate="A" pin="ADR0"/>
 <wire x1="-17.78" y1="55.88" x2="-20.32" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="-20.32" y1="55.88" x2="-20.32" y2="53.34" width="0.1524" layer="91"/>
 <junction x="-20.32" y="53.34"/>
 <wire x1="-20.32" y1="53.34" x2="-20.32" y2="48.26" width="0.1524" layer="91"/>
-<pinref part="IC5" gate="A" pin="ADR1"/>
+<pinref part="IC1" gate="A" pin="ADR1"/>
 <wire x1="-17.78" y1="53.34" x2="-20.32" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="IC5" gate="A" pin="CH1-"/>
+<pinref part="IC1" gate="A" pin="CH1-"/>
 <pinref part="GND13" gate="1" pin="GND"/>
 <wire x1="12.7" y1="63.5" x2="15.24" y2="63.5" width="0.1524" layer="91"/>
 <wire x1="15.24" y1="63.5" x2="15.24" y2="58.42" width="0.1524" layer="91"/>
@@ -3603,29 +3599,29 @@ Thru-hole RA Female Mini-B USB Connector 4UConnector: 18732&lt;/p&gt;
 <wire x1="15.24" y1="48.26" x2="15.24" y2="45.72" width="0.1524" layer="91"/>
 <junction x="15.24" y="53.34"/>
 <junction x="15.24" y="58.42"/>
-<pinref part="IC5" gate="A" pin="CH2-"/>
+<pinref part="IC1" gate="A" pin="CH2-"/>
 <wire x1="12.7" y1="58.42" x2="15.24" y2="58.42" width="0.1524" layer="91"/>
-<pinref part="IC5" gate="A" pin="CH3-"/>
+<pinref part="IC1" gate="A" pin="CH3-"/>
 <wire x1="12.7" y1="53.34" x2="15.24" y2="53.34" width="0.1524" layer="91"/>
-<pinref part="IC5" gate="A" pin="CH4-"/>
+<pinref part="IC1" gate="A" pin="CH4-"/>
 <wire x1="12.7" y1="48.26" x2="15.24" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="IC6" gate="G$1" pin="VSS"/>
+<pinref part="IC2" gate="G$1" pin="VSS"/>
 <wire x1="-15.24" y1="-17.78" x2="-17.78" y2="-17.78" width="0.1524" layer="91"/>
 <wire x1="-17.78" y1="-17.78" x2="-17.78" y2="-20.32" width="0.1524" layer="91"/>
 <pinref part="GND15" gate="1" pin="GND"/>
 <junction x="-17.78" y="-17.78"/>
-<pinref part="IC6" gate="G$1" pin="A0"/>
+<pinref part="IC2" gate="G$1" pin="A0"/>
 <wire x1="-15.24" y1="-7.62" x2="-17.78" y2="-7.62" width="0.1524" layer="91"/>
 <wire x1="-17.78" y1="-7.62" x2="-17.78" y2="-10.16" width="0.1524" layer="91"/>
 <junction x="-17.78" y="-10.16"/>
 <wire x1="-17.78" y1="-10.16" x2="-17.78" y2="-12.7" width="0.1524" layer="91"/>
 <junction x="-17.78" y="-12.7"/>
 <wire x1="-17.78" y1="-12.7" x2="-17.78" y2="-17.78" width="0.1524" layer="91"/>
-<pinref part="IC6" gate="G$1" pin="A1"/>
+<pinref part="IC2" gate="G$1" pin="A1"/>
 <wire x1="-15.24" y1="-10.16" x2="-17.78" y2="-10.16" width="0.1524" layer="91"/>
-<pinref part="IC6" gate="G$1" pin="A2"/>
+<pinref part="IC2" gate="G$1" pin="A2"/>
 <wire x1="-15.24" y1="-12.7" x2="-17.78" y2="-12.7" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -3633,11 +3629,11 @@ Thru-hole RA Female Mini-B USB Connector 4UConnector: 18732&lt;/p&gt;
 <pinref part="GND16" gate="1" pin="GND"/>
 <wire x1="5.08" y1="185.42" x2="7.62" y2="185.42" width="0.1524" layer="91"/>
 <junction x="5.08" y="185.42"/>
-<pinref part="R14" gate="G$1" pin="2"/>
+<pinref part="R3" gate="G$1" pin="2"/>
 <wire x1="2.54" y1="185.42" x2="5.08" y2="185.42" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="R4" gate="G$1" pin="1"/>
+<pinref part="R1" gate="G$1" pin="1"/>
 <pinref part="GND20" gate="1" pin="GND"/>
 <wire x1="-17.78" y1="193.04" x2="-20.32" y2="193.04" width="0.1524" layer="91"/>
 </segment>
@@ -3646,11 +3642,11 @@ Thru-hole RA Female Mini-B USB Connector 4UConnector: 18732&lt;/p&gt;
 <pinref part="GND9" gate="1" pin="GND"/>
 <wire x1="5.08" y1="139.7" x2="7.62" y2="139.7" width="0.1524" layer="91"/>
 <junction x="5.08" y="139.7"/>
-<pinref part="R16" gate="G$1" pin="2"/>
+<pinref part="R6" gate="G$1" pin="2"/>
 <wire x1="2.54" y1="139.7" x2="5.08" y2="139.7" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="R5" gate="G$1" pin="1"/>
+<pinref part="R4" gate="G$1" pin="1"/>
 <pinref part="GND11" gate="1" pin="GND"/>
 <wire x1="-17.78" y1="147.32" x2="-20.32" y2="147.32" width="0.1524" layer="91"/>
 </segment>
@@ -3659,16 +3655,16 @@ Thru-hole RA Female Mini-B USB Connector 4UConnector: 18732&lt;/p&gt;
 <pinref part="GND17" gate="1" pin="GND"/>
 <wire x1="5.08" y1="93.98" x2="7.62" y2="93.98" width="0.1524" layer="91"/>
 <junction x="5.08" y="93.98"/>
-<pinref part="R17" gate="G$1" pin="2"/>
+<pinref part="R9" gate="G$1" pin="2"/>
 <wire x1="2.54" y1="93.98" x2="5.08" y2="93.98" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="R6" gate="G$1" pin="1"/>
+<pinref part="R7" gate="G$1" pin="1"/>
 <pinref part="GND18" gate="1" pin="GND"/>
 <wire x1="-17.78" y1="101.6" x2="-20.32" y2="101.6" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="IC8" gate="G$1" pin="UGND"/>
+<pinref part="IC7" gate="G$1" pin="UGND"/>
 <pinref part="GND8" gate="1" pin="GND"/>
 <wire x1="68.58" y1="-7.62" x2="55.88" y2="-7.62" width="0.1524" layer="91"/>
 <wire x1="55.88" y1="-7.62" x2="55.88" y2="-12.7" width="0.1524" layer="91"/>
@@ -3679,16 +3675,16 @@ Thru-hole RA Female Mini-B USB Connector 4UConnector: 18732&lt;/p&gt;
 <junction x="55.88" y="-17.78"/>
 <junction x="55.88" y="-15.24"/>
 <junction x="55.88" y="-12.7"/>
-<pinref part="IC8" gate="G$1" pin="GND"/>
+<pinref part="IC7" gate="G$1" pin="GND"/>
 <wire x1="68.58" y1="-12.7" x2="55.88" y2="-12.7" width="0.1524" layer="91"/>
-<pinref part="IC8" gate="G$1" pin="GND1"/>
+<pinref part="IC7" gate="G$1" pin="GND1"/>
 <wire x1="68.58" y1="-15.24" x2="55.88" y2="-15.24" width="0.1524" layer="91"/>
-<pinref part="IC8" gate="G$1" pin="GND2"/>
+<pinref part="IC7" gate="G$1" pin="GND2"/>
 <wire x1="68.58" y1="-17.78" x2="55.88" y2="-17.78" width="0.1524" layer="91"/>
-<pinref part="IC8" gate="G$1" pin="GND3"/>
+<pinref part="IC7" gate="G$1" pin="GND3"/>
 <wire x1="68.58" y1="-20.32" x2="55.88" y2="-20.32" width="0.1524" layer="91"/>
 <junction x="55.88" y="-7.62"/>
-<pinref part="C1" gate="G$1" pin="2"/>
+<pinref part="C7" gate="G$1" pin="2"/>
 <wire x1="58.42" y1="17.78" x2="55.88" y2="17.78" width="0.1524" layer="91"/>
 <wire x1="55.88" y1="17.78" x2="55.88" y2="12.7" width="0.1524" layer="91"/>
 <pinref part="C8" gate="G$1" pin="2"/>
@@ -3705,7 +3701,7 @@ Thru-hole RA Female Mini-B USB Connector 4UConnector: 18732&lt;/p&gt;
 <wire x1="55.88" y1="0" x2="55.88" y2="-7.62" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="JP1" gate="G$1" pin="GND"/>
+<pinref part="JP4" gate="G$1" pin="GND"/>
 <pinref part="GND22" gate="1" pin="GND"/>
 <wire x1="165.1" y1="17.78" x2="157.48" y2="17.78" width="0.1524" layer="91"/>
 <wire x1="157.48" y1="17.78" x2="157.48" y2="15.24" width="0.1524" layer="91"/>
@@ -3718,17 +3714,17 @@ Thru-hole RA Female Mini-B USB Connector 4UConnector: 18732&lt;/p&gt;
 <segment>
 <pinref part="GND24" gate="1" pin="GND"/>
 <wire x1="284.48" y1="43.18" x2="284.48" y2="45.72" width="0.1524" layer="91"/>
-<pinref part="X2" gate="G$1" pin="2"/>
+<pinref part="X1" gate="G$1" pin="2"/>
 <wire x1="266.7" y1="45.72" x2="284.48" y2="45.72" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="JP6" gate="G$1" pin="2"/>
+<pinref part="JP2" gate="G$1" pin="2"/>
 <pinref part="GND10" gate="1" pin="GND"/>
 <wire x1="68.58" y1="106.68" x2="60.96" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="60.96" y1="106.68" x2="60.96" y2="104.14" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="IC8" gate="G$1" pin="PE2(!HWB)"/>
+<pinref part="IC7" gate="G$1" pin="PE2(!HWB)"/>
 <pinref part="GND28" gate="1" pin="GND"/>
 <wire x1="116.84" y1="35.56" x2="124.46" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="124.46" y1="35.56" x2="124.46" y2="33.02" width="0.1524" layer="91"/>
@@ -3738,38 +3734,38 @@ Thru-hole RA Female Mini-B USB Connector 4UConnector: 18732&lt;/p&gt;
 <pinref part="GND7" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="C6" gate="G$1" pin="2"/>
+<pinref part="C4" gate="G$1" pin="2"/>
 <pinref part="GND12" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="C7" gate="G$1" pin="2"/>
+<pinref part="C5" gate="G$1" pin="2"/>
 <pinref part="GND19" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="C11" gate="G$1" pin="2"/>
+<pinref part="C3" gate="G$1" pin="2"/>
 <pinref part="GND21" gate="1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="GND25" gate="1" pin="GND"/>
 <wire x1="170.18" y1="43.18" x2="160.02" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="160.02" y1="43.18" x2="160.02" y2="40.64" width="0.1524" layer="91"/>
-<pinref part="JP2" gate="A" pin="3"/>
+<pinref part="JP3" gate="A" pin="3"/>
 </segment>
 </net>
 <net name="+3V3" class="0">
 <segment>
-<pinref part="IC4" gate="G$1" pin="VDD"/>
+<pinref part="IC6" gate="G$1" pin="VDD"/>
 <pinref part="+3V2" gate="G$1" pin="+3V3"/>
 <wire x1="127" y1="116.84" x2="124.46" y2="116.84" width="0.1524" layer="91"/>
 <wire x1="124.46" y1="116.84" x2="124.46" y2="119.38" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="IC1" gate="P" pin="VDD"/>
+<pinref part="IC5" gate="P" pin="VDD"/>
 <pinref part="+3V3" gate="G$1" pin="+3V3"/>
 </segment>
 <segment>
-<pinref part="IC3" gate="G$1" pin="OUT"/>
-<pinref part="C5" gate="G$1" pin="+"/>
+<pinref part="IC4" gate="G$1" pin="OUT"/>
+<pinref part="C6" gate="G$1" pin="+"/>
 <wire x1="314.96" y1="17.78" x2="320.04" y2="17.78" width="0.1524" layer="91"/>
 <wire x1="320.04" y1="17.78" x2="320.04" y2="15.24" width="0.1524" layer="91"/>
 <junction x="320.04" y="17.78"/>
@@ -3778,49 +3774,49 @@ Thru-hole RA Female Mini-B USB Connector 4UConnector: 18732&lt;/p&gt;
 <wire x1="330.2" y1="20.32" x2="330.2" y2="17.78" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="D3" gate="G$1" pin="A"/>
+<pinref part="D2" gate="G$1" pin="A"/>
 <pinref part="+3V4" gate="G$1" pin="+3V3"/>
 </segment>
 <segment>
-<pinref part="D5" gate="G$1" pin="A"/>
+<pinref part="D4" gate="G$1" pin="A"/>
 <pinref part="+3V5" gate="G$1" pin="+3V3"/>
 </segment>
 <segment>
-<pinref part="D7" gate="G$1" pin="A"/>
+<pinref part="D6" gate="G$1" pin="A"/>
 <pinref part="+3V6" gate="G$1" pin="+3V3"/>
 </segment>
 <segment>
-<pinref part="C11" gate="G$1" pin="1"/>
+<pinref part="C3" gate="G$1" pin="1"/>
 <pinref part="+3V7" gate="G$1" pin="+3V3"/>
 </segment>
 <segment>
-<pinref part="R22" gate="G$1" pin="2"/>
+<pinref part="R16" gate="G$1" pin="2"/>
 <pinref part="+3V9" gate="G$1" pin="+3V3"/>
 </segment>
 <segment>
-<pinref part="R21" gate="G$1" pin="2"/>
+<pinref part="R15" gate="G$1" pin="2"/>
 <pinref part="+3V8" gate="G$1" pin="+3V3"/>
 </segment>
 </net>
 <net name="N$3" class="0">
 <segment>
-<pinref part="IC4" gate="G$1" pin="DIN"/>
+<pinref part="IC6" gate="G$1" pin="DIN"/>
 <wire x1="116.84" y1="116.84" x2="116.84" y2="111.76" width="0.1524" layer="91"/>
 <wire x1="116.84" y1="111.76" x2="127" y2="111.76" width="0.1524" layer="91"/>
-<pinref part="IC1" gate="C" pin="O"/>
+<pinref part="IC5" gate="C" pin="O"/>
 </segment>
 </net>
 <net name="N$4" class="0">
 <segment>
-<pinref part="IC4" gate="G$1" pin="RESET"/>
-<pinref part="IC1" gate="B" pin="O"/>
+<pinref part="IC6" gate="G$1" pin="RESET"/>
+<pinref part="IC5" gate="B" pin="O"/>
 <wire x1="116.84" y1="106.68" x2="127" y2="106.68" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="RSSI" class="0">
 <segment>
-<pinref part="IC4" gate="G$1" pin="RSSI"/>
-<pinref part="R1" gate="G$1" pin="2"/>
+<pinref part="IC6" gate="G$1" pin="RSSI"/>
+<pinref part="R17" gate="G$1" pin="2"/>
 <wire x1="127" y1="104.14" x2="116.84" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="116.84" y1="104.14" x2="116.84" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="116.84" y1="96.52" x2="114.3" y2="96.52" width="0.1524" layer="91"/>
@@ -3829,7 +3825,7 @@ Thru-hole RA Female Mini-B USB Connector 4UConnector: 18732&lt;/p&gt;
 </net>
 <net name="N$6" class="0">
 <segment>
-<pinref part="R1" gate="G$1" pin="1"/>
+<pinref part="R17" gate="G$1" pin="1"/>
 <pinref part="RSSI" gate="G$1" pin="A"/>
 </segment>
 </net>
@@ -3837,28 +3833,28 @@ Thru-hole RA Female Mini-B USB Connector 4UConnector: 18732&lt;/p&gt;
 <segment>
 <wire x1="116.84" y1="86.36" x2="119.38" y2="86.36" width="0.1524" layer="91"/>
 <wire x1="119.38" y1="86.36" x2="119.38" y2="96.52" width="0.1524" layer="91"/>
-<pinref part="IC4" gate="G$1" pin="DTR"/>
+<pinref part="IC6" gate="G$1" pin="DTR"/>
 <wire x1="119.38" y1="96.52" x2="127" y2="96.52" width="0.1524" layer="91"/>
-<pinref part="IC1" gate="A" pin="O"/>
+<pinref part="IC5" gate="A" pin="O"/>
 </segment>
 </net>
 <net name="N$8" class="0">
 <segment>
-<pinref part="IC4" gate="G$1" pin="RTS"/>
+<pinref part="IC6" gate="G$1" pin="RTS"/>
 <wire x1="167.64" y1="106.68" x2="170.18" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="170.18" y1="106.68" x2="170.18" y2="121.92" width="0.1524" layer="91"/>
 <wire x1="170.18" y1="121.92" x2="172.72" y2="121.92" width="0.1524" layer="91"/>
-<pinref part="IC1" gate="D" pin="O"/>
+<pinref part="IC5" gate="D" pin="O"/>
 </segment>
 </net>
 <net name="RESET" class="0">
 <segment>
 <wire x1="96.52" y1="106.68" x2="88.9" y2="106.68" width="0.1524" layer="91"/>
 <label x="88.9" y="106.68" size="1.778" layer="95"/>
-<pinref part="IC1" gate="B" pin="I"/>
+<pinref part="IC5" gate="B" pin="I"/>
 </segment>
 <segment>
-<pinref part="IC8" gate="G$1" pin="PD4(ICP1/ADC8)"/>
+<pinref part="IC7" gate="G$1" pin="PD4(ICP1/ADC8)"/>
 <wire x1="116.84" y1="-10.16" x2="127" y2="-10.16" width="0.1524" layer="91"/>
 <label x="121.92" y="-10.16" size="1.778" layer="95"/>
 </segment>
@@ -3867,56 +3863,56 @@ Thru-hole RA Female Mini-B USB Connector 4UConnector: 18732&lt;/p&gt;
 <segment>
 <wire x1="96.52" y1="86.36" x2="88.9" y2="86.36" width="0.1524" layer="91"/>
 <label x="88.9" y="86.36" size="1.778" layer="95"/>
-<pinref part="IC1" gate="A" pin="I"/>
+<pinref part="IC5" gate="A" pin="I"/>
 </segment>
 <segment>
-<pinref part="IC8" gate="G$1" pin="PD6(T1/ADC9/!OC4D)"/>
+<pinref part="IC7" gate="G$1" pin="PD6(T1/ADC9/!OC4D)"/>
 <wire x1="116.84" y1="-5.08" x2="127" y2="-5.08" width="0.1524" layer="91"/>
 <label x="121.92" y="-5.08" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="RTS" class="0">
 <segment>
-<pinref part="IC1" gate="D" pin="I"/>
+<pinref part="IC5" gate="D" pin="I"/>
 <wire x1="193.04" y1="121.92" x2="198.12" y2="121.92" width="0.1524" layer="91"/>
 <label x="193.04" y="121.92" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="IC8" gate="G$1" pin="PB4(ADC11)"/>
+<pinref part="IC7" gate="G$1" pin="PB4(ADC11)"/>
 <wire x1="116.84" y1="12.7" x2="127" y2="12.7" width="0.1524" layer="91"/>
 <label x="121.92" y="12.7" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="CTS" class="0">
 <segment>
-<pinref part="IC4" gate="G$1" pin="CTS"/>
+<pinref part="IC6" gate="G$1" pin="CTS"/>
 <wire x1="167.64" y1="96.52" x2="198.12" y2="96.52" width="0.1524" layer="91"/>
 <label x="193.04" y="96.52" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="IC8" gate="G$1" pin="PD7(OC4D/ADC10/T0)"/>
+<pinref part="IC7" gate="G$1" pin="PD7(OC4D/ADC10/T0)"/>
 <wire x1="116.84" y1="-2.54" x2="127" y2="-2.54" width="0.1524" layer="91"/>
 <label x="121.92" y="-2.54" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="+12V" class="0">
 <segment>
-<pinref part="IC2" gate="G$1" pin="IN"/>
+<pinref part="IC3" gate="G$1" pin="IN"/>
 <junction x="294.64" y="48.26"/>
 <wire x1="294.64" y1="48.26" x2="299.72" y2="48.26" width="0.1524" layer="91"/>
-<pinref part="C2" gate="G$1" pin="+"/>
+<pinref part="C1" gate="G$1" pin="+"/>
 <wire x1="294.64" y1="45.72" x2="294.64" y2="48.26" width="0.1524" layer="91"/>
 <pinref part="P+3" gate="1" pin="+12V"/>
 <wire x1="294.64" y1="50.8" x2="294.64" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="IC3" gate="G$1" pin="IN"/>
+<pinref part="IC4" gate="G$1" pin="IN"/>
 <wire x1="299.72" y1="17.78" x2="294.64" y2="17.78" width="0.1524" layer="91"/>
 <pinref part="P+4" gate="1" pin="+12V"/>
 <wire x1="294.64" y1="20.32" x2="294.64" y2="17.78" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="D1" gate="D1" pin="C"/>
+<pinref part="D7" gate="D1" pin="C"/>
 <pinref part="P+2" gate="1" pin="+12V"/>
 <wire x1="279.4" y1="48.26" x2="284.48" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="284.48" y1="48.26" x2="284.48" y2="50.8" width="0.1524" layer="91"/>
@@ -3924,23 +3920,23 @@ Thru-hole RA Female Mini-B USB Connector 4UConnector: 18732&lt;/p&gt;
 </net>
 <net name="+5V" class="0">
 <segment>
-<pinref part="IC2" gate="G$1" pin="OUT"/>
+<pinref part="IC3" gate="G$1" pin="OUT"/>
 <wire x1="320.04" y1="48.26" x2="314.96" y2="48.26" width="0.1524" layer="91"/>
 <junction x="320.04" y="48.26"/>
-<pinref part="C3" gate="G$1" pin="+"/>
+<pinref part="C2" gate="G$1" pin="+"/>
 <wire x1="320.04" y1="45.72" x2="320.04" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="330.2" y1="48.26" x2="320.04" y2="48.26" width="0.1524" layer="91"/>
 <pinref part="P+1" gate="1" pin="+5V"/>
 <wire x1="330.2" y1="50.8" x2="330.2" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="IC5" gate="A" pin="VCC"/>
+<pinref part="IC1" gate="A" pin="VCC"/>
 <pinref part="P+10" gate="1" pin="+5V"/>
 <wire x1="-20.32" y1="68.58" x2="-20.32" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="-20.32" y1="66.04" x2="-17.78" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="IC6" gate="G$1" pin="VDD"/>
+<pinref part="IC2" gate="G$1" pin="VDD"/>
 <wire x1="-17.78" y1="27.94" x2="-17.78" y2="22.86" width="0.1524" layer="91"/>
 <wire x1="-17.78" y1="22.86" x2="-15.24" y2="22.86" width="0.1524" layer="91"/>
 <wire x1="-22.86" y1="27.94" x2="-20.32" y2="27.94" width="0.1524" layer="91"/>
@@ -3948,23 +3944,23 @@ Thru-hole RA Female Mini-B USB Connector 4UConnector: 18732&lt;/p&gt;
 <wire x1="-20.32" y1="27.94" x2="-17.78" y2="27.94" width="0.1524" layer="91"/>
 <wire x1="-20.32" y1="27.94" x2="-20.32" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="P+11" gate="1" pin="+5V"/>
-<pinref part="R8" gate="G$1" pin="2"/>
+<pinref part="R10" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<pinref part="D2" gate="G$1" pin="A"/>
+<pinref part="D1" gate="G$1" pin="A"/>
 <pinref part="P+6" gate="1" pin="+5V"/>
 </segment>
 <segment>
-<pinref part="D4" gate="G$1" pin="A"/>
+<pinref part="D3" gate="G$1" pin="A"/>
 <pinref part="P+8" gate="1" pin="+5V"/>
 </segment>
 <segment>
-<pinref part="D6" gate="G$1" pin="A"/>
+<pinref part="D5" gate="G$1" pin="A"/>
 <pinref part="P+9" gate="1" pin="+5V"/>
 </segment>
 <segment>
 <pinref part="P+13" gate="1" pin="+5V"/>
-<pinref part="IC8" gate="G$1" pin="AVCC1"/>
+<pinref part="IC7" gate="G$1" pin="AVCC1"/>
 <wire x1="55.88" y1="40.64" x2="55.88" y2="38.1" width="0.1524" layer="91"/>
 <wire x1="55.88" y1="38.1" x2="55.88" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="55.88" y1="35.56" x2="55.88" y2="33.02" width="0.1524" layer="91"/>
@@ -3974,45 +3970,45 @@ Thru-hole RA Female Mini-B USB Connector 4UConnector: 18732&lt;/p&gt;
 <junction x="55.88" y="35.56"/>
 <junction x="55.88" y="38.1"/>
 <junction x="55.88" y="40.64"/>
-<pinref part="IC8" gate="G$1" pin="VCC"/>
+<pinref part="IC7" gate="G$1" pin="VCC"/>
 <wire x1="68.58" y1="40.64" x2="55.88" y2="40.64" width="0.1524" layer="91"/>
-<pinref part="IC8" gate="G$1" pin="VCC1"/>
+<pinref part="IC7" gate="G$1" pin="VCC1"/>
 <wire x1="68.58" y1="38.1" x2="55.88" y2="38.1" width="0.1524" layer="91"/>
-<pinref part="IC8" gate="G$1" pin="UVCC"/>
+<pinref part="IC7" gate="G$1" pin="UVCC"/>
 <wire x1="68.58" y1="35.56" x2="55.88" y2="35.56" width="0.1524" layer="91"/>
-<pinref part="IC8" gate="G$1" pin="AVCC"/>
+<pinref part="IC7" gate="G$1" pin="AVCC"/>
 <wire x1="68.58" y1="33.02" x2="55.88" y2="33.02" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="R3" gate="G$1" pin="2"/>
+<pinref part="R18" gate="G$1" pin="2"/>
 <pinref part="P+14" gate="1" pin="+5V"/>
 </segment>
 <segment>
-<pinref part="JP1" gate="G$1" pin="VTG"/>
+<pinref part="JP4" gate="G$1" pin="VTG"/>
 <pinref part="P+15" gate="1" pin="+5V"/>
 <wire x1="165.1" y1="22.86" x2="157.48" y2="22.86" width="0.1524" layer="91"/>
 <wire x1="157.48" y1="22.86" x2="157.48" y2="25.4" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="JP6" gate="G$1" pin="1"/>
+<pinref part="JP2" gate="G$1" pin="1"/>
 <pinref part="P+7" gate="1" pin="+5V"/>
 <wire x1="68.58" y1="109.22" x2="60.96" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="60.96" y1="109.22" x2="60.96" y2="111.76" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="P+5" gate="1" pin="+5V"/>
-<pinref part="R7" gate="G$1" pin="2"/>
+<pinref part="R14" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<pinref part="C6" gate="G$1" pin="1"/>
+<pinref part="C4" gate="G$1" pin="1"/>
 <pinref part="P+12" gate="1" pin="+5V"/>
 </segment>
 <segment>
-<pinref part="C7" gate="G$1" pin="1"/>
+<pinref part="C5" gate="G$1" pin="1"/>
 <pinref part="P+16" gate="1" pin="+5V"/>
 </segment>
 <segment>
-<pinref part="R11" gate="G$1" pin="2"/>
+<pinref part="R13" gate="G$1" pin="2"/>
 <pinref part="P+17" gate="1" pin="+5V"/>
 <wire x1="35.56" y1="2.54" x2="35.56" y2="5.08" width="0.1524" layer="91"/>
 <wire x1="35.56" y1="5.08" x2="30.48" y2="5.08" width="0.1524" layer="91"/>
@@ -4020,7 +4016,7 @@ Thru-hole RA Female Mini-B USB Connector 4UConnector: 18732&lt;/p&gt;
 <junction x="30.48" y="5.08"/>
 <pinref part="R12" gate="G$1" pin="2"/>
 <wire x1="30.48" y1="2.54" x2="30.48" y2="5.08" width="0.1524" layer="91"/>
-<pinref part="R19" gate="G$1" pin="2"/>
+<pinref part="R11" gate="G$1" pin="2"/>
 <wire x1="25.4" y1="2.54" x2="25.4" y2="5.08" width="0.1524" layer="91"/>
 <wire x1="25.4" y1="5.08" x2="30.48" y2="5.08" width="0.1524" layer="91"/>
 </segment>
@@ -4030,113 +4026,113 @@ Thru-hole RA Female Mini-B USB Connector 4UConnector: 18732&lt;/p&gt;
 <wire x1="160.02" y1="45.72" x2="160.02" y2="58.42" width="0.1524" layer="91"/>
 <junction x="160.02" y="58.42"/>
 <wire x1="160.02" y1="58.42" x2="160.02" y2="60.96" width="0.1524" layer="91"/>
-<pinref part="R20" gate="G$1" pin="2"/>
+<pinref part="R19" gate="G$1" pin="2"/>
 <wire x1="162.56" y1="58.42" x2="160.02" y2="58.42" width="0.1524" layer="91"/>
-<pinref part="JP2" gate="A" pin="2"/>
+<pinref part="JP3" gate="A" pin="2"/>
 </segment>
 </net>
 <net name="EN" class="0">
 <segment>
-<pinref part="JP5" gate="A" pin="2"/>
+<pinref part="JP1" gate="A" pin="2"/>
 <wire x1="68.58" y1="121.92" x2="55.88" y2="121.92" width="0.1524" layer="91"/>
 <label x="55.88" y="121.92" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="IC8" gate="G$1" pin="PB7(OC0A/OC1C/RTS)"/>
+<pinref part="IC7" gate="G$1" pin="PB7(OC0A/OC1C/RTS)"/>
 <wire x1="116.84" y1="20.32" x2="127" y2="20.32" width="0.1524" layer="91"/>
 <label x="121.92" y="20.32" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SCL" class="0">
 <segment>
-<pinref part="IC5" gate="A" pin="SCL"/>
+<pinref part="IC1" gate="A" pin="SCL"/>
 <wire x1="-17.78" y1="58.42" x2="-25.4" y2="58.42" width="0.1524" layer="91"/>
 <label x="-25.4" y="58.42" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="IC6" gate="G$1" pin="SCL"/>
+<pinref part="IC2" gate="G$1" pin="SCL"/>
 <wire x1="-15.24" y1="0" x2="-22.86" y2="0" width="0.1524" layer="91"/>
 <label x="-22.86" y="0" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="IC8" gate="G$1" pin="PD0(INT0/OC0B/SCL)"/>
+<pinref part="IC7" gate="G$1" pin="PD0(INT0/OC0B/SCL)"/>
 <wire x1="116.84" y1="-20.32" x2="127" y2="-20.32" width="0.1524" layer="91"/>
 <label x="121.92" y="-20.32" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SDA" class="0">
 <segment>
-<pinref part="IC5" gate="A" pin="SDA"/>
+<pinref part="IC1" gate="A" pin="SDA"/>
 <wire x1="-17.78" y1="60.96" x2="-25.4" y2="60.96" width="0.1524" layer="91"/>
 <label x="-25.4" y="60.96" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="IC6" gate="G$1" pin="SDA"/>
+<pinref part="IC2" gate="G$1" pin="SDA"/>
 <wire x1="-15.24" y1="-2.54" x2="-22.86" y2="-2.54" width="0.1524" layer="91"/>
 <label x="-22.86" y="-2.54" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="IC8" gate="G$1" pin="PD1(INT1/SDA)"/>
+<pinref part="IC7" gate="G$1" pin="PD1(INT1/SDA)"/>
 <wire x1="116.84" y1="-17.78" x2="127" y2="-17.78" width="0.1524" layer="91"/>
 <label x="121.92" y="-17.78" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="CH1" class="0">
 <segment>
-<pinref part="R13" gate="G$1" pin="1"/>
+<pinref part="R2" gate="G$1" pin="1"/>
 <wire x1="-7.62" y1="187.96" x2="-10.16" y2="187.96" width="0.1524" layer="91"/>
 <label x="-15.24" y="187.96" size="1.778" layer="95"/>
 <junction x="-10.16" y="187.96"/>
 <wire x1="-10.16" y1="187.96" x2="-15.24" y2="187.96" width="0.1524" layer="91"/>
-<pinref part="R14" gate="G$1" pin="1"/>
+<pinref part="R3" gate="G$1" pin="1"/>
 <wire x1="-7.62" y1="185.42" x2="-10.16" y2="185.42" width="0.1524" layer="91"/>
 <wire x1="-10.16" y1="185.42" x2="-10.16" y2="187.96" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="IC5" gate="A" pin="CH1+"/>
+<pinref part="IC1" gate="A" pin="CH1+"/>
 <wire x1="12.7" y1="66.04" x2="22.86" y2="66.04" width="0.1524" layer="91"/>
 <label x="17.78" y="66.04" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="CH2" class="0">
 <segment>
-<pinref part="R15" gate="G$1" pin="1"/>
+<pinref part="R5" gate="G$1" pin="1"/>
 <wire x1="-7.62" y1="142.24" x2="-10.16" y2="142.24" width="0.1524" layer="91"/>
 <label x="-15.24" y="142.24" size="1.778" layer="95"/>
 <junction x="-10.16" y="142.24"/>
 <wire x1="-10.16" y1="142.24" x2="-15.24" y2="142.24" width="0.1524" layer="91"/>
-<pinref part="R16" gate="G$1" pin="1"/>
+<pinref part="R6" gate="G$1" pin="1"/>
 <wire x1="-7.62" y1="139.7" x2="-10.16" y2="139.7" width="0.1524" layer="91"/>
 <wire x1="-10.16" y1="139.7" x2="-10.16" y2="142.24" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="IC5" gate="A" pin="CH2+"/>
+<pinref part="IC1" gate="A" pin="CH2+"/>
 <wire x1="12.7" y1="60.96" x2="22.86" y2="60.96" width="0.1524" layer="91"/>
 <label x="17.78" y="60.96" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="CH3" class="0">
 <segment>
-<pinref part="R18" gate="G$1" pin="1"/>
+<pinref part="R8" gate="G$1" pin="1"/>
 <wire x1="-7.62" y1="96.52" x2="-10.16" y2="96.52" width="0.1524" layer="91"/>
 <label x="-15.24" y="96.52" size="1.778" layer="95"/>
 <junction x="-10.16" y="96.52"/>
 <wire x1="-10.16" y1="96.52" x2="-15.24" y2="96.52" width="0.1524" layer="91"/>
-<pinref part="R17" gate="G$1" pin="1"/>
+<pinref part="R9" gate="G$1" pin="1"/>
 <wire x1="-7.62" y1="93.98" x2="-10.16" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="-10.16" y1="93.98" x2="-10.16" y2="96.52" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="IC5" gate="A" pin="CH3+"/>
+<pinref part="IC1" gate="A" pin="CH3+"/>
 <wire x1="12.7" y1="55.88" x2="22.86" y2="55.88" width="0.1524" layer="91"/>
 <label x="17.78" y="55.88" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$11" class="0">
 <segment>
-<pinref part="IC6" gate="G$1" pin="!RESET"/>
+<pinref part="IC2" gate="G$1" pin="!RESET"/>
 <wire x1="-22.86" y1="17.78" x2="-15.24" y2="17.78" width="0.1524" layer="91"/>
-<pinref part="R8" gate="G$1" pin="1"/>
+<pinref part="R10" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$12" class="0">
@@ -4158,7 +4154,7 @@ Thru-hole RA Female Mini-B USB Connector 4UConnector: 18732&lt;/p&gt;
 <label x="-15.24" y="205.74" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="IC6" gate="G$1" pin="GPA0"/>
+<pinref part="IC2" gate="G$1" pin="GPA0"/>
 <wire x1="10.16" y1="22.86" x2="15.24" y2="22.86" width="0.1524" layer="91"/>
 <label x="12.7" y="22.86" size="1.778" layer="95"/>
 </segment>
@@ -4166,7 +4162,7 @@ Thru-hole RA Female Mini-B USB Connector 4UConnector: 18732&lt;/p&gt;
 <net name="SN1" class="0">
 <segment>
 <pinref part="JK1" gate="G$1" pin="TSH"/>
-<pinref part="R4" gate="G$1" pin="2"/>
+<pinref part="R1" gate="G$1" pin="2"/>
 <wire x1="-7.62" y1="193.04" x2="-5.08" y2="193.04" width="0.1524" layer="91"/>
 <junction x="-5.08" y="193.04"/>
 <wire x1="-5.08" y1="193.04" x2="7.62" y2="193.04" width="0.1524" layer="91"/>
@@ -4175,7 +4171,7 @@ Thru-hole RA Female Mini-B USB Connector 4UConnector: 18732&lt;/p&gt;
 <label x="-15.24" y="198.12" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="IC6" gate="G$1" pin="GPB0"/>
+<pinref part="IC2" gate="G$1" pin="GPB0"/>
 <wire x1="10.16" y1="0" x2="15.24" y2="0" width="0.1524" layer="91"/>
 <label x="12.7" y="0" size="1.778" layer="95"/>
 </segment>
@@ -4183,14 +4179,14 @@ Thru-hole RA Female Mini-B USB Connector 4UConnector: 18732&lt;/p&gt;
 <net name="N$13" class="0">
 <segment>
 <pinref part="Q1" gate="G$1" pin="S"/>
-<pinref part="D2" gate="G$1" pin="C"/>
+<pinref part="D1" gate="G$1" pin="C"/>
 <wire x1="-2.54" y1="210.82" x2="-2.54" y2="208.28" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$14" class="0">
 <segment>
 <pinref part="Q2" gate="G$1" pin="S"/>
-<pinref part="D3" gate="G$1" pin="C"/>
+<pinref part="D2" gate="G$1" pin="C"/>
 <wire x1="5.08" y1="210.82" x2="5.08" y2="208.28" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -4201,7 +4197,7 @@ Thru-hole RA Female Mini-B USB Connector 4UConnector: 18732&lt;/p&gt;
 <label x="12.7" y="205.74" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="IC6" gate="G$1" pin="GPA1"/>
+<pinref part="IC2" gate="G$1" pin="GPA1"/>
 <wire x1="10.16" y1="20.32" x2="15.24" y2="20.32" width="0.1524" layer="91"/>
 <label x="12.7" y="20.32" size="1.778" layer="95"/>
 </segment>
@@ -4213,7 +4209,7 @@ Thru-hole RA Female Mini-B USB Connector 4UConnector: 18732&lt;/p&gt;
 <label x="-15.24" y="160.02" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="IC6" gate="G$1" pin="GPA2"/>
+<pinref part="IC2" gate="G$1" pin="GPA2"/>
 <wire x1="10.16" y1="17.78" x2="15.24" y2="17.78" width="0.1524" layer="91"/>
 <label x="12.7" y="17.78" size="1.778" layer="95"/>
 </segment>
@@ -4225,7 +4221,7 @@ Thru-hole RA Female Mini-B USB Connector 4UConnector: 18732&lt;/p&gt;
 <label x="12.7" y="160.02" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="IC6" gate="G$1" pin="GPA3"/>
+<pinref part="IC2" gate="G$1" pin="GPA3"/>
 <wire x1="10.16" y1="15.24" x2="15.24" y2="15.24" width="0.1524" layer="91"/>
 <label x="12.7" y="15.24" size="1.778" layer="95"/>
 </segment>
@@ -4237,7 +4233,7 @@ Thru-hole RA Female Mini-B USB Connector 4UConnector: 18732&lt;/p&gt;
 <label x="-15.24" y="114.3" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="IC6" gate="G$1" pin="GPA4"/>
+<pinref part="IC2" gate="G$1" pin="GPA4"/>
 <wire x1="10.16" y1="12.7" x2="15.24" y2="12.7" width="0.1524" layer="91"/>
 <label x="12.7" y="12.7" size="1.778" layer="95"/>
 </segment>
@@ -4249,7 +4245,7 @@ Thru-hole RA Female Mini-B USB Connector 4UConnector: 18732&lt;/p&gt;
 <label x="12.7" y="114.3" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="IC6" gate="G$1" pin="GPA5"/>
+<pinref part="IC2" gate="G$1" pin="GPA5"/>
 <wire x1="10.16" y1="10.16" x2="15.24" y2="10.16" width="0.1524" layer="91"/>
 <label x="12.7" y="10.16" size="1.778" layer="95"/>
 </segment>
@@ -4257,7 +4253,7 @@ Thru-hole RA Female Mini-B USB Connector 4UConnector: 18732&lt;/p&gt;
 <net name="SN2" class="0">
 <segment>
 <pinref part="JK2" gate="G$1" pin="TSH"/>
-<pinref part="R5" gate="G$1" pin="2"/>
+<pinref part="R4" gate="G$1" pin="2"/>
 <wire x1="-7.62" y1="147.32" x2="-5.08" y2="147.32" width="0.1524" layer="91"/>
 <junction x="-5.08" y="147.32"/>
 <wire x1="-5.08" y1="147.32" x2="7.62" y2="147.32" width="0.1524" layer="91"/>
@@ -4266,7 +4262,7 @@ Thru-hole RA Female Mini-B USB Connector 4UConnector: 18732&lt;/p&gt;
 <label x="-15.24" y="152.4" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="IC6" gate="G$1" pin="GPB1"/>
+<pinref part="IC2" gate="G$1" pin="GPB1"/>
 <wire x1="10.16" y1="-2.54" x2="15.24" y2="-2.54" width="0.1524" layer="91"/>
 <label x="12.7" y="-2.54" size="1.778" layer="95"/>
 </segment>
@@ -4274,7 +4270,7 @@ Thru-hole RA Female Mini-B USB Connector 4UConnector: 18732&lt;/p&gt;
 <net name="SN3" class="0">
 <segment>
 <pinref part="JK3" gate="G$1" pin="TSH"/>
-<pinref part="R6" gate="G$1" pin="2"/>
+<pinref part="R7" gate="G$1" pin="2"/>
 <wire x1="-7.62" y1="101.6" x2="-5.08" y2="101.6" width="0.1524" layer="91"/>
 <junction x="-5.08" y="101.6"/>
 <wire x1="-5.08" y1="101.6" x2="7.62" y2="101.6" width="0.1524" layer="91"/>
@@ -4283,7 +4279,7 @@ Thru-hole RA Female Mini-B USB Connector 4UConnector: 18732&lt;/p&gt;
 <label x="-15.24" y="106.68" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="IC6" gate="G$1" pin="GPB2"/>
+<pinref part="IC2" gate="G$1" pin="GPB2"/>
 <wire x1="10.16" y1="-5.08" x2="15.24" y2="-5.08" width="0.1524" layer="91"/>
 <label x="12.7" y="-5.08" size="1.778" layer="95"/>
 </segment>
@@ -4303,14 +4299,14 @@ Thru-hole RA Female Mini-B USB Connector 4UConnector: 18732&lt;/p&gt;
 <net name="N$16" class="0">
 <segment>
 <pinref part="Q3" gate="G$1" pin="S"/>
-<pinref part="D4" gate="G$1" pin="C"/>
+<pinref part="D3" gate="G$1" pin="C"/>
 <wire x1="-2.54" y1="165.1" x2="-2.54" y2="162.56" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$17" class="0">
 <segment>
 <pinref part="Q4" gate="G$1" pin="S"/>
-<pinref part="D5" gate="G$1" pin="C"/>
+<pinref part="D4" gate="G$1" pin="C"/>
 <wire x1="5.08" y1="165.1" x2="5.08" y2="162.56" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -4329,26 +4325,26 @@ Thru-hole RA Female Mini-B USB Connector 4UConnector: 18732&lt;/p&gt;
 <net name="N$19" class="0">
 <segment>
 <pinref part="Q5" gate="G$1" pin="S"/>
-<pinref part="D6" gate="G$1" pin="C"/>
+<pinref part="D5" gate="G$1" pin="C"/>
 <wire x1="-2.54" y1="119.38" x2="-2.54" y2="116.84" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$20" class="0">
 <segment>
 <pinref part="Q6" gate="G$1" pin="S"/>
-<pinref part="D7" gate="G$1" pin="C"/>
+<pinref part="D6" gate="G$1" pin="C"/>
 <wire x1="5.08" y1="119.38" x2="5.08" y2="116.84" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="RST" class="0">
 <segment>
-<pinref part="JP1" gate="G$1" pin="RST"/>
+<pinref part="JP4" gate="G$1" pin="RST"/>
 <wire x1="175.26" y1="17.78" x2="187.96" y2="17.78" width="0.1524" layer="91"/>
 <label x="182.88" y="17.78" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="IC8" gate="G$1" pin="/RESET"/>
-<pinref part="R3" gate="G$1" pin="1"/>
+<pinref part="IC7" gate="G$1" pin="/RESET"/>
+<pinref part="R18" gate="G$1" pin="1"/>
 <wire x1="66.04" y1="55.88" x2="66.04" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="66.04" y1="53.34" x2="68.58" y2="53.34" width="0.1524" layer="91"/>
 <junction x="66.04" y="53.34"/>
@@ -4358,22 +4354,22 @@ Thru-hole RA Female Mini-B USB Connector 4UConnector: 18732&lt;/p&gt;
 </net>
 <net name="N$24" class="0">
 <segment>
-<pinref part="IC8" gate="G$1" pin="UCAP"/>
-<pinref part="C1" gate="G$1" pin="1"/>
+<pinref part="IC7" gate="G$1" pin="UCAP"/>
+<pinref part="C7" gate="G$1" pin="1"/>
 <wire x1="68.58" y1="17.78" x2="66.04" y2="17.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$25" class="0">
 <segment>
-<pinref part="IC8" gate="G$1" pin="AREF"/>
+<pinref part="IC7" gate="G$1" pin="AREF"/>
 <pinref part="C8" gate="G$1" pin="1"/>
 <wire x1="66.04" y1="12.7" x2="68.58" y2="12.7" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$26" class="0">
 <segment>
-<pinref part="IC8" gate="G$1" pin="XTAL1"/>
-<pinref part="Q9" gate="G$1" pin="2"/>
+<pinref part="IC7" gate="G$1" pin="XTAL1"/>
+<pinref part="K1" gate="G$1" pin="2"/>
 <wire x1="68.58" y1="7.62" x2="66.04" y2="7.62" width="0.1524" layer="91"/>
 <wire x1="66.04" y1="7.62" x2="66.04" y2="5.08" width="0.1524" layer="91"/>
 <pinref part="C9" gate="G$1" pin="1"/>
@@ -4382,16 +4378,16 @@ Thru-hole RA Female Mini-B USB Connector 4UConnector: 18732&lt;/p&gt;
 </net>
 <net name="N$27" class="0">
 <segment>
-<pinref part="Q9" gate="G$1" pin="1"/>
+<pinref part="K1" gate="G$1" pin="1"/>
 <junction x="66.04" y="0"/>
-<pinref part="IC8" gate="G$1" pin="XTAL2"/>
+<pinref part="IC7" gate="G$1" pin="XTAL2"/>
 <wire x1="68.58" y1="0" x2="66.04" y2="0" width="0.1524" layer="91"/>
 <pinref part="C10" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="VBUS" class="0">
 <segment>
-<pinref part="IC8" gate="G$1" pin="VBUS"/>
+<pinref part="IC7" gate="G$1" pin="VBUS"/>
 <wire x1="68.58" y1="48.26" x2="55.88" y2="48.26" width="0.1524" layer="91"/>
 <label x="55.88" y="48.26" size="1.778" layer="95"/>
 </segment>
@@ -4404,78 +4400,78 @@ Thru-hole RA Female Mini-B USB Connector 4UConnector: 18732&lt;/p&gt;
 <net name="N$28" class="0">
 <segment>
 <pinref part="CN1" gate="G$1" pin="D+"/>
-<pinref part="R9" gate="G$1" pin="2"/>
+<pinref part="R20" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$29" class="0">
 <segment>
 <pinref part="CN1" gate="G$1" pin="D-"/>
-<pinref part="R10" gate="G$1" pin="2"/>
+<pinref part="R21" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="D+" class="0">
 <segment>
-<pinref part="R9" gate="G$1" pin="1"/>
+<pinref part="R20" gate="G$1" pin="1"/>
 <wire x1="185.42" y1="-10.16" x2="187.96" y2="-10.16" width="0.1524" layer="91"/>
 <label x="185.42" y="-10.16" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="IC8" gate="G$1" pin="D+"/>
+<pinref part="IC7" gate="G$1" pin="D+"/>
 <wire x1="68.58" y1="22.86" x2="55.88" y2="22.86" width="0.1524" layer="91"/>
 <label x="55.88" y="22.86" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="D-" class="0">
 <segment>
-<pinref part="R10" gate="G$1" pin="1"/>
+<pinref part="R21" gate="G$1" pin="1"/>
 <wire x1="185.42" y1="-12.7" x2="187.96" y2="-12.7" width="0.1524" layer="91"/>
 <label x="185.42" y="-12.7" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="IC8" gate="G$1" pin="D-"/>
+<pinref part="IC7" gate="G$1" pin="D-"/>
 <wire x1="68.58" y1="25.4" x2="55.88" y2="25.4" width="0.1524" layer="91"/>
 <label x="55.88" y="25.4" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SCK" class="0">
 <segment>
-<pinref part="IC8" gate="G$1" pin="PB1(SCK)"/>
+<pinref part="IC7" gate="G$1" pin="PB1(SCK)"/>
 <wire x1="116.84" y1="5.08" x2="127" y2="5.08" width="0.1524" layer="91"/>
 <label x="121.92" y="5.08" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP1" gate="G$1" pin="SCK"/>
+<pinref part="JP4" gate="G$1" pin="SCK"/>
 <wire x1="175.26" y1="20.32" x2="187.96" y2="20.32" width="0.1524" layer="91"/>
 <label x="182.88" y="20.32" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="MOSI" class="0">
 <segment>
-<pinref part="IC8" gate="G$1" pin="PB2(PDI/MOSI)"/>
+<pinref part="IC7" gate="G$1" pin="PB2(PDI/MOSI)"/>
 <wire x1="116.84" y1="7.62" x2="127" y2="7.62" width="0.1524" layer="91"/>
 <label x="121.92" y="7.62" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP1" gate="G$1" pin="MOSI"/>
+<pinref part="JP4" gate="G$1" pin="MOSI"/>
 <wire x1="165.1" y1="20.32" x2="149.86" y2="20.32" width="0.1524" layer="91"/>
 <label x="149.86" y="20.32" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="MISO" class="0">
 <segment>
-<pinref part="IC8" gate="G$1" pin="PB3(PDO/MISO)"/>
+<pinref part="IC7" gate="G$1" pin="PB3(PDO/MISO)"/>
 <wire x1="116.84" y1="10.16" x2="127" y2="10.16" width="0.1524" layer="91"/>
 <label x="121.92" y="10.16" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP1" gate="G$1" pin="MISO"/>
+<pinref part="JP4" gate="G$1" pin="MISO"/>
 <wire x1="175.26" y1="22.86" x2="187.96" y2="22.86" width="0.1524" layer="91"/>
 <label x="182.88" y="22.86" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$30" class="0">
 <segment>
-<pinref part="R13" gate="G$1" pin="2"/>
+<pinref part="R2" gate="G$1" pin="2"/>
 <pinref part="JK1" gate="G$1" pin="RING"/>
 <wire x1="7.62" y1="187.96" x2="2.54" y2="187.96" width="0.1524" layer="91"/>
 </segment>
@@ -4483,46 +4479,46 @@ Thru-hole RA Female Mini-B USB Connector 4UConnector: 18732&lt;/p&gt;
 <net name="N$32" class="0">
 <segment>
 <pinref part="JK2" gate="G$1" pin="RING"/>
-<pinref part="R15" gate="G$1" pin="2"/>
+<pinref part="R5" gate="G$1" pin="2"/>
 <wire x1="2.54" y1="142.24" x2="7.62" y2="142.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$34" class="0">
 <segment>
-<pinref part="R18" gate="G$1" pin="2"/>
+<pinref part="R8" gate="G$1" pin="2"/>
 <pinref part="JK3" gate="G$1" pin="RING"/>
 <wire x1="2.54" y1="96.52" x2="7.62" y2="96.52" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="TX" class="0">
 <segment>
-<pinref part="IC8" gate="G$1" pin="PD3(INT3/TXD1)"/>
+<pinref part="IC7" gate="G$1" pin="PD3(INT3/TXD1)"/>
 <wire x1="116.84" y1="-12.7" x2="127" y2="-12.7" width="0.1524" layer="91"/>
 <label x="121.92" y="-12.7" size="1.778" layer="95"/>
 </segment>
 <segment>
 <wire x1="96.52" y1="116.84" x2="93.98" y2="116.84" width="0.1524" layer="91"/>
 <label x="88.9" y="116.84" size="1.778" layer="95"/>
-<pinref part="IC1" gate="C" pin="I"/>
+<pinref part="IC5" gate="C" pin="I"/>
 <junction x="93.98" y="116.84"/>
 <wire x1="93.98" y1="116.84" x2="88.9" y2="116.84" width="0.1524" layer="91"/>
 <pinref part="TX" gate="G$1" pin="C"/>
 <wire x1="93.98" y1="134.62" x2="93.98" y2="116.84" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="JP5" gate="A" pin="3"/>
+<pinref part="JP1" gate="A" pin="3"/>
 <wire x1="68.58" y1="119.38" x2="55.88" y2="119.38" width="0.1524" layer="91"/>
 <label x="55.88" y="119.38" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="RX" class="0">
 <segment>
-<pinref part="IC8" gate="G$1" pin="PD2(INT2/RXD1)"/>
+<pinref part="IC7" gate="G$1" pin="PD2(INT2/RXD1)"/>
 <wire x1="116.84" y1="-15.24" x2="127" y2="-15.24" width="0.1524" layer="91"/>
 <label x="121.92" y="-15.24" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="IC4" gate="G$1" pin="DOUT"/>
+<pinref part="IC6" gate="G$1" pin="DOUT"/>
 <wire x1="127" y1="114.3" x2="119.38" y2="114.3" width="0.1524" layer="91"/>
 <wire x1="119.38" y1="114.3" x2="119.38" y2="124.46" width="0.1524" layer="91"/>
 <wire x1="119.38" y1="124.46" x2="106.68" y2="124.46" width="0.1524" layer="91"/>
@@ -4533,28 +4529,28 @@ Thru-hole RA Female Mini-B USB Connector 4UConnector: 18732&lt;/p&gt;
 <wire x1="106.68" y1="124.46" x2="106.68" y2="134.62" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="JP5" gate="A" pin="1"/>
+<pinref part="JP1" gate="A" pin="1"/>
 <wire x1="68.58" y1="124.46" x2="55.88" y2="124.46" width="0.1524" layer="91"/>
 <label x="55.88" y="124.46" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$2" class="0">
 <segment>
-<pinref part="R7" gate="G$1" pin="1"/>
+<pinref part="R14" gate="G$1" pin="1"/>
 <pinref part="PWR" gate="G$1" pin="A"/>
 </segment>
 </net>
 <net name="N$1" class="0">
 <segment>
-<pinref part="X2" gate="G$1" pin="1"/>
-<pinref part="D1" gate="D1" pin="A"/>
+<pinref part="X1" gate="G$1" pin="1"/>
+<pinref part="D7" gate="D1" pin="A"/>
 <wire x1="266.7" y1="48.26" x2="274.32" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$5" class="0">
 <segment>
-<pinref part="R11" gate="G$1" pin="1"/>
-<pinref part="PWR1" gate="G$1" pin="A"/>
+<pinref part="R13" gate="G$1" pin="1"/>
+<pinref part="PWR3" gate="G$1" pin="A"/>
 <wire x1="35.56" y1="-7.62" x2="35.56" y2="-12.7" width="0.1524" layer="91"/>
 <wire x1="35.56" y1="-12.7" x2="22.86" y2="-12.7" width="0.1524" layer="91"/>
 </segment>
@@ -4569,29 +4565,29 @@ Thru-hole RA Female Mini-B USB Connector 4UConnector: 18732&lt;/p&gt;
 </net>
 <net name="N$23" class="0">
 <segment>
-<pinref part="PWR3" gate="G$1" pin="A"/>
-<pinref part="R19" gate="G$1" pin="1"/>
+<pinref part="PWR1" gate="G$1" pin="A"/>
+<pinref part="R11" gate="G$1" pin="1"/>
 <wire x1="22.86" y1="-7.62" x2="25.4" y2="-7.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$33" class="0">
 <segment>
 <pinref part="PWR2" gate="G$1" pin="C"/>
-<pinref part="IC6" gate="G$1" pin="GPB4"/>
+<pinref part="IC2" gate="G$1" pin="GPB4"/>
 <wire x1="15.24" y1="-10.16" x2="10.16" y2="-10.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="DATA" class="0">
 <segment>
-<pinref part="R20" gate="G$1" pin="1"/>
+<pinref part="R19" gate="G$1" pin="1"/>
 <wire x1="162.56" y1="48.26" x2="170.18" y2="48.26" width="0.1524" layer="91"/>
-<pinref part="JP2" gate="A" pin="1"/>
+<pinref part="JP3" gate="A" pin="1"/>
 <junction x="170.18" y="48.26"/>
 <wire x1="170.18" y1="48.26" x2="180.34" y2="48.26" width="0.1524" layer="91"/>
 <label x="175.26" y="48.26" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="IC8" gate="G$1" pin="PB5(OC1A/ADC12/!OC4B)"/>
+<pinref part="IC7" gate="G$1" pin="PB5(OC1A/ADC12/!OC4B)"/>
 <wire x1="116.84" y1="15.24" x2="127" y2="15.24" width="0.1524" layer="91"/>
 <label x="121.92" y="15.24" size="1.778" layer="95"/>
 </segment>
@@ -4599,40 +4595,40 @@ Thru-hole RA Female Mini-B USB Connector 4UConnector: 18732&lt;/p&gt;
 <net name="N$36" class="0">
 <segment>
 <pinref part="TX" gate="G$1" pin="A"/>
-<pinref part="R21" gate="G$1" pin="1"/>
+<pinref part="R15" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$37" class="0">
 <segment>
 <pinref part="RX" gate="G$1" pin="A"/>
-<pinref part="R22" gate="G$1" pin="1"/>
+<pinref part="R16" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="RXLED" class="0">
 <segment>
-<pinref part="IC8" gate="G$1" pin="PB0(SS)"/>
+<pinref part="IC7" gate="G$1" pin="PB0(SS)"/>
 <wire x1="116.84" y1="2.54" x2="127" y2="2.54" width="0.1524" layer="91"/>
 <label x="121.92" y="2.54" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="TXLED" class="0">
 <segment>
-<pinref part="IC8" gate="G$1" pin="PD5(XCK/CTS)"/>
+<pinref part="IC7" gate="G$1" pin="PD5(XCK/CTS)"/>
 <wire x1="116.84" y1="-7.62" x2="127" y2="-7.62" width="0.1524" layer="91"/>
 <label x="121.92" y="-7.62" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$9" class="0">
 <segment>
-<pinref part="PWR1" gate="G$1" pin="C"/>
-<pinref part="IC6" gate="G$1" pin="GPB5"/>
+<pinref part="PWR3" gate="G$1" pin="C"/>
+<pinref part="IC2" gate="G$1" pin="GPB5"/>
 <wire x1="15.24" y1="-12.7" x2="10.16" y2="-12.7" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$10" class="0">
 <segment>
-<pinref part="PWR3" gate="G$1" pin="C"/>
-<pinref part="IC6" gate="G$1" pin="GPB3"/>
+<pinref part="PWR1" gate="G$1" pin="C"/>
+<pinref part="IC2" gate="G$1" pin="GPB3"/>
 <wire x1="15.24" y1="-7.62" x2="10.16" y2="-7.62" width="0.1524" layer="91"/>
 </segment>
 </net>
