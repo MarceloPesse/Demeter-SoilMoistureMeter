@@ -1,5 +1,5 @@
 version;4;4;http://eagleup.wordpress.com/;
-settings;C:/Program Files/EAGLE-5.11.0/models/;C:/Program Files/ImageMagick-6.8.0-Q8/convert.exe;C:/Program Files/ImageMagick-6.8.0-Q8/composite.exe;del;
+settings;C:/Documents and Settings/Pesse/Desktop/dev/Plataforma/Eagle/Models/;C:/Program Files/ImageMagick-6.8.0-Q8/convert.exe;C:/Program Files/ImageMagick-6.8.0-Q8/composite.exe;del;
 color;0x092356;0x133775;silver;white;
 images;C:/Documents and Settings/Pesse/Desktop/demeter/Hardware/PCB/mark_2/eagleUp/;eagleUp_demeter_v28-TSSOP;png;600;png;
 outline-line;4.000000;0.000000;86.000000;0.000000;1.600000;
@@ -152,6 +152,22 @@ package;C8;50.800;39.370;225;100nF;C0805K;-0.800;
 package;C9;31.115;31.750;90;22pF;C0805K;-0.800;
 package;C10;31.115;26.670;270;22pF;C0805K;-0.800;
 package;CN1;45.085;4.445;0;;USB-MINIB;0.800;
+<<<<<<< .mine
+package;D1;70.485;11.430;90;;SOD123;-0.800;
+package;D2;70.485;17.780;90;;SOD123;-0.800;
+package;D3;70.485;25.400;90;;SOD123;-0.800;
+package;D4;70.485;31.750;90;;SOD123;-0.800;
+package;D5;70.485;39.370;90;;SOD123;-0.800;
+package;D6;70.485;45.720;90;;SOD123;-0.800;
+package;D7;10.033;39.370;90;S1M;DO-214AC;-0.800;
+package;IC1;58.420;13.970;90;MCP3424;TSSOP14;0.800;
+package;IC2;58.420;38.735;270;MCP23017;SO28W;0.800;
+package;IC3;16.510;46.990;0;LM1117-5.0;DPACK;0.800;
+package;IC4;26.670;46.990;0;LM1117-3.3;DPACK;0.800;
+package;IC5;19.050;15.875;90;4050;SO16;-0.800;
+package;IC6;21.590;25.400;180;XBEE;XBEE-1;0.800;
+package;IC7;45.085;33.147;225;ATMEGA32U4;TQFP44;-0.800;
+=======
 package;D1;70.485;11.430;90;;SOD123;-0.800;
 package;D2;70.485;17.780;90;;SOD123;-0.800;
 package;D3;70.485;25.400;90;;SOD123;-0.800;
@@ -166,6 +182,7 @@ package;IC4;26.670;46.990;0;LM1117-3.3;DPACK;0.800;
 package;IC5;19.050;15.875;90;4050;SO16;-0.800;
 package;IC6;21.590;25.400;180;XBEE;XBEE-1;0.800;
 package;IC7;45.085;33.147;225;ATMEGA32U4;TQFP44;-0.800;
+>>>>>>> .r57
 package;JK1;86.360;13.970;180;;AUDIO-JACK;0.800;
 package;JK2;86.360;27.940;180;;AUDIO-JACK;0.800;
 package;JK3;86.360;41.910;180;;AUDIO-JACK;0.800;
