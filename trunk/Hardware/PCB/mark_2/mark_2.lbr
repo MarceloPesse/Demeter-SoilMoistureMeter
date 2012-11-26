@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.1">
+<eagle version="6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -44,8 +44,8 @@
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
@@ -158,6 +158,8 @@
 <pad name="20" x="11" y="20" drill="1.1" diameter="1.778"/>
 <text x="-8.89" y="2.54" size="0.4064" layer="25">&gt;Name</text>
 <text x="-8.89" y="1.27" size="0.4064" layer="27">&gt;Value</text>
+<wire x1="-12.25" y1="21.25" x2="-8.937" y2="24.171" width="0.2032" layer="21"/>
+<wire x1="12.25" y1="21.25" x2="8.937" y2="24.171" width="0.2032" layer="21"/>
 </package>
 <package name="XBEE-SILK">
 <wire x1="-5" y1="27.6" x2="5" y2="27.6" width="0.2032" layer="51"/>
@@ -619,8 +621,8 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <wire x1="-2.95" y1="-0.95" x2="2.95" y2="-0.95" width="0.1016" layer="21" curve="144.299363"/>
 <wire x1="-2.1" y1="2.25" x2="-2.1" y2="-2.2" width="0.1016" layer="51"/>
 <circle x="0" y="0" radius="3.1" width="0.1016" layer="51"/>
-<smd name="-" x="-2.4" y="0" dx="3" dy="1.4" layer="1"/>
-<smd name="+" x="2.4" y="0" dx="3" dy="1.4" layer="1"/>
+<smd name="-" x="-2.527" y="0" dx="3.254" dy="1.4" layer="1"/>
+<smd name="+" x="2.527" y="0" dx="3.254" dy="1.4" layer="1"/>
 <text x="-1.75" y="1" size="1.016" layer="25">&gt;NAME</text>
 <text x="-1.75" y="-1.975" size="1.016" layer="27">&gt;VALUE</text>
 <rectangle x1="-3.65" y1="-0.35" x2="-3.05" y2="0.35" layer="51"/>
@@ -2277,12 +2279,10 @@ Source: http://www.microchip.com .. 39637a.pdf</description>
 <circle x="-2.5" y="2.2098" radius="0.508" width="0.1524" layer="21"/>
 <circle x="2.5038" y="-1.27" radius="1.4986" width="0.1524" layer="51"/>
 <circle x="2.5038" y="2.2098" radius="0.508" width="0.1524" layer="21"/>
-<pad name="1" x="-2.5" y="-1.27" drill="1.1" diameter="2.1844" shape="long" rot="R90"/>
-<pad name="2" x="2.5" y="-1.27" drill="1.1" diameter="2.1844" shape="long" rot="R90"/>
+<pad name="1" x="-2.5" y="-1.27" drill="1.3" diameter="2.1844" shape="long" rot="R90"/>
+<pad name="2" x="2.5" y="-1.27" drill="1.3" diameter="2.1844" shape="long" rot="R90"/>
 <text x="-5.04" y="-7.62" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 <text x="-3.8462" y="-5.0038" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-4.532" y="0.635" size="1.27" layer="21" ratio="10">1</text>
-<text x="0.421" y="0.635" size="1.27" layer="21" ratio="10">2</text>
 </package>
 <package name="3,6">
 <description>&lt;b&gt;MOUNTING HOLE&lt;/b&gt; 3.6 mm with drill center</description>
@@ -2534,7 +2534,6 @@ Source: http://www.microchip.com .. 39637a.pdf</description>
 <text x="13.57" y="-7.575" size="2.54" layer="47">R = 4.0mm</text>
 <text x="93" y="36" size="1.27" layer="49">Center</text>
 <text x="-13" y="15" size="1.27" layer="49">Center</text>
-<text x="83" y="1" size="1.27" layer="26" ratio="12" rot="MR0">DP9056_v1</text>
 <hole x="4" y="4" drill="3.2"/>
 <hole x="86" y="4" drill="3.2"/>
 <hole x="86" y="52" drill="3.2"/>
@@ -2724,45 +2723,41 @@ Source: http://www.microchip.com .. 39637a.pdf</description>
 </package>
 <package name="TSSOP14">
 <description>&lt;b&gt;Thin Shrink Small Outline Plastic 14&lt;/b&gt;&lt;p&gt;</description>
-<wire x1="-2.5146" y1="-2.2828" x2="2.5146" y2="-2.2828" width="0.1524" layer="21"/>
-<wire x1="2.5146" y1="2.2828" x2="2.5146" y2="-2.2828" width="0.1524" layer="21"/>
-<wire x1="2.5146" y1="2.2828" x2="-2.5146" y2="2.2828" width="0.1524" layer="21"/>
-<wire x1="-2.5146" y1="-2.2828" x2="-2.5146" y2="2.2828" width="0.1524" layer="21"/>
-<wire x1="-2.286" y1="-2.0542" x2="2.286" y2="-2.0542" width="0.0508" layer="21"/>
-<wire x1="2.286" y1="2.0542" x2="2.286" y2="-2.0542" width="0.0508" layer="21"/>
-<wire x1="2.286" y1="2.0542" x2="-2.286" y2="2.0542" width="0.0508" layer="21"/>
-<wire x1="-2.286" y1="-2.0542" x2="-2.286" y2="2.0542" width="0.0508" layer="21"/>
+<wire x1="-2.5146" y1="-2.1558" x2="2.5146" y2="-2.1558" width="0.1524" layer="21"/>
+<wire x1="2.5146" y1="2.1558" x2="2.5146" y2="-2.1558" width="0.1524" layer="21"/>
+<wire x1="2.5146" y1="2.1558" x2="-2.5146" y2="2.1558" width="0.1524" layer="21"/>
+<wire x1="-2.5146" y1="-2.1558" x2="-2.5146" y2="2.1558" width="0.1524" layer="21"/>
 <circle x="-1.6256" y="-1.2192" radius="0.4572" width="0.1524" layer="21"/>
-<smd name="1" x="-1.95" y="-2.9178" dx="0.3048" dy="0.9906" layer="1"/>
-<smd name="2" x="-1.3" y="-2.9178" dx="0.3048" dy="0.9906" layer="1"/>
-<smd name="3" x="-0.65" y="-2.9178" dx="0.3048" dy="0.9906" layer="1"/>
-<smd name="4" x="0" y="-2.9178" dx="0.3048" dy="0.9906" layer="1"/>
-<smd name="5" x="0.65" y="-2.9178" dx="0.3048" dy="0.9906" layer="1"/>
-<smd name="6" x="1.3" y="-2.9178" dx="0.3048" dy="0.9906" layer="1"/>
-<smd name="7" x="1.95" y="-2.9178" dx="0.3048" dy="0.9906" layer="1"/>
-<smd name="8" x="1.95" y="2.9178" dx="0.3048" dy="0.9906" layer="1"/>
-<smd name="9" x="1.3" y="2.9178" dx="0.3048" dy="0.9906" layer="1"/>
-<smd name="10" x="0.65" y="2.9178" dx="0.3048" dy="0.9906" layer="1"/>
-<smd name="11" x="0" y="2.9178" dx="0.3048" dy="0.9906" layer="1"/>
-<smd name="12" x="-0.65" y="2.9178" dx="0.3048" dy="0.9906" layer="1"/>
-<smd name="13" x="-1.3" y="2.9178" dx="0.3048" dy="0.9906" layer="1"/>
-<smd name="14" x="-1.95" y="2.9178" dx="0.3048" dy="0.9906" layer="1"/>
+<smd name="1" x="-1.95" y="-2.9178" dx="0.3048" dy="1.143" layer="1"/>
+<smd name="2" x="-1.3" y="-2.9178" dx="0.3048" dy="1.143" layer="1"/>
+<smd name="3" x="-0.65" y="-2.9178" dx="0.3048" dy="1.143" layer="1"/>
+<smd name="4" x="0" y="-2.9178" dx="0.3048" dy="1.143" layer="1"/>
+<smd name="5" x="0.65" y="-2.9178" dx="0.3048" dy="1.143" layer="1"/>
+<smd name="6" x="1.3" y="-2.9178" dx="0.3048" dy="1.143" layer="1"/>
+<smd name="7" x="1.95" y="-2.9178" dx="0.3048" dy="1.143" layer="1"/>
+<smd name="8" x="1.95" y="2.9178" dx="0.3048" dy="1.143" layer="1"/>
+<smd name="9" x="1.3" y="2.9178" dx="0.3048" dy="1.143" layer="1"/>
+<smd name="10" x="0.65" y="2.9178" dx="0.3048" dy="1.143" layer="1"/>
+<smd name="11" x="0" y="2.9178" dx="0.3048" dy="1.143" layer="1"/>
+<smd name="12" x="-0.65" y="2.9178" dx="0.3048" dy="1.143" layer="1"/>
+<smd name="13" x="-1.3" y="2.9178" dx="0.3048" dy="1.143" layer="1"/>
+<smd name="14" x="-1.95" y="2.9178" dx="0.3048" dy="1.143" layer="1"/>
 <text x="-2.8956" y="-2.0828" size="1.016" layer="25" ratio="10" rot="R90">&gt;NAME</text>
 <text x="3.8862" y="-2.0828" size="1.016" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
-<rectangle x1="-2.0516" y1="-3.121" x2="-1.8484" y2="-2.2828" layer="51"/>
-<rectangle x1="-1.4016" y1="-3.121" x2="-1.1984" y2="-2.2828" layer="51"/>
-<rectangle x1="-0.7516" y1="-3.121" x2="-0.5484" y2="-2.2828" layer="51"/>
-<rectangle x1="-0.1016" y1="-3.121" x2="0.1016" y2="-2.2828" layer="51"/>
-<rectangle x1="0.5484" y1="-3.121" x2="0.7516" y2="-2.2828" layer="51"/>
-<rectangle x1="1.1984" y1="-3.121" x2="1.4016" y2="-2.2828" layer="51"/>
-<rectangle x1="1.8484" y1="-3.121" x2="2.0516" y2="-2.2828" layer="51"/>
-<rectangle x1="1.8484" y1="2.2828" x2="2.0516" y2="3.121" layer="51"/>
-<rectangle x1="1.1984" y1="2.2828" x2="1.4016" y2="3.121" layer="51"/>
-<rectangle x1="0.5484" y1="2.2828" x2="0.7516" y2="3.121" layer="51"/>
-<rectangle x1="-0.1016" y1="2.2828" x2="0.1016" y2="3.121" layer="51"/>
-<rectangle x1="-0.7516" y1="2.2828" x2="-0.5484" y2="3.121" layer="51"/>
-<rectangle x1="-1.4016" y1="2.2828" x2="-1.1984" y2="3.121" layer="51"/>
-<rectangle x1="-2.0516" y1="2.2828" x2="-1.8484" y2="3.121" layer="51"/>
+<rectangle x1="-2.0516" y1="-2.994" x2="-1.8484" y2="-2.1558" layer="51"/>
+<rectangle x1="-1.4016" y1="-2.994" x2="-1.1984" y2="-2.1558" layer="51"/>
+<rectangle x1="-0.7516" y1="-2.994" x2="-0.5484" y2="-2.1558" layer="51"/>
+<rectangle x1="-0.1016" y1="-2.994" x2="0.1016" y2="-2.1558" layer="51"/>
+<rectangle x1="0.5484" y1="-2.994" x2="0.7516" y2="-2.1558" layer="51"/>
+<rectangle x1="1.1984" y1="-2.994" x2="1.4016" y2="-2.1558" layer="51"/>
+<rectangle x1="1.8484" y1="-2.994" x2="2.0516" y2="-2.1558" layer="51"/>
+<rectangle x1="1.8484" y1="2.1558" x2="2.0516" y2="2.994" layer="51"/>
+<rectangle x1="1.1984" y1="2.1558" x2="1.4016" y2="2.994" layer="51"/>
+<rectangle x1="0.5484" y1="2.1558" x2="0.7516" y2="2.994" layer="51"/>
+<rectangle x1="-0.1016" y1="2.1558" x2="0.1016" y2="2.994" layer="51"/>
+<rectangle x1="-0.7516" y1="2.1558" x2="-0.5484" y2="2.994" layer="51"/>
+<rectangle x1="-1.4016" y1="2.1558" x2="-1.1984" y2="2.994" layer="51"/>
+<rectangle x1="-2.0516" y1="2.1558" x2="-1.8484" y2="2.994" layer="51"/>
 </package>
 </packages>
 <symbols>
