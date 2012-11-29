@@ -4,7 +4,7 @@
 
 import os
 #PROJECT_ROOT_PATH = os.path.dirname(os.path.abspath(__file__))
-PROJECT_ROOT_PATH = 'C:\Users\Ton\Documents\SIs\si_demeter'
+PROJECT_ROOT_PATH = 'C:\Users\Ton\Desktop\projeto-demeter\Software\si_demeter'
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
@@ -14,7 +14,7 @@ ADMINS = (
 )
 
 MANAGERS = ADMINS
-PREFIXO1 = 'C:\Users\Ton\Documents\SIs\si_demeter'
+PREFIXO1 = 'C:\Users\Ton\Desktop\projeto-demeter\Software\si_demeter'
 #PREFIXO1 = ''
 PREFIXO2 = '127.0.0.1:8000'
 #PREFIXO2 = ''

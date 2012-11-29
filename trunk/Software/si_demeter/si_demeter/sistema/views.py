@@ -158,24 +158,25 @@ def setor(request, id_fazenda, id_setor):
             return render_to_response('setor.html', locals(), context_instance=RequestContext(request) )
     else:
         setor_form = SetorForm(instance=setor)
-        dados_setor = HistoricoSetor.objects.filter(id=id_setor)
-        lista_historico_setor = HistoricoSetor.objects.filter(setor=setor)
+        id_modulo = setor.id_modulo
+        lista_historico_setor = HistoricoSetor.objects.filter(id_modulo=id_modulo)
         var_grafico_terra = []
         var_interno = []
         i = 1
         soma = 0
-        for historico_setor in lista_historico_setor:
-            #pass
-            var_interno = [i, historico_setor.calcula_media()]
-            soma = soma + historico_setor.calcula_media()
-            var_grafico_terra.append(var_interno)
-            i = i + 1
-        var_media_terra = soma/i
-        while i<31:
-            var_grafico_terra.append([i,0])
-            i = i + 1
+        #for historico_setor in lista_historico_setor:
+        #    #pass
+        #    var_interno = [i, historico_setor.calcula_media()]
+        #    soma = soma + historico_setor.calcula_media()
+        #    var_grafico_terra.append(var_interno)
+        #    i = i + 1
+        #var_media_terra = soma/i
+        #while i<31:
+        #    var_grafico_terra.append([i,0])
+        #    i = i + 1
         #d20 = [[1, 5], [2, 4], [3, 4], [4, 9],[5, 4],[6, 4],[7, 5],[8, 5],[9, 6],[10, 6],[11, 6],[12, 2],[13, 3],[14, 4],[15, 4],[16, 4],[17, 5],[18, 5],[19, 2],[20, 2],[21, 3],[22, 3],[23, 3],[24, 2],[25, 4],[26, 4],[27,5],[28, 2],[29, 2], [30, 3]]
-        d10 = [[1, 15], [2, 14], [3, 14], [4, 19],[5, 14],[6, 14],[7, 15],[8, 15],[9, 16],[10, 16],[11, 16],[12, 12],[13, 13],[14, 14],[15, 14],[16, 14],[17, 15],[18, 15],[19, 12],[20, 12],[21, 13],[22, 13],[23, 13],[24, 12],[25, 14],[26, 14],[27,15],[28, 12],[29, 12], [30, 13]]
+        #d10 = [[1, 15], [2, 14], [3, 14], [4, 19],[5, 14],[6, 14],[7, 15],[8, 15],[9, 16],[10, 16],[11, 16],[12, 12],[13, 13],[14, 14],[15, 14],[16, 14],[17, 15],[18, 15],[19, 12],[20, 12],[21, 13],[22, 13],[23, 13],[24, 12],[25, 14],[26, 14],[27,15],[28, 12],[29, 12], [30, 13]]
+        d10=[[1,10],[2,20]]
         return render_to_response('setor.html', locals(), context_instance=RequestContext(request) )
     return render_to_response('setor.html', locals(), context_instance=RequestContext(request) )
     
