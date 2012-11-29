@@ -23,29 +23,23 @@ class Fazenda(models.Model):
 
 class Setor(models.Model):
     fazenda = models.ForeignKey(Fazenda)
-    numero_setor = models.CharField("Numero do Setor", max_length=128)
-    cultura_setor = models.CharField("Cultura do Setor", max_length=128) #colocar choice
+    regiao_setor = models.CharField("Regiao do Setor", max_length=128) #colocar choice?
+    cultura_setor = models.CharField("Cultura do Setor", max_length=128) #colocar choice?
     descricao_setor = models.CharField("Descricao do Setor", max_length=1024, blank=True, null=True)
+    id_modulo = models.IntegerField("ID do Modulo", max_length=1024, blank=True, null=True)
 
     def __unicode__(self):
-        return self.nome_setor
+        return self.id_modulo
     
 class HistoricoSetor(models.Model):
-    setor = models.ForeignKey(Setor)
-    data_medida = models.DateField("Data da Medida")
-    id_modulo = models.CharField("ID do Modulo", max_length=1024, blank=True, null=True)
-    medida1 = models.FloatField("Medida 1", blank=True, null=True)
-    medida2 = models.FloatField("Medida 2", blank=True, null=True)
-    medida3 = models.FloatField("Medida 3", blank=True, null=True)
-    medida4 = models.FloatField("Medida 4", blank=True, null=True)
+    #setor = models.ForeignKey(Setor)
+    id_modulo = models.IntegerField("ID do Modulo", max_length=1024, blank=True, null=True)
+    data_medida = models.DateTimeField("Data da Medida")
+    valor_medida = models.FloatField("Valor da Medida", blank=True, null=True)
+    tipo_sensor = models.CharField("Tipo do Sensor", max_length=1024, blank=True, null=True) #colocar choice?
 
     def __unicode__(self):
-        return self.setor
-    
-    def calcula_media(self):
-        soma = float(self.medida1)+float(self.medida2)+float(self.medida3)+float(self.medida4)
-        media = soma//4.0
-        return media
+        return self.id_modulo
     
 class Contato(models.Model):
     fazenda = models.ForeignKey(Fazenda)

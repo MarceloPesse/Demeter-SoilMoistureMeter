@@ -18,17 +18,19 @@ class Command(NoArgsCommand):
             usuario = Usuario(username=username, email=username+'@gmail.com')
             usuario.set_password(password)
             usuario.save()
+            #usuario = User.objects.create_user(username=username, password=password, email=username+'@gmail.com')
             return usuario
             
         def cria_usuario_admin(username, password):
-            usuario = cria_usuario(username, password)
-            usuario.is_staff = True
-            usuario.is_active = True
-            usuario.is_superuser = True
-            usuario.save()
-            return usuario
+            usuario2 = cria_usuario(username, password)
+            usuario2.is_staff = True
+            usuario2.is_active = True
+            usuario2.is_superuser = True
+            usuario2.save()
+            return usuario2
         
         usuario1 = cria_usuario('tones', 'tones')
+        #usuario = User.objects.create_user(username='tones', password='tonesp', email='jhonston@gmail.com')
         admin1 = cria_usuario_admin('admin', 'admin')
         
         def cria_fazenda(usuario, nome_fazenda, descricao_fazenda, endereco, cidade, estado, data_visualizacao, data_modificacao):
@@ -40,23 +42,23 @@ class Command(NoArgsCommand):
         fazenda1 = cria_fazenda(usuario1, 'Fazenda Fruto da Terra', 'Fazenda criada em 1965, terra vermelha e muito sol.', 'Rod. Marechal do Norte', 'Boituva', 'SP', '2012-05-10', '2012-06-10')
         fazenda2 = cria_fazenda(usuario1, 'Fazenda Amanhecer', 'Fazenda criada em 1965, terra vermelha e muito sol.', 'Rod. Marechal do Norte', 'Boituva', 'SP', '2012-05-10', '2012-06-10')
         
-        def cria_setor(fazenda, numero_setor, cultura_setor, descricao_setor):
-            setor = Setor(fazenda=fazenda, numero_setor=numero_setor, cultura_setor=cultura_setor, descricao_setor=descricao_setor)
+        def cria_setor(fazenda, regiao_setor, cultura_setor, descricao_setor, id_modulo):
+            setor = Setor(fazenda=fazenda, regiao_setor=regiao_setor, cultura_setor=cultura_setor, descricao_setor=descricao_setor, id_modulo=id_modulo)
             setor.save()
             return setor
         
-        setor1 = cria_setor(fazenda1, '1', 'Arroz', 'Norte da Fazenda')
-        setor2 = cria_setor(fazenda1, '2', 'Milho', 'Sul da Fazenda')
-        setor3 = cria_setor(fazenda2, '1', 'Café', 'Norte da Fazenda')
+        setor1 = cria_setor(fazenda1, 'Norte da Fazenda', 'Arroz', 'Arroz de exportação', 123)
+        setor2 = cria_setor(fazenda1, 'Sul da Fazenda', 'Milho', 'Milho de exportação', 124)
+        setor3 = cria_setor(fazenda2, 'Sul da Fazenda', 'Café', 'Café de exportação', 234)
         
-        def cria_historico_setor(setor, data_medida, id_modulo, medida1, medida2, medida3, medida4):
-            historico_setor = HistoricoSetor(setor=setor, data_medida=data_medida, id_modulo=id_modulo, medida1=medida1,  medida2=medida2,  medida3=medida3,  medida4=medida4)
+        def cria_historico_setor(id_modulo, data_medida, valor_medida, tipo_sensor):
+            historico_setor = HistoricoSetor(id_modulo=id_modulo, data_medida=data_medida, valor_medida=valor_medida, tipo_sensor=tipo_sensor)
             historico_setor.save()
             return historico_setor
         
-        historico_setor1 = cria_historico_setor(setor1, '2012-05-10', 1.0, 10.0, 15.0, 12.0, 17.0)
-        historico_setor2 = cria_historico_setor(setor1, '2012-06-10', 1.0, 11.0, 16.0, 13.0, 18.0)
-        historico_setor3 = cria_historico_setor(setor1, '2012-07-10', 1.0, 12.0, 17.0, 14.0, 19.0)
+        historico_setor1 = cria_historico_setor(123, '2012-05-10', 10.0, 'Umidade da Terra')
+        historico_setor2 = cria_historico_setor(123, '2012-06-10', 11.0, 'Umidade da Terra')
+        historico_setor3 = cria_historico_setor(124, '2012-07-10', 12.0, 'Umidade da Terra')
         #historico_setor2 = cria_historico_setor(setor1, make_aware('2012-05-10', 'America/Sao_Paulo Brazil/East'), '2', '12', '17')
         
         def cria_contato_fazenda(fazenda, nome_contato, descricao_contato, telefone):
