@@ -8,6 +8,7 @@ namespace Demeter
 {
     public class Connector
     {
+        public bool Connected { get; set; }
     	private MySqlConnection mConn;
     	private DataSet mDataSet;
 
@@ -15,13 +16,16 @@ namespace Demeter
         {
             mConn = new MySqlConnection("Persist Security Info=False;server="+server+";database="+database+";uid="+uid+";pwd="+pwd);
             mDataSet = new DataSet();
+            Connected = false;
 
             try
             {
                 mConn.Open();
+                Connected = true;
             }
             catch (System.Exception e)
             {
+                Connected = false;
                 System.Windows.Forms.MessageBox.Show(e.Message.ToString());
             }
 
@@ -32,9 +36,11 @@ namespace Demeter
             try
             {
                 mConn.Open();
+                Connected = true;
             }
             catch (System.Exception e)
             {
+                Connected = false;
                 System.Windows.Forms.MessageBox.Show(e.Message.ToString());
             }
         }
@@ -44,6 +50,7 @@ namespace Demeter
             try
             {
                 mConn.Close();
+                Connected = false;
             }
             catch (System.Exception e)
             {
@@ -73,11 +80,12 @@ namespace Demeter
 
             MySqlCommand Com = new MySqlCommand();
             Com.Connection = mConn;
-            Com.CommandText = "INSERT INTO leiutras (id,idtipo,valor,timestamp) VALUES (@1,@2,@3,@4)";
-            Com.Parameters.AddWithValue("@1", oLeitura.id);
-            Com.Parameters.AddWithValue("@2", oLeitura.idType);
-            Com.Parameters.AddWithValue("@3", oLeitura.Data);
-            Com.Parameters.AddWithValue("@4", oLeitura.TimeStampDevice);
+            Com.CommandText = "INSERT INTO leiutras (idmodulo,idsensor,idtiposensor,valor,timestamp) VALUES (@1,@2,@3,@4,@5)";
+            Com.Parameters.AddWithValue("@1", oLeitura.idModule);
+            Com.Parameters.AddWithValue("@2", oLeitura.idSensor);
+            Com.Parameters.AddWithValue("@3", oLeitura.idSensorType);
+            Com.Parameters.AddWithValue("@4", oLeitura.SensorData);
+            Com.Parameters.AddWithValue("@5", oLeitura.TimeStampDevice);
 
             int id;
 
