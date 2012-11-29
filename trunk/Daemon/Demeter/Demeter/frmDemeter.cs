@@ -19,18 +19,15 @@ namespace Demeter
         Connector _Connection;
 
         System.Timers.Timer _trReader = new System.Timers.Timer();
-        System.Timers.Timer _trAlarm = new System.Timers.Timer();
 
-        bool _isPolling = false;
         int _readingCount;
         System.Globalization.CultureInfo _CultureInfo;
-        double _LastReading = 0;
 
 
         List<SampleData> lSamples = new List<SampleData>();
 
         #region GUI Delegate Declarations
-        public delegate void GUIDelegate(string paramString, string spH, double dPh);
+        public delegate void GUIDelegate(string paramString);
         public delegate void GUIClear();
         public delegate void GUIStatus(string paramString);
         #endregion
@@ -40,35 +37,11 @@ namespace Demeter
             InitializeComponent();
             LoadListboxes();
 
-            //_Connection = new Connector("10.10.10.1", "demeter", "root", "admin");
+            
 
             _trReader.Elapsed += new ElapsedEventHandler(_trReader_Elapsed);
 
-            _trAlarm.Enabled = true;
-            _trAlarm.Interval = 300;
-            _trAlarm.AutoReset = true;
-            _trAlarm.Elapsed += new ElapsedEventHandler(_trAlarm_Elapsed);
-
             _CultureInfo = System.Threading.Thread.CurrentThread.CurrentCulture;            
-        }
-
-        Color _actualPHColor = Color.White;
-        void _trAlarm_Elapsed(object sender, ElapsedEventArgs e)
-        {
-            if (chkAlarmFlash.Checked)
-            {
-                if (txtPH.BackColor != Color.Green)
-                    txtPH.BackColor = (txtPH.BackColor != Color.White) ? Color.White : _actualPHColor;
-            }
-
-            if (chkAlarmBeep.Checked)
-            {
-                if (txtPH.BackColor == Color.Red)
-                    Console.Beep();
-
-                if (txtPH.BackColor == Color.Yellow && _actualPHColor == Color.Yellow)
-                    Console.Beep();
-            }
         }
 
         #region Delegate Functions
@@ -92,44 +65,16 @@ namespace Demeter
             else
                 this.lblStatus.Text = paramString;
         }
-        public void DoGUIUpdate(string paramString, string sPH, double dPH)
+        public void DoGUIUpdate(string paramString)
         {
             if (this.InvokeRequired)
             {
                 GUIDelegate delegateMethod = new GUIDelegate(this.DoGUIUpdate);
-                this.Invoke(delegateMethod, new object[] { paramString, sPH, dPH });
+                this.Invoke(delegateMethod, new object[] { paramString });
             }
             else
             {
                 this.lstReadings.Items.Add(paramString);
-                this.txtPH.Text = sPH;
-
-                _LastReading = dPH;
-                _CheckAlarm(_LastReading);
-            }
-
-        }
-
-        private void _CheckAlarm(double dPH)
-        {
-            if (dPH == 0)
-            {
-                _actualPHColor = txtPH.BackColor = Color.White;
-                return;
-            }
-
-            if (dPH <= (double)nudAlarmMin.Value || dPH >= (double)nudAlarmMax.Value)
-            {
-                _actualPHColor = txtPH.BackColor = Color.Red;
-
-            }
-            else if (dPH <= (double)nudAlertLow.Value || dPH >= (double)nudAlertHigh.Value)
-            {
-                _actualPHColor= txtPH.BackColor = Color.Yellow;
-            }
-            else
-            {
-                _actualPHColor = txtPH.BackColor = Color.Green;
             }
 
         }
@@ -179,9 +124,6 @@ namespace Demeter
                 //Disable double starts:
                 btnStart.Enabled = false;
 
-                //Set polling flag:
-                _isPolling = true;
-
                 //Start timer using provided values:
                 _trReader.AutoReset = true;
                 if (nudInterval.Value != 0)
@@ -198,7 +140,6 @@ namespace Demeter
         private void StopPoll()
         {
             //Stop timer and close COM port:
-            _isPolling = false;
             _trReader.Stop();
             _Protocol.Close();
 
@@ -209,12 +150,10 @@ namespace Demeter
         private void btnStart_Click(object sender, EventArgs e)
         {
             StartPoll();
-            _trAlarm.Start();
         }
         private void btnStop_Click(object sender, EventArgs e)
         {
             StopPoll();
-            _trAlarm.Stop();
         }
         #endregion
 
@@ -226,38 +165,41 @@ namespace Demeter
             _readingCount++;
             DoGUIStatus("Reading # " + _readingCount.ToString());
 
+
             string[] sep = new string[] { "\r\n" };
-            string response = "++++", sph = "NA";
-            double dPh = 0;
-            //Read registers and display data in desired format:
-            try
+            string response = "++++";
+
+            for (int idModule = 1; idModule <= nudModules.Value; idModule++)
             {
-                response = _Protocol.SendRemoteString("#01:1");
-
-                string[] sSplits;
-
-                sSplits = response.Split(sep, StringSplitOptions.RemoveEmptyEntries);
-
-                foreach (string item in sSplits)
+                for (int idsensor = 1; idsensor <= 5; idsensor++)
                 {
-                    SampleData oSD = ParseSample(item);
-                    if (oSD != null)
+                    string sendstring = "#"+idModule.ToString("00") + ":" + idsensor.ToString();
+
+                    try
                     {
-                        response = String.Format("pH {0:0.000} - {1:0.000} C - {2:d/M/yyyy HH:mm:ss}", oSD.Data, oSD.id, oSD.TimeStampDevice);
-                        sph = oSD.Data.ToString("0.000");
-                        dPh = oSD.Data;
+                        response = _Protocol.SendRemoteString(sendstring);
 
-                        lSamples.Add(oSD);
-                        //_Connection.RegistraLeitura(oSD);
+                        string[] sSplits = response.Split(sep, StringSplitOptions.RemoveEmptyEntries);
+                        foreach (string item in sSplits)
+                        {
+                            SampleData oSD = ParseSample(item);
+                            if (oSD != null)
+                            {
+                                lSamples.Add(oSD);
 
-                        DoGUIUpdate(DateTime.Now.ToString("HH:mm:ss") + " - " + response, sph, dPh);
+                                if (_Connection != null)
+                                    _Connection.RegistraLeitura(oSD);
 
+                                response = String.Format("#{0:000} : {1:000} : {2:000} : {3:00000}", oSD.idModule, oSD.idSensor, oSD.idSensorType, oSD.SensorData);
+                                DoGUIUpdate(DateTime.Now.ToString("HH:mm:ss") + " - " + response);
+                            }
+                        }
+                    }
+                    catch (Exception err)
+                    {
+                        DoGUIStatus("Error in reading: " + err.Message);
                     }
                 }
-            }
-            catch(Exception err)
-            {
-                DoGUIStatus("Error in reading: " + err.Message);
             }
         }
         #endregion
@@ -272,13 +214,13 @@ namespace Demeter
         {
             StopPoll();
 
-            if (txtKeystroke.Text != "")
+            if (txtCommand.Text != "")
             {
                 String response;
                 try
                 {
-                    response = _Protocol.SendRemoteKeystroke(txtKeystroke.Text[0]);
-                    DoGUIUpdate("SendKeystroke: " + txtKeystroke.Text[0] + "; Response: " + response, "NA", 0);
+                    response = _Protocol.SendRemoteKeystroke(txtCommand.Text[0]);
+                    DoGUIUpdate("SendKeystroke: " + txtCommand.Text[0] + "; Response: " + response);
                 }
                 catch (Exception err)
                 {
@@ -306,18 +248,6 @@ namespace Demeter
             _ExportToFileCSV(lSamples, sfd.FileName);
         }
 
-        private void AlarmValuesChanged(object sender, EventArgs e)
-        {
-            this.nudAlertHigh.Maximum = this.nudAlarmMax.Value;
-            this.nudAlertHigh.Minimum = this.nudAlertLow.Value;
-
-            this.nudAlertLow.Maximum = this.nudAlertHigh.Value;
-            this.nudAlertLow.Minimum = this.nudAlarmMin.Value;
-
-            _CheckAlarm(_LastReading);
-        }
-
-
 
         //#n placa [2] : n sensor[1] : id sensor[2] : dados 16bits[4]
         //#01:1;06:0000
@@ -325,7 +255,7 @@ namespace Demeter
         {
             SampleData sSD;
             string[] sSplits;
-            char[] sep = new char[] { ';' , ':' };
+            char[] sep = new char[] { ';', ':' };
             if (sSample == null)
                 return null;
 
@@ -334,25 +264,25 @@ namespace Demeter
             if (!sSplits[0].StartsWith("#"))
                 return null;
 
-            int idPlaca, idSensorPlaca, idSensor, iData;
+            int idPlaca, idSensor, idSensorType, iData;
 
             if (!int.TryParse(sSplits[0].Replace('#', ' '), out idPlaca))
                 return null;
 
-            if (!int.TryParse(sSplits[1], out idSensorPlaca))
+            if (!int.TryParse(sSplits[1], out idSensor))
                 return null;
 
-
-            if (!int.TryParse(sSplits[2], out idSensor))
+            if (!int.TryParse(sSplits[2], out idSensorType))
                 return null;
 
             if (!int.TryParse(sSplits[3], NumberStyles.HexNumber, CultureInfo.CurrentCulture, out iData))
                 return null;
 
-            sSD = new SampleData(idPlaca, idSensor, iData, DateTime.Now);
+            sSD = new SampleData(idPlaca, idSensor, idSensorType, iData, DateTime.Now);
 
             return sSD;
         }
+
 
         private void _ExportToFileCSV(List<SampleData> ldata, string path)
         {
@@ -369,10 +299,8 @@ namespace Demeter
                 line =  
                         sample.TimeStampDevice.ToString("d/M/yyyy") + ";" +
                         sample.TimeStampDevice.ToString("HH:mm:ss") + ";" +
-                        sample.TimeStampHost.ToString("d/M/yyyy") + ";" +
-                        sample.TimeStampHost.ToString("HH:mm:ss") + ";" +
-                        sample.Data.ToString(_CultureInfo) + ";" +
-                        sample.id.ToString(_CultureInfo);
+                        sample.SensorData.ToString(_CultureInfo) + ";" +
+                        sample.idModule.ToString(_CultureInfo);
 
                 tw.WriteLine(line);
             }
@@ -385,23 +313,30 @@ namespace Demeter
             StopPoll();
         }
 
+        private void btnConnect_Click(object sender, EventArgs e)
+        {
+            _Connection = new Connector(txtServer.Text, txtDatabase.Text, txtUser.Text, txtPassword.Text);
+            if (_Connection.Connected)
+                MessageBox.Show("Connected");
+        }
+
     }
 
     public class SampleData
     {
-        public int id;
-        public int idType;
-        public double Data;
+        public int idModule;
+        public int idSensor;
+        public int idSensorType;
+        public double SensorData;
         public DateTime TimeStampDevice;
-        public DateTime TimeStampHost;
 
-        public SampleData(int id, int idType, double data, DateTime TimestampDevice)
+        public SampleData(int idModule, int idSensor, int idSensorType, double data, DateTime TimestampDevice)
         {
-            this.Data = data;
-            this.id = id;
-            this.idType = idType;
+            this.SensorData = data;
+            this.idModule = idModule;
+            this.idSensor = idSensor;
+            this.idSensorType = idSensorType;
             this.TimeStampDevice = TimestampDevice;
-            this.TimeStampHost = DateTime.Now;
         }
     }
 
