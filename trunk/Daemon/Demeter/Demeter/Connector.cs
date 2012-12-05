@@ -80,7 +80,7 @@ namespace Demeter
 
             MySqlCommand Com = new MySqlCommand();
             Com.Connection = mConn;
-            Com.CommandText = "INSERT INTO leiutras (idmodulo,idsensor,idtiposensor,valor,timestamp) VALUES (@1,@2,@3,@4,@5)";
+            Com.CommandText = "INSERT INTO sistema_historicosetor (id_modulo,id_sensor,tipo_sensor,valor_medida,data_medida) VALUES (@1,@2,@3,@4,@5)";
             Com.Parameters.AddWithValue("@1", oLeitura.idModule);
             Com.Parameters.AddWithValue("@2", oLeitura.idSensor);
             Com.Parameters.AddWithValue("@3", oLeitura.idSensorType);
