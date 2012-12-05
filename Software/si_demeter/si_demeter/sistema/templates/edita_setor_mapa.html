@@ -1,0 +1,101 @@
+{% extends "base.html" %}
+
+{% block title %}
+	Editar Setor
+{% endblock title %}
+
+{% block extrahead %}
+<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBzfs5IYi2KVsMYLmdqCO0x8TUW66wIRPU&sensor=false"></script>
+<script>
+    function initialize()
+    {
+        var mapProp = {
+	    center:new google.maps.LatLng({{fazenda.get_latitude}},{{fazenda.get_longitude}}),
+	    zoom:14,
+	    mapTypeId:google.maps.MapTypeId.SATELLITE
+	};
+	var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+        
+        google.maps.event.addListener(map, 'click', function(event) {
+            placeMarker(event.latLng);
+            });
+      
+        function placeMarker(location) {
+            var marker = new google.maps.Marker({
+              position: location,
+              map: map,
+            });
+            var infowindow = new google.maps.InfoWindow({
+              content: 'Latitude: ' + location.lat() +
+              '<br>Longitude: ' + location.lng()
+            });
+            infowindow.open(map,marker);
+        }
+        //google.maps.event.addListener(map, 'click', function(event) {
+        //    placeMarker(event.latLng);
+        //    });
+        //
+//        function placeMarker(location) {
+//            var circulo_setor = new google.maps.Circle({
+//                center:new google.maps.LatLng({{setor.latitude|stringformat:"f"}},{{setor.longitude|stringformat:"f"}}),
+//                radius:400,
+//                strokeColor:"#0000FF",
+//                strokeOpacity:0.8,
+//                strokeWeight:2,
+//                fillColor:"#0000FF",
+//                fillOpacity:0.4
+//	    });
+//            circulo_setor.setMap(map);
+            //var infowindow = new google.maps.InfoWindow({
+            //    content: 'Latitude: ' + location.lat() + '<br>Longitude: ' + location.lng()
+            //});
+            //infowindow.open(map,marker);
+            
+            //function saveData() {
+            //    var latlng = circulo.getPosition();
+            //  
+            //    var url = "fazenda/1/edita_setor_mapa/1/?lat=" + latlng.lat() + "&lng=" + latlng.lng();
+            //    downloadUrl(url, function(data, responseCode) {
+            //    if (responseCode == 200 && data.length <= 1) {
+            //        infowindow.close();
+            //        document.getElementById("message").innerHTML = "Location added.";
+            //    }
+            //    });
+            //}
+            //saveData();
+        //}
+    }
+//    function downloadUrl(url, callback) {
+//	var request = window.ActiveXObject ?
+//	    new ActiveXObject('Microsoft.XMLHTTP') :
+//	    new XMLHttpRequest;
+//      
+//	request.onreadystatechange = function() {
+//	  if (request.readyState == 4) {
+//	    request.onreadystatechange = doNothing;
+//	    callback(request.responseText, request.status);
+//	  }
+//	};
+//      
+//	request.open('GET', url, true);
+//	request.send(null);
+//    }
+//    function doNothing() {}
+    
+    google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+
+{% endblock extrahead %}
+
+
+
+{% block content %}
+    <div class="fazenda_mapa">
+        <div id="googleMap" style="width:600px;height:500px;"></div>
+    </div>
+    <span>Coloque os dados iniciais do setor e na página seguinte configure sua posição dentro da fazenda.</span>
+    <form method="POST" action="/fazenda/{{fazenda.id}}/cria_setor/">
+        {{setor_form.as_table}}
+        <button type="submit" class="btn btn-info marginT10">Salvar alterações</button>
+    </form>
+{% endblock content %}

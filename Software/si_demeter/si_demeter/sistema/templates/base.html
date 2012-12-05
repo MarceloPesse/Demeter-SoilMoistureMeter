@@ -8,7 +8,7 @@
         <meta name="description" content="Template SI Demeter" />
         <meta name="keywords" content="economia agua, agua, sistema agua" />
         <meta name="application-name" content="Template SI Demeter" />
-    
+        
         <!-- Mobile Specific Metas -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
@@ -51,9 +51,7 @@
     
         <!-- Main stylesheets -->
         <link href="/static/css/main.css" rel="stylesheet" type="text/css" />
-        <link type="text/css" href="/static/css/geral.css" rel="stylesheet" />
-    <!--    <link type="text/css" href="/static/css/telas.css" rel="stylesheet" />
-        <link type="text/css" href="/static/css/base.css" rel="stylesheet" />-->
+        <link href="/static/css/geral.css" rel="stylesheet" type="text/css" />
     
         <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
         <!--[if lt IE 9]>
@@ -72,7 +70,8 @@
         <!--    document.documentElement.className += 'loadstate';-->
         <!--</script>-->
         
-            <!-- Le javascript
+            
+        <!-- Le javascript
         ================================================== -->
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
         <script type="text/javascript" src="/static/js/bootstrap/bootstrap.js"></script>  
@@ -129,12 +128,12 @@
         <!-- Init plugins -->
         <script type="text/javascript" src="/static/js/statistic.js"></script><!-- Control graphs ( chart, pies and etc) -->
         
-        {% block extrahead %}{% endblock extrahead %}
-    
         <!-- Important Place before main.js  -->
-        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.21/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.12/jquery-ui.min.js"></script>
         <script type="text/javascript" src="/static/plugins/touch-punch/jquery.ui.touch-punch.min.js"></script>
         <script type="text/javascript" src="/static/js/main.js"></script>
+        
+        {% block extrahead %}{% endblock extrahead %}
         
     </head>
       
@@ -305,13 +304,12 @@
                                     <ul class="sub">
                                         <li><a href="/fazenda/{{fazenda.id}}/"><span class="icon16 icomoon-icon-stats-up"></span>Visão geral</a></li>
                                         {% for setor in fazenda|lista_setores %}
-                                            <li><a href="/fazenda/{{fazenda.id}}/setor/{{setor.id}}"><span class="icon16 icomoon-icon-file"></span>{{setor.numero_setor}} - {{setor.cultura_setor}}</a></li>
+                                            <li><a href="/fazenda/{{fazenda.id}}/setor/{{setor.id}}"><span class="icon16 icomoon-icon-file"></span>{{setor.id_modulo}} - {{setor.cultura_setor}}</a></li>
                                         {% endfor %}
                                     </ul>
                                 </li>
                                 {% endfor %}
                                 <li><a href="/contatos/"><span class="icon16 icomoon-icon-stats-up"></span>Contatos</a></li>
-                                <li><a href="/contatos/"><span class="icon16 icomoon-icon-stats-up"></span>Previsão do Tempo</a></li>
                             </ul>
                         </div>
                     </div><!-- End sidenav -->
@@ -342,6 +340,6 @@
         </div><!-- End #wrapper .row -->
 
     </div><!-- End .container -->
-
+    
     </body>
 </html>

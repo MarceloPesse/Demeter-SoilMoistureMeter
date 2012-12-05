@@ -25,6 +25,86 @@
 	$(function() {
 	});
 </script>
+<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBzfs5IYi2KVsMYLmdqCO0x8TUW66wIRPU&sensor=false"></script>
+<script>
+    var latitude_fazenda = {{latitude_fazenda}}
+    var longitude_fazenda = {{longitude_fazenda}}
+    centro_fazenda = new google.maps.LatLng(latitude_fazenda,longitude_fazenda)
+    
+    function initialize()
+    {
+    var mapProp = {
+      center:centro_fazenda,
+      zoom:15,
+      mapTypeId:google.maps.MapTypeId.SATELLITE
+      };
+    var map = new google.maps.Map(document.getElementById("googleMap")
+      ,mapProp);
+    
+    var setor = new google.maps.Circle({
+	center:centro_fazenda,
+	radius:400,
+	strokeColor:"#0000FF",
+	strokeOpacity:0.8,
+	strokeWeight:2,
+	fillColor:"#0000FF",
+	fillOpacity:0.4
+	});
+    
+    setor.setMap(map);
+    
+    google.maps.event.addListener(map, 'click', function(event) {
+	placeMarker(event.latLng);
+    });
+    function placeMarker(location) {
+	var circulo = new google.maps.Circle({
+	    radius:400,
+	    strokeColor:"#0000FF",
+	    strokeOpacity:0.8,
+	    strokeWeight:2,
+	    fillColor:"#0000FF",
+	    fillOpacity:0.4
+	    map: map,
+	});
+	var infowindow = new google.maps.InfoWindow({
+	    content: 'Latitude: ' + location.lat() + '<br>Longitude: ' + location.lng()
+	});
+	infowindow.open(map,marker);
+	
+	function saveData() {
+	    var latlng = circulo.getPosition();
+	  
+	    var url = "fazenda/1/setor/1/edita_setor_mapa/?lat=" + latlng.lat() + "&lng=" + latlng.lng();
+	    downloadUrl(url, function(data, responseCode) {
+	    if (responseCode == 200 && data.length <= 1) {
+		infowindow.close();
+		document.getElementById("message").innerHTML = "Location added.";
+	    }
+	    });
+	}
+    }
+	
+    }
+    function downloadUrl(url, callback) {
+	var request = window.ActiveXObject ?
+	    new ActiveXObject('Microsoft.XMLHTTP') :
+	    new XMLHttpRequest;
+      
+	request.onreadystatechange = function() {
+	  if (request.readyState == 4) {
+	    request.onreadystatechange = doNothing;
+	    callback(request.responseText, request.status);
+	  }
+	};
+      
+	request.open('GET', url, true);
+	request.send(null);
+      }
+      
+    function doNothing() {}
+    
+    google.maps.event.addDomListener(window, 'load', initialize);
+</script>
 <body>
     <div class="pagina">
         <div class="menu_lateral_box">
