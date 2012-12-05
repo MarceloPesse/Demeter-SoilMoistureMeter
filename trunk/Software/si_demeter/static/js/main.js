@@ -507,14 +507,14 @@ $(document).ready(function() {
 		$('.picker').farbtastic('#color');
 	}	
 	//------------- Datepicker -------------//
-	$("#datepicker").datepicker({
-		showOtherMonths:true
-	});
-
-	$('#datepicker-inline').datepicker({
-        inline: true,
-		showOtherMonths:true
-    });
+//	$("#datepicker").datepicker({
+//		showOtherMonths:true
+//	});
+//
+//	$('#datepicker-inline').datepicker({
+//        inline: true,
+//		showOtherMonths:true
+//    });
 
     //------------- Time entry (picker) -------------//
 	$('#timepicker').timeEntry({
@@ -857,15 +857,15 @@ $(document).ready(function() {
 	});
 
 	//animated progress bar
-	$('#progress1').anim_progressbar();
+	//$('#progress1').anim_progressbar();
 
 	// from second #5 till 15
     var iNow = new Date().setTime(new Date().getTime() + 5 * 1000); // now plus 5 secs
     var iEnd = new Date().setTime(new Date().getTime() + 15 * 1000); // now plus 15 secs
-    $('#progress2').anim_progressbar({start: iNow, finish: iEnd, interval: 100});
+    //$('#progress2').anim_progressbar({start: iNow, finish: iEnd, interval: 100});
 
     // we will just set interval of updating to 2 sec
-    $('#progress3').anim_progressbar({interval: 2000});
+    //$('#progress3').anim_progressbar({interval: 2000});
 
 	$(".progressBlue").knob({
         'min':0,

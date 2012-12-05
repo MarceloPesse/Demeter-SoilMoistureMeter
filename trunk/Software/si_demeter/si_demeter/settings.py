@@ -8,6 +8,7 @@ PROJECT_ROOT_PATH = 'C:\Users\Ton\Desktop\projeto-demeter\Software\si_demeter'
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
+GOOGLE_API_KEY = 'AIzaSyBzfs5IYi2KVsMYLmdqCO0x8TUW66wIRPU'
 
 ADMINS = (
     # ('Your Name', 'your_email@example.com'),

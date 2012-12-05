@@ -39,6 +39,7 @@ urlpatterns = patterns('',
     #SETOR
     url(r'^fazenda/(?P<id_fazenda>[A-Za-z0-9]+)/cria_setor/$', 'si_demeter.sistema.views.cria_setor', name='cria_setor'),
     url(r'^fazenda/(?P<id_fazenda>[A-Za-z0-9]+)/setor/(?P<id_setor>[A-Za-z0-9]+)/$', 'si_demeter.sistema.views.setor', name='setor'),
+    url(r'^fazenda/(?P<id_fazenda>[A-Za-z0-9]+)/edita_setor_mapa/(?P<id_setor>[A-Za-z0-9]+)/$', 'si_demeter.sistema.views.edita_setor_mapa', name='edita_setor_mapa/'),
     url(r'^fazenda/(?P<id_fazenda>[A-Za-z0-9]+)/exclui_setor/(?P<id_setor>[A-Za-z0-9]+)/$', 'si_demeter.sistema.views.exclui_setor', name='exclui_setor'),
     
     #CONTATO

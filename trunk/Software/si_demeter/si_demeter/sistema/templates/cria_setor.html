@@ -11,6 +11,7 @@
 
 
 {% block content %}
+    <span>Coloque os dados iniciais do setor e na página seguinte configure sua posição dentro da fazenda.</span>
     <form method="POST" action="/fazenda/{{fazenda.id}}/cria_setor/">
         {{setor_form.as_table}}
         <button type="submit" class="btn btn-info marginT10">Salvar alterações</button>

@@ -25,13 +25,13 @@
     float: left;
     width: 200px;
     height: 600px;
-    margin: 0px 0px 0px 20px;
+    margin: 600px 0px 0px 20px;
     border-radius: 3px;
 }
 
 .fazenda_mapa{
     float: left;
-    width: 300px;
+    width: 600px;
     margin: 0px 0px 0px 20px;
     border-radius: 3px;
 }

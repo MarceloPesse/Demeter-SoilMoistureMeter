@@ -26,8 +26,8 @@ for (i=1; i<8; i++) {
 
 //sparkline in sidebar area
 var positive = [1,5,3,7,8,6,10];
-var negative = [10,6,8,7,3,5,1]
-var negative1 = [7,6,8,7,6,5,4]
+var negative = [10,6,8,7,3,5,1];
+var negative1 = [7,6,8,7,6,5,4];
 
 $('#stat1').sparkline(positive,{
 	height:15,
@@ -81,7 +81,7 @@ $(document).ready(function() {
 	//circular progrress bar
 	$(function () {
 
-	$(".greenCircle").knob({
+		$(".greenCircle").knob({
             'min':0,
             'max':100,
             'readOnly': true,
@@ -190,13 +190,13 @@ $(document).ready(function() {
 //        	$.plot(placeholder, [ 
 //
 //        		{
-//        			label: "Ar", 
+//        			label: "Visits", 
 //        			data: d1,
 //        			lines: {fillColor: "#f2f7f9"},
 //        			points: {fillColor: "#88bbc8"}
 //        		}, 
 //        		{	
-//        			label: "Terra", 
+//        			label: "Unique Visits", 
 //        			data: d2,
 //        			lines: {fillColor: "#fff8f2"},
 //        			points: {fillColor: "#ed7a53"}
