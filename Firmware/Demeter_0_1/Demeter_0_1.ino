@@ -15,10 +15,12 @@ demeterCOM com;
 
 String id;
 
+//Board{sen1,ten1,sen2,ten2,sen3,ten3}
 Board board = { EEPROM.read(EE_SEN1), EEPROM.read(EE_TEN1),
                 EEPROM.read(EE_SEN2), EEPROM.read(EE_TEN2),
                 EEPROM.read(EE_SEN3), EEPROM.read(EE_TEN3) };
 
+//Sensor{v5,v3,led,sen,adc}
 Sensor sensor1 = {SEN_5V1, SEN_3V1, SEN_LED1, SEN_SN1, SEN_ADC1 };
 Sensor sensor2 = {SEN_5V2, SEN_3V2, SEN_LED2, SEN_SN2, SEN_ADC2 };
 Sensor sensor3 = {SEN_5V3, SEN_3V3, SEN_LED3, SEN_SN3, SEN_ADC3 };
@@ -34,15 +36,17 @@ void setup() {
   sensorBegin(&sensor1);
   sensorBegin(&sensor2);
   sensorBegin(&sensor3);
+  
   /*
   EEPROM.write(EE_BOARD, 1);
   EEPROM.write(EE_SEN1, 3);
-  EEPROM.write(EE_TEN1, 5);
+  EEPROM.write(EE_TEN1, 3);
   EEPROM.write(EE_SEN2, 3);
   EEPROM.write(EE_TEN2, 3);
   EEPROM.write(EE_SEN3, 3);
   EEPROM.write(EE_TEN3, 3);
   */
+  
   id = String(EEPROM.read(EE_BOARD), HEX);
   if(EEPROM.read(EE_BOARD) < 16){
     id.concat(id[0]);
@@ -81,7 +85,7 @@ void sensorBegin (Sensor* sensor){
 int32_t sensorRead (Sensor* sensor, byte tensao){
   mcp.digitalWrite(sensor->led, LOW);
   
-  if (tensao = 5) mcp.digitalWrite(sensor->v5, LOW);
+  if (tensao == 5) mcp.digitalWrite(sensor->v5, LOW);
   else mcp.digitalWrite(sensor->v3, LOW);
   
   delay(100);
