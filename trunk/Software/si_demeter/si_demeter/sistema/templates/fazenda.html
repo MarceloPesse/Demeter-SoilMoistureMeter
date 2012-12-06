@@ -22,7 +22,7 @@
 	var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
 	
 	{% for setor in setores %}
-	    {% if setor.compara_media_referencia %}
+	    {% if setor.compara_medida_referencia %}
 		var cor = "#339900";
 	    {% else %}
 		var cor = "#FF0000";
@@ -64,32 +64,12 @@
     <div class="fazenda_mapa">
         <div id="googleMap" style="width:600px;height:500px;"></div>
     </div>
-    
-    <div class="">
-        <form method="POST" action="/fazenda/{{fazenda.id}}/">
-            <div class="fazenda_form_box">
-                <span class="fazenda_form_text">Nome da Fazenda:</span>
-                <span class="fazenda_form_text">{{fazenda_form.nome_fazenda}}</span>
-            </div>
-            <div class="fazenda_form_box">
-                <span class="fazenda_form_text">Descrição:</span>
-                <span class="fazenda_form_text">{{fazenda_form.descricao_fazenda}}</span>
-            </div>
-            <div class="fazenda_form_box">
-                <span class="fazenda_form_text">Endereço:</span>
-                <span class="fazenda_form_text">{{fazenda_form.endereco}}</span>
-            </div>
-            <div class="fazenda_form_box">
-                <button type="submit" class="btn btn-info marginT10">Salvar alterações</button>
-            </div>
-        </form>
-        <div class="fazenda_form_box">
-            <span class="fazenda_form_text"><a href='/exclui_fazenda/{{fazenda.id}}/' class="inicio_excluir"><img alt="Excluir fazenda" onclick="alertExcluirFaz()" src="/static/img/ico_close_off.png" onmouseover="src='/static/img/ico_close_over.png'" onmouseout="src='/static/img/ico_close_off.png'"/> - Excluir fazenda</a></span>
-        </div>
-        <div class="fazenda_form_box">
-            <span><a href='/fazenda/{{fazenda.id}}/cria_setor/' class="btn btn-info marginT10">Criar Setor</a></span>
-        </div>
-    </div>
+    <form method="POST" action="/fazenda/{{fazenda.id}}/">
+        {{fazenda_form.as_table}}
+	<span><a href='/exclui_fazenda/{{fazenda.id}}/' class="btn btn-info marginT10">Excluir fazenda</a></span>
+        <button type="submit" class="btn btn-info marginT10">Salvar alterações</button>
+	<span><a href='/fazenda/{{fazenda.id}}/cria_setor/' class="btn btn-info marginT10">Criar Setor</a></span>
+    </form>
 
     
 {% endblock content %}

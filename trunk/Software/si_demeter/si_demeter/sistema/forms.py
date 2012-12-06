@@ -14,12 +14,12 @@ class LoginForm(forms.Form):
 class FazendaForm(forms.ModelForm):
     class Meta:
         model = Fazenda
-        exclude = ('usuario')
+        exclude = ('usuario', 'latitude', 'longitude')
         
 class SetorForm(forms.ModelForm):
     class Meta:
         model = Setor
-        exclude = ('fazenda')
+        exclude = ('fazenda', 'latitude', 'longitude')
         
 class ContatoForm(forms.ModelForm):
     class Meta:

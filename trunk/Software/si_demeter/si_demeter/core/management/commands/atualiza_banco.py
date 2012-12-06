@@ -47,8 +47,8 @@ class Command(NoArgsCommand):
             setor.save()
             return setor
         
-        setor1 = cria_setor(fazenda1, 'Norte da Fazenda', 'Arroz', 'Arroz de exportação', 123, 13.0, -23.558, -46.722)
-        setor2 = cria_setor(fazenda1, 'Sul da Fazenda', 'Milho', 'Milho de exportação', 124, 12.0, -23.566, -46.734)
+        setor1 = cria_setor(fazenda1, 'Norte da Fazenda', 'Arroz', 'Arroz de exportação', 123, 13.0, -23.559, -46.722)
+        setor2 = cria_setor(fazenda1, 'Sul da Fazenda', 'Milho', 'Milho de exportação', 124, 12.0, -23.553, -46.728)
         setor3 = cria_setor(fazenda2, 'Sul da Fazenda', 'Café', 'Café de exportação', 234, 11.0, -23.557299699999774, -46.72210693359375)
         
         def cria_historico_setor(id_modulo, data_medida, valor_medida, tipo_sensor):

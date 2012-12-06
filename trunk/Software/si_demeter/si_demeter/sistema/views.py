@@ -96,6 +96,8 @@ def fazenda(request, id_fazenda):
     if request.method == 'POST':
         fazenda_form = FazendaForm(request.POST, instance=fazenda)
         if fazenda_form.is_valid():
+            #latitude = fazenda_form.cleaned_data['latitude']
+            #return HttpResponse(latitude)
             fazenda = fazenda_form.save()
             messages.add_message(request, messages.SUCCESS, 'Fazenda editada com sucesso.')
             url = reverse('fazenda', args=[fazenda.id])
@@ -170,7 +172,7 @@ def setor(request, id_fazenda, id_setor):
             var_media_terra = soma/i
             var_grafico_terra.append(var_interno)
             i = i + 1
-        datahora = historico_setor.data_medida
+            datahora = historico_setor.data_medida
         d10=[[1,10],[2,20], [3,30]]
         return render_to_response('setor.html', locals(), context_instance=RequestContext(request) )
     return render_to_response('setor.html', locals(), context_instance=RequestContext(request) )
@@ -180,16 +182,13 @@ def edita_setor_mapa(request, id_fazenda, id_setor):
         usuario = Usuario.objects.get(username=request.user.username)
         fazenda = Fazenda.objects.get(id=id_fazenda)
         setor = Setor.objects.get(id=id_setor)
-        latitude_get = request.GET.get('latitude')
-        longitude_get = request.GET.get('longitude')
-        if latitude_get == None and longitude_get == None:
-            return render_to_response('edita_setor_mapa.html', locals(), context_instance=RequestContext(request) )
+        if request.is_ajax():
+            setor.latitude = request.POST['latitude']
+            setor.longitude = request.POST['longitude']
+            setor.save()
+            return HttpResponse('Posição alterada com sucesso.')
         else:
-            setor.latitude = latitude_get
-            setor.longitude = longitude_get
-            messages.add_message(request, messages.SUCCESS, 'Posição alterada com sucesso.')
-            url = reverse('setor', args=[fazenda.id, setor.id])
-            return HttpResponseRedirect(url)
+            return render_to_response('edita_setor_mapa.html', locals(), context_instance=RequestContext(request) )
     
 @login_required
 def exclui_setor(request, id_fazenda, id_setor):
