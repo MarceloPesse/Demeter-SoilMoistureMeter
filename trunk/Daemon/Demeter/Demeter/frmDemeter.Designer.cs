@@ -34,6 +34,8 @@ namespace Demeter
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.grbReading = new System.Windows.Forms.GroupBox();
+            this.nudModules = new System.Windows.Forms.NumericUpDown();
+            this.label4 = new System.Windows.Forms.Label();
             this.nudInterval = new System.Windows.Forms.NumericUpDown();
             this.label3 = new System.Windows.Forms.Label();
             this.lstReadings = new System.Windows.Forms.ListBox();
@@ -55,15 +57,13 @@ namespace Demeter
             this.grpCommand = new System.Windows.Forms.GroupBox();
             this.btnSendKeystroke = new System.Windows.Forms.Button();
             this.txtCommand = new System.Windows.Forms.TextBox();
-            this.nudModules = new System.Windows.Forms.NumericUpDown();
-            this.label4 = new System.Windows.Forms.Label();
             this.grbComm.SuspendLayout();
             this.grbReading.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nudModules)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudInterval)).BeginInit();
             this.statusStrip.SuspendLayout();
             this.grbDatabase.SuspendLayout();
             this.grpCommand.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nudModules)).BeginInit();
             this.SuspendLayout();
             // 
             // grbComm
@@ -125,6 +125,32 @@ namespace Demeter
             this.grbReading.TabIndex = 1;
             this.grbReading.TabStop = false;
             this.grbReading.Text = "Reading";
+            // 
+            // nudModules
+            // 
+            this.nudModules.Location = new System.Drawing.Point(90, 18);
+            this.nudModules.Maximum = new decimal(new int[] {
+            3600,
+            0,
+            0,
+            0});
+            this.nudModules.Name = "nudModules";
+            this.nudModules.Size = new System.Drawing.Size(82, 20);
+            this.nudModules.TabIndex = 3;
+            this.nudModules.Value = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(6, 20);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(50, 13);
+            this.label4.TabIndex = 2;
+            this.label4.Text = "Modules:";
             // 
             // nudInterval
             // 
@@ -327,36 +353,9 @@ namespace Demeter
             // txtCommand
             // 
             this.txtCommand.Location = new System.Drawing.Point(9, 18);
-            this.txtCommand.MaxLength = 1;
             this.txtCommand.Name = "txtCommand";
             this.txtCommand.Size = new System.Drawing.Size(106, 20);
             this.txtCommand.TabIndex = 2;
-            // 
-            // nudModules
-            // 
-            this.nudModules.Location = new System.Drawing.Point(90, 18);
-            this.nudModules.Maximum = new decimal(new int[] {
-            3600,
-            0,
-            0,
-            0});
-            this.nudModules.Name = "nudModules";
-            this.nudModules.Size = new System.Drawing.Size(82, 20);
-            this.nudModules.TabIndex = 3;
-            this.nudModules.Value = new decimal(new int[] {
-            5,
-            0,
-            0,
-            0});
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(6, 20);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(50, 13);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "Modules:";
             // 
             // frmDemeter
             // 
@@ -382,6 +381,7 @@ namespace Demeter
             this.grbComm.PerformLayout();
             this.grbReading.ResumeLayout(false);
             this.grbReading.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nudModules)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudInterval)).EndInit();
             this.statusStrip.ResumeLayout(false);
             this.statusStrip.PerformLayout();
@@ -389,7 +389,6 @@ namespace Demeter
             this.grbDatabase.PerformLayout();
             this.grpCommand.ResumeLayout(false);
             this.grpCommand.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nudModules)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
