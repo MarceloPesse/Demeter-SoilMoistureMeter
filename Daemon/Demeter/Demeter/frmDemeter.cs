@@ -190,7 +190,7 @@ namespace Demeter
                                 if (_Connection != null)
                                     _Connection.RegistraLeitura(oSD);
 
-                                response = String.Format("#{0:000} : {1:000} : {2:000} : {3:00000}", oSD.idModule, oSD.idSensor, oSD.idSensorType, oSD.SensorData);
+                                response = String.Format("#{0:000} : {1:000} : {2:000} : {3:00000} ({4:0.00})", oSD.idModule, oSD.idSensor, oSD.idSensorType, oSD.SensorData, oSD.CalculatedData);
                                 DoGUIUpdate(DateTime.Now.ToString("HH:mm:ss") + " - " + response);
                             }
                         }
@@ -322,36 +322,6 @@ namespace Demeter
 
     }
 
-    public double CalculaMedida(int idSensorType, double data)
-    {    
-        if (idSensorType == 3)
-        {
-            double i;
-            i = data*5100/65535;
-            i = 0,00211 * i - 0,675;
-            return i;
-        }
-        else return data;
-    }
 
-    public class SampleData
-    {
-        public int idModule;
-        public int idSensor;
-        public int idSensorType;
-        public double SensorData;
-        public double CalculatedData;
-        public DateTime TimeStampDevice;
-
-        public SampleData(int idModule, int idSensor, int idSensorType, double data, DateTime TimestampDevice)
-        {
-            this.SensorData = data;
-            this.idModule = idModule;
-            this.idSensor = idSensor;
-            this.idSensorType = idSensorType;
-            this.TimeStampDevice = TimestampDevice;
-            this.CalculatedData = CalculaMedida(idSensorType, data);
-        }
-    }
 
 }

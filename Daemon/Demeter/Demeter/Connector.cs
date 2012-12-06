@@ -84,7 +84,7 @@ namespace Demeter
             Com.Parameters.AddWithValue("@1", oLeitura.idModule);
             Com.Parameters.AddWithValue("@2", oLeitura.idSensor);
             Com.Parameters.AddWithValue("@3", oLeitura.idSensorType);
-            Com.Parameters.AddWithValue("@4", oLeitura.SensorData);
+            Com.Parameters.AddWithValue("@4", oLeitura.CalculatedData);
             Com.Parameters.AddWithValue("@5", oLeitura.TimeStampDevice);
 
             int id;
