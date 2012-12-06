@@ -76,8 +76,11 @@ class Setor(models.Model):
     #retorna verdadeiro se a ultima medida está maior que a refrencia
     def compara_medida_referencia(self):
         lista_historico_setor = HistoricoSetor.objects.filter(id_modulo=self.id_modulo)
-        ultimo_historico = lista_historico_setor.order_by("-data_medida")[0]
-        ultima_medida = ultimo_historico.valor_medida
+        if lista_historico_setor == None:
+            ultimo_historico = lista_historico_setor.order_by("-data_medida")[0]
+            ultima_medida = ultimo_historico.valor_medida
+        else:
+            ultima_medida = 0
         if ultima_medida >= self.valor_referencia:
             return True
         else:
