@@ -37,7 +37,7 @@ void setup() {
   sensorBegin(&sensor2);
   sensorBegin(&sensor3);
   
-  /*
+  
   EEPROM.write(EE_BOARD, 1);
   EEPROM.write(EE_SEN1, 3);
   EEPROM.write(EE_TEN1, 3);
@@ -45,7 +45,7 @@ void setup() {
   EEPROM.write(EE_TEN2, 3);
   EEPROM.write(EE_SEN3, 3);
   EEPROM.write(EE_TEN3, 3);
-  */
+  
   
   id = String(EEPROM.read(EE_BOARD), HEX);
   if(EEPROM.read(EE_BOARD) < 16){
