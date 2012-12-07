@@ -26,5 +26,5 @@ def context_principal(request):
     a = 1
     if request.user.is_authenticated():
         usuario = Usuario.objects.get(username=request.user.username)
-        fazendas = Fazenda.objects.all()
+        fazendas = Fazenda.objects.filter(usuario=usuario)
     return locals()

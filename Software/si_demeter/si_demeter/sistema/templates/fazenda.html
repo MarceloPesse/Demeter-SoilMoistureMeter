@@ -22,7 +22,7 @@
 	var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
 	
 	{% for setor in setores %}
-	    {% if setor.compara_medida_referencia %}
+	    {% if setor.compara_media_referencia %}
 		var cor = "#339900";
 	    {% else %}
 		var cor = "#FF0000";

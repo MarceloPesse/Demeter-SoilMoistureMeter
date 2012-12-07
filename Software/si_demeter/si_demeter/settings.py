@@ -20,12 +20,20 @@ PREFIXO1 = 'C:\Users\Ton\Desktop\projeto-demeter\Software\si_demeter'
 PREFIXO2 = '127.0.0.1:8000'
 #PREFIXO2 = ''
 DATABASES = {
+    #'default': {
+    #    'ENGINE': 'django.db.backends.sqlite3', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
+    #    'NAME': os.path.join(PROJECT_ROOT_PATH,'banco.db'),
+    #    'USER': '',                      # Not used with sqlite3.
+    #    'PASSWORD': '',                  # Not used with sqlite3.
+    #    'HOST': '',                      # Set to empty string for localhost. Not used with sqlite3.
+    #    'PORT': '',                      # Set to empty string for default. Not used with sqlite3.
+    #}
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': os.path.join(PROJECT_ROOT_PATH,'banco.db'),
-        'USER': '',                      # Not used with sqlite3.
-        'PASSWORD': '',                  # Not used with sqlite3.
-        'HOST': '',                      # Set to empty string for localhost. Not used with sqlite3.
+        'ENGINE': 'django.db.backends.mysql', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
+        'NAME': 'banco_demeter',
+        'USER': 'root',                      # Not used with sqlite3.
+        'PASSWORD': 'demeter',                  # Not used with sqlite3.
+        'HOST': '127.0.0.1',                      # Set to empty string for localhost. Not used with sqlite3.
         'PORT': '',                      # Set to empty string for default. Not used with sqlite3.
     }
 }

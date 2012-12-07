@@ -95,7 +95,7 @@ class Setor(models.Model):
     
 class HistoricoSetor(models.Model):
     id_modulo = models.IntegerField("ID do Modulo", max_length=1024, blank=True, null=True)
-    #id_sensor = models.IntegerField("ID do Sensor", max_length=1024, blank=True, null=True)
+    id_sensor = models.CharField("ID do Sensor", max_length=1024, blank=True, null=True)
     data_medida = models.DateTimeField("Data da Medida")
     valor_medida = models.FloatField("Valor da Medida", blank=True, null=True)
     tipo_sensor = models.CharField("Tipo do Sensor", max_length=1024, blank=True, null=True) #colocar choice?
@@ -104,7 +104,7 @@ class HistoricoSetor(models.Model):
         return self.id_modulo
     
 class Contato(models.Model):
-    fazenda = models.ForeignKey(Fazenda)
+    usuario = models.ForeignKey(Usuario)
     nome_contato = models.CharField("Nome do Contato" ,max_length=128)
     descricao_contato = models.CharField("Descricao", max_length=1024, blank=True, null=True)
     telefone = models.CharField("Telefone", max_length=1024, blank=True, null=True)
