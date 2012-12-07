@@ -28,8 +28,9 @@ namespace Demeter
             if (idSensorType == 3)
             {
                 double i;
-                i = (data / 64)  - 37.5;
-                return i;
+                i = (data / 52)  - 30;
+                if (i > 0) return i;
+                else return 0;
             }
             else return data;
         }
