@@ -108,7 +108,7 @@ def fazenda(request, id_fazenda):
     else:
         fazenda_form = FazendaForm(instance=fazenda)
         setores = Setor.objects.filter(fazenda=fazenda)
-        contatos = Contato.objects.filter(fazenda=fazenda)
+        contatos = Contato.objects.filter(usuario=usuario)
         return render_to_response('fazenda.html', locals(), context_instance=RequestContext(request) )
     return render_to_response('fazenda.html', locals(), context_instance=RequestContext(request) )
     
@@ -162,18 +162,44 @@ def setor(request, id_fazenda, id_setor):
         setor_form = SetorForm(instance=setor)
         id_modulo = setor.id_modulo
         lista_historico_setor = HistoricoSetor.objects.filter(id_modulo=id_modulo)
+        var_grafico_temp = []
+        var_interno_temp = []
+        soma_temp = 0
+        var_media_temp = 0
+        var_grafico_ar = []
+        var_interno_ar = []
+        soma_ar = 0
+        var_media_ar = 0
         var_grafico_terra = []
-        var_interno = []
-        i = 1.0
-        soma = 0
+        var_interno_terra = []
+        soma_terra = 0
+        var_media_terra = 0
+        i = 1
+        j = 1
+        k = 1
         for historico_setor in lista_historico_setor:
-            var_interno = [i, historico_setor.valor_medida]
-            soma = soma + historico_setor.valor_medida
-            var_media_terra = soma/i
-            var_grafico_terra.append(var_interno)
-            i = i + 1
-            datahora = historico_setor.data_medida
-        d10=[[1,10],[2,20], [3,30]]
+            if historico_setor.tipo_sensor == '1':
+                var_interno_temp = [i, historico_setor.valor_medida]
+                soma_temp = soma_temp + historico_setor.valor_medida
+                var_media_temp = soma_temp/i
+                var_grafico_temp.append(var_interno_temp)
+                i = i + 1
+            if historico_setor.tipo_sensor == '2':
+                var_interno_ar = [j, historico_setor.valor_medida]
+                soma_ar = soma_ar + historico_setor.valor_medida
+                var_media_ar = soma_ar/j
+                var_grafico_ar.append(var_interno_ar)
+                j = j + 1
+            if historico_setor.tipo_sensor == '3' and historico_setor.id_sensor == '1':
+                if historico_setor.valor_medida < 0:
+                    pass
+                else:
+                    var_interno_terra = [k, historico_setor.valor_medida]
+                    soma_terra = soma_terra + historico_setor.valor_medida
+                    var_media_terra = soma_terra/k
+                    var_grafico_terra.append(var_interno_terra)
+                    k = k + 1
+        datahora = historico_setor.data_medida
         return render_to_response('setor.html', locals(), context_instance=RequestContext(request) )
     return render_to_response('setor.html', locals(), context_instance=RequestContext(request) )
     
@@ -204,7 +230,8 @@ def exclui_setor(request, id_fazenda, id_setor):
 #CONTATO
 @login_required
 def contatos(request):
-    contatos = Contato.objects.all()
+    usuario = Usuario.objects.get(username=request.user.username)
+    contatos = Contato.objects.filter(usuario=usuario)
     lista_contatos = []
     for contato in contatos:
         lista_contatos.append(ContatoForm(instance=contato))
