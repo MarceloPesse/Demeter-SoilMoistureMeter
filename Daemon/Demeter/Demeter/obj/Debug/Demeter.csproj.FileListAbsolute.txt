@@ -1,0 +1,11 @@
+C:\Documents and Settings\Pesse\Desktop\demeter\Daemon\Demeter\Demeter\bin\Debug\Demeter.exe
+C:\Documents and Settings\Pesse\Desktop\demeter\Daemon\Demeter\Demeter\bin\Debug\Demeter.pdb
+C:\Documents and Settings\Pesse\Desktop\demeter\Daemon\Demeter\Demeter\bin\Debug\MySql.Data.dll
+C:\Documents and Settings\Pesse\Desktop\demeter\Daemon\Demeter\Demeter\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Pesse\Desktop\demeter\Daemon\Demeter\Demeter\obj\Debug\Demeter.frmDemeter.resources
+C:\Documents and Settings\Pesse\Desktop\demeter\Daemon\Demeter\Demeter\obj\Debug\Demeter.Properties.Resources.resources
+C:\Documents and Settings\Pesse\Desktop\demeter\Daemon\Demeter\Demeter\obj\Debug\GenerateResource-ResGen.read.1.tlog
+C:\Documents and Settings\Pesse\Desktop\demeter\Daemon\Demeter\Demeter\obj\Debug\GenerateResource-ResGen.write.1.tlog
+C:\Documents and Settings\Pesse\Desktop\demeter\Daemon\Demeter\Demeter\obj\Debug\Demeter.exe
+C:\Documents and Settings\Pesse\Desktop\demeter\Daemon\Demeter\Demeter\obj\Debug\Demeter.pdb
+C:\Documents and Settings\Pesse\Desktop\demeter\Daemon\Demeter\Demeter\bin\Debug\Demeter.exe.config
