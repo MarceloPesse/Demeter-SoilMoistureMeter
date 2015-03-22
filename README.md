@@ -1,6 +1,6 @@
 Ah, the good old times.
 
-This here is my final project for my Bachelor's degree in electrical engineering.
+This here is the final project for my Bachelor's degree in electrical engineering.
 The group was composed of:
   - Marcelo Pesse a.k.a. Me
   - Ricardo Bonfá Alberico 
