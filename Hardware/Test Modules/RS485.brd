@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.2">
+<eagle version="7.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.005" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.0125" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -122,6 +122,13 @@
 <wire x1="22.86" y1="0" x2="22.86" y2="15.24" width="0.4064" layer="20"/>
 <wire x1="22.86" y1="15.24" x2="0" y2="15.24" width="0.4064" layer="20"/>
 <wire x1="0" y1="15.24" x2="0" y2="0" width="0.4064" layer="20"/>
+<text x="14.9225" y="9.2075" size="1.9304" layer="21" font="vector" ratio="15">TX</text>
+<text x="14.9225" y="6.6675" size="1.9304" layer="21" font="vector" ratio="15">EN</text>
+<text x="14.9225" y="4.1275" size="1.9304" layer="21" font="vector" ratio="15">RX</text>
+<text x="11.43" y="1.5875" size="1.9304" layer="21" font="vector" ratio="15">GND</text>
+<text x="14.9225" y="11.7475" size="1.9304" layer="21" font="vector" ratio="15">5V</text>
+<text x="10.16" y="11.43" size="2.54" layer="21" font="vector" ratio="15">B</text>
+<text x="10.16" y="6.35" size="2.54" layer="21" font="vector" ratio="15">A</text>
 </plain>
 <libraries>
 <library name="mark_1">
@@ -274,7 +281,7 @@ Metric Code Size 2012</description>
 <class number="0" name="default" width="0" drill="0">
 </class>
 </classes>
-<designrules>
+<designrules name="default">
 <description language="de">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
 &lt;p&gt;
 Die Standard-Design-Rules sind so gewählt, dass sie für 
@@ -360,6 +367,9 @@ design rules under a new name.</description>
 <autorouter>
 <pass name="Default">
 <param name="RoutingGrid" value="50mil"/>
+<param name="AutoGrid" value="1"/>
+<param name="Efforts" value="0"/>
+<param name="TopRouterVariant" value="1"/>
 <param name="tpViaShape" value="round"/>
 <param name="PrefDir.1" value="|"/>
 <param name="PrefDir.2" value="0"/>
@@ -494,14 +504,14 @@ design rules under a new name.</description>
 <wire x1="17.2212" y1="9.525" x2="18.415" y2="9.525" width="0.4064" layer="16"/>
 <wire x1="18.415" y1="9.525" x2="19.05" y2="10.16" width="0.4064" layer="16"/>
 <contactref element="JP1" pad="2"/>
-<wire x1="19.05" y1="10.16" x2="20.32" y2="10.16" width="0.254" layer="16"/>
+<wire x1="19.05" y1="10.16" x2="20.32" y2="10.16" width="0.4064" layer="16"/>
 </signal>
 <signal name="RXD">
 <contactref element="IC1" pad="4"/>
 <wire x1="17.2212" y1="5.715" x2="18.415" y2="5.715" width="0.4064" layer="16"/>
 <wire x1="18.415" y1="5.715" x2="19.05" y2="5.08" width="0.4064" layer="16"/>
 <contactref element="JP1" pad="4"/>
-<wire x1="19.05" y1="5.08" x2="20.32" y2="5.08" width="0" layer="19" extent="16-16"/>
+<wire x1="19.05" y1="5.08" x2="20.32" y2="5.08" width="0.4064" layer="16"/>
 </signal>
 <signal name="EN">
 <contactref element="IC1" pad="3"/>
@@ -512,7 +522,7 @@ design rules under a new name.</description>
 <wire x1="17.145" y1="7.62" x2="17.145" y2="7.0612" width="0.4064" layer="16"/>
 <wire x1="17.145" y1="7.0612" x2="17.2212" y2="6.985" width="0.4064" layer="16"/>
 <contactref element="JP1" pad="3"/>
-<wire x1="20.32" y1="7.62" x2="17.145" y2="7.62" width="0.254" layer="16"/>
+<wire x1="20.32" y1="7.62" x2="17.145" y2="7.62" width="0.4064" layer="16"/>
 </signal>
 <signal name="B">
 <contactref element="IC1" pad="7"/>
